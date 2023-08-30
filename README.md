@@ -8,7 +8,7 @@
  ## AUX PROJECT: BASIC GIT PROJECT
  The Git project serves as an introduction to Git Bash terminal and the GitHub version control system. Its purpose is to facilitate learning about GitHub, encompassing skills such as creating repositories, initializing them, creating branches, collaborating remotely effectively, and establishing connections with remote servers.
  
- Within this project, we were also introduced to various other terminals, including Windows PowerShell, Termius, and the command prompt and basic systax in markdown cheat sheet among others.
+ Within this project, I was also introduced to various other terminals, including Windows PowerShell, Termius, and the command prompt and basic systax in markdown cheat sheet among others.
     
     
 # PROJECT 1: LAMP STACK IMPLEMENTATION IN AWS
