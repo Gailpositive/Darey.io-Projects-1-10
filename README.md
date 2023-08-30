@@ -6,32 +6,17 @@
 
 
  ## AUX PROJECT: BASIC GIT PROJECT
- Initializing a repository and making commits
- 1. What is Git
- 2. Initializing a git repo
- 3.Making your first commit
-4. Working with branches
-5. Make your first git branch
-6. Listing git branches 
-7. Change into an old branch
-8. Merging a branch into another branch
-9. Deleting a git branch
-10. Collaboration and remote repositories
-11. Creating a github account
-12. Creating your first repository
-13. Pushing your local git repository to your remote git repository
-14. Cloning remote git repository
-15. Branch management and and tagging: Introduction to markdown systax
-
+ The Git project serves as an introduction to Git Bash terminal and the GitHub version control system. Its purpose is to facilitate learning about GitHub, encompassing skills such as creating repositories, initializing them, creating branches, collaborating remotely effectively, and establishing connections with remote servers.
+ 
+ Within this project, we were also introduced to various other terminals, including Windows PowerShell, Termius, and the command prompt and basic systax in markdown cheat sheet among others.
     
     
 # PROJECT 1: LAMP STACK IMPLEMENTATION IN AWS
+The "LAMP Stack Architecture" project offers an immersive introduction and practical experience within the realm of web servers.
 
-1. Webstack Implementation: Creating a free tier account with AWS.
-2. Preparing Prerequisites
-3. Installing apache and updating firewall
-4. Installing mysql
-5. Installing PHP
-6. Creating a virtual host for your webserver
-7. Enabling PHP on the website using apache2
+This project revolves around hands-on learning, focusing on the construction and deployment of a web server through the utilization of LAMP stack technologies. The process involves establishing a Linux environment, configuring the Apache2 web server, overseeing MySQL database management, and crafting script code using PHP.
+
+Furthermore, delving into the creation of a LAMP stack server provides an initial exposure to the AWS console. This journey entails establishing a remote connection to the LAMP web server via the AWS free tier, effectively expanding one's understanding of cloud-based server management.
+
+
  
