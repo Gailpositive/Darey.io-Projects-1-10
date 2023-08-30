@@ -30,19 +30,24 @@
 <img width="833" alt="apt page defualt 2" src="https://github.com/Gailpositive/darey.io-pbl-1/assets/111061512/4f292ce1-1a76-428a-a7fe-dbc61ec4e548">
 
 
- "apache2 web server is located in an index.html file. To locate this file in ubuntu ec2 instance, I changed directory to /var/www/htm. To display the content of the index.file, I used the cat command (cat index.html). To change the the files inside index.html, I used the vi editor and input "This is my first ever amazing website experience"
+ "apache2 web server located in an index.html file. To locate this file in ubuntu ec2 instance, I changed directory to /var/www/htm. To display the content of the index.file, I used the cat command (cat index.html). To change the the files inside index.html, I used the vi editor and input "This is my first ever amazing webserver experience"
        
  <img width="926" alt="cat file" src="https://github.com/Gailpositive/darey.io-pbl-1/assets/111061512/92131b75-4cd1-48c3-b913-3d30297e8c8b">
+ 
 
+ "my first webserver on the browser"
+   
+<img width="633" alt="first webserver" src="https://github.com/Gailpositive/darey.io-pbl-1/assets/111061512/d378910f-528b-48fe-9665-f2311c3c9586">
 
    "Curl localhost command without port, requesting apache2 webserver inside my ubuntu ec2 instance on windows powershell"
    
  <img width="864" alt="curl localhost on ubuntu" src="https://github.com/Gailpositive/darey.io-pbl-1/assets/111061512/f5780dc7-ee34-4b25-be1f-99d7e4604a0d">
-
+ 
 
  "Curl localhost command without port, requesting apache2 webserver inside my ubuntu ec2 instance on termius terminal"
  
 <img width="902" alt="curl localhost" src="https://github.com/Gailpositive/darey.io-pbl-1/assets/111061512/dd2ccc09-bb56-4fc2-9c06-fd80bddf9933">
+
 
 
       "SSH into my aws domain name server(DNS) on window powershell"
@@ -89,10 +94,6 @@
     
 <img width="924" alt="php and others installed" src="https://github.com/Gailpositive/darey.io-pbl-1/assets/111061512/3f11b5fb-0497-4d91-9272-d891ee929d73">
 
-
-   "my first webserver on the browser"
-   
-<img width="633" alt="first webserver" src="https://github.com/Gailpositive/darey.io-pbl-1/assets/111061512/d378910f-528b-48fe-9665-f2311c3c9586">
 
 
   "cd into index.html file to test my virtual host"
