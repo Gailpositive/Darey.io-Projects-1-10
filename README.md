@@ -25,13 +25,13 @@
 
     
     
-# PROJECT 1: LAMP STACK IMPLEMENTATION
+# PROJECT 1: LAMP STACK IMPLEMENTATION IN AWS
 
-1. Webstack Implementation
+1. Webstack Implementation: Creating a free tier account with AWS.
 2. Preparing Prerequisites
-3. Installing apache and updating
+3. Installing apache and updating firewall
 4. Installing mysql
 5. Installing PHP
 6. Creating a virtual host for your webserver
-7. Enabling PHP on the website
+7. Enabling PHP on the website using apache2
  
