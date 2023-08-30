@@ -25,12 +25,12 @@
 <img width="960" alt="apt installed on termuis" src="https://github.com/Gailpositive/darey.io-pbl-1/assets/111061512/5be61551-7d61-4a5a-8cf8-698c21026fee">
 
 
-        "Apache2 default page"
+  "Apache2 web server sucessfully installed and accessible through firewall "
         
 <img width="833" alt="apt page defualt 2" src="https://github.com/Gailpositive/darey.io-pbl-1/assets/111061512/4f292ce1-1a76-428a-a7fe-dbc61ec4e548">
 
 
-       "apache2 default page located in index.html file"
+ "apache2 web server is located in an index.html file. To locate this file in ubuntu ec2 instance, I changed directory to /var/www/htm. To display the content of the index.file, I used the cat command (cat index.html). To change the the files inside index.html, I used the vi editor and input "This is my first ever amazing website experience"
        
  <img width="926" alt="cat file" src="https://github.com/Gailpositive/darey.io-pbl-1/assets/111061512/92131b75-4cd1-48c3-b913-3d30297e8c8b">
 
@@ -103,9 +103,8 @@
      
 <img width="892" alt="virtual host echo" src="https://github.com/Gailpositive/darey.io-pbl-1/assets/111061512/c9d38682-567b-4d44-b6aa-af71818c0a9e">
 
-   " Website activated"
+ " Website activated"
 <img width="717" alt="virtual host" src="https://github.com/Gailpositive/darey.io-pbl-1/assets/111061512/bd4e8ee1-2783-41ce-84dd-dff151ac8268">
-
 
      " Self side study task submission"
      
