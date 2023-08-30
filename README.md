@@ -1,6 +1,6 @@
 # PROJECT BASE LEARNING LEARNING (PBL) :PROJECT 1-10
 
- Welcome to my documentation process with darey.io as a devOps/cloud engineer. These projects outlines both aux projects, introduction process into the world of web-stack deployment and technologies. 
+ Welcome to my documentation process with darey.io as a devOps/cloud engineer. These projects outlines both aux projects, introduction process into the world of web-stack development & deployment and technologies. 
  
  A more detailed implementation of these projects are stored in the repository.
 
