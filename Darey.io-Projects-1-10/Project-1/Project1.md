@@ -17,10 +17,12 @@
 <img width="868" alt="git-clone-in-Wpowershell" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/952e577a-75db-43b6-a68a-2c9970bc9b96">
 
 
-To get started,I had previously set-up my AWS account , on a default port 80 TCP, and provisioned an ubuntu server, I just logged into my AWS ec2 instance on a defu
+To get started,I had previously set-up my AWS account , on a default port 80 TCP, and provisioned an ubuntu server, I just logged into my AWS ec2 instance.
 
 <img width="838" alt="Captureec2 instance" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/e0d34487-0618-40c1-8790-28496622ed27">
 
+   "Port 80 TCP protocol"
+<img width="925" alt="port 80" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/8573defb-ba9f-4b42-b9b6-f211806f0da4">
 
 
 Next, Is the Installing of apache2 and updating the fire wall!
@@ -37,4 +39,10 @@ Next, Is the Installing of apache2 and updating the fire wall!
 
 <img width="926" alt="cat file" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/6fc89372-d015-4ed2-b1d7-a156371690d7">
 
- 
+Running the following "curl" commands through the Domain name server (DNS) "curl http://localhost:80", through the Ip server "curl http://127.0.0.1:80" or just simply without the port 80 protocol; "curl http://localhost" to request Apache2 http server port 80 on my local machine.
+
+ <img width="902" alt="curl localhost" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/350b79e7-c4b3-4f44-af8e-44e8c9925342">
+
+ In order to assess the responsiveness of my Apache2 webserver on a browser, I executed the IP command http://<Public-IP-Address>:80
+
+<img width="633" alt="first webserver" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/5baac9b4-a7ac-4837-abcd-9026af126731">
