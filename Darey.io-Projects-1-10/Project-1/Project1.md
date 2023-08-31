@@ -15,8 +15,11 @@
 
 <img width="868" alt="git-clone-in-Wpowershell" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/34c0a60e-01b4-4bce-bae2-3f5656390dee">
 
+To get started,I had previously created and login to my  AWS ec2 instance and a virtual server with ubuntu operating system.
 
-" Executing the command "sudo apt install" to update my apache2 software before installation, and afterwards executing the commands "sudo apt install apache2" to install apache2 software on my termuis terminal"
+Next, Is the  Installing of apache2 and updating the fire wall!
+" To execute this command, I "sudo apt install" on my terminal to update my apache2 package before installation, and afterwards executing the commands "sudo apt install apache2" to install apache2 package on my termuis terminal and run the command "sudo systemctl status apache2" to verify that apahe2 is runing as a service on my operating system"
+
 <img width="960" alt="apt installed on termuis" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/d881ec04-8877-4b19-ad9a-ce9dddea36ec">
 
 
