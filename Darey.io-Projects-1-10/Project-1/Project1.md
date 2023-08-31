@@ -1,6 +1,6 @@
 
 # LAMP-STACK IMPLEMENTATION.
-## (Linux Ubuntu, Apache2 Http server, Mysql Console and Php Package)
+## (Linux Ubuntu, Apache2 Http Server, Mysql Console and Php Package)
 
 
 " Attempting to experiment with different terminals to observe their individual functionalities and behavious, I initially performed a git clone operation into my github account on ubuntu virtualbox terminal"
