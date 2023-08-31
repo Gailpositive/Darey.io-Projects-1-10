@@ -16,5 +16,15 @@
 <img width="868" alt="git-clone-in-Wpowershell" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/34c0a60e-01b4-4bce-bae2-3f5656390dee">
 
 
-" Executing the command "sudo apt install" to uodate my apachee software before installation, and 
+" Executing the command "sudo apt install" to update my apache2 software before installation, and afterwards executing the commands "sudo apt install apache2" to install apache2 software on my termuis terminal"
 <img width="960" alt="apt installed on termuis" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/d881ec04-8877-4b19-ad9a-ce9dddea36ec">
+
+
+"Apache2 web server sucessfully installed and accessible through firewall "
+
+<img width="833" alt="apt page defualt 2" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/49534213-78da-4060-9199-29212630833b">
+
+
+ "Apache2 web server located in an index.html file. To locate this file in ubuntu ec2 instance, I changed directory to /var/www/htm. To display the content of the index.file, I used the cat command (cat index.html). To change  the files inside index.html, I used the vi editor and input "This is my first ever amazing webserver experience"
+ 
+ <img width="926" alt="cat file" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/31fddbc4-f18a-4599-a215-c36826d414b3">
