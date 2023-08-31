@@ -1,5 +1,7 @@
 
 # LAMP-STACK IMPLEMENTATION.
+## (Linux Ubuntu, Apache2 Http server, Mysql Console and Php Package)
+
 
 " Attempting to experiment with different terminals to observe their individual functionalities and behavious, I initially performed a git clone operation into my github account on ubuntu virtualbox terminal"
 
@@ -78,3 +80,8 @@ Next, Is to install PHP package, together with two other packages:Php-mysql whic
 
 
 <img width="924" alt="php and others installed" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/8753db16-29c1-49f4-80f3-fc386ae891b5">
+
+
+And Php package was successfully installed. I run this command "php -v" to confirm my Php version as seen below
+
+<img width="777" alt="php" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/605636af-c71c-4022-b6a1-c90ad9bddb7e">
