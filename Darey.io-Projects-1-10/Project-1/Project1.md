@@ -62,3 +62,12 @@ I executed the command "sudo apt install mysql-server" to install mysql
 
 <img width="702" alt="mysql pwd inputted" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/7c19e2f2-5f0f-4283-9adc-7f4c5012ee3a">
 
+With this command "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';
+to executed a pre-installed security script to erase any insecured default settings, lock down access to my database system and set root user password ,using "mysql_native_password as a default authentication method.  
+
+<img width="458" alt="Running a security script check ,setting a password and exitig mysql console" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/d8fc79b6-3459-48b5-98ec-6cb7ef067b59">
+
+
+ " To start the interactive script and validate password pluggins, I run this command "sudo mysql_secure_installation" 
+
+<img width="740" alt="mysql setup" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/f6bfa14f-5c75-4fda-af80-61af3ab76e75">
