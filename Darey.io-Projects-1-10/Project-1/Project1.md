@@ -74,3 +74,4 @@ to executed a pre-installed security script to erase any insecured default setti
 
 "Atfer installing is complete, I  run this command " sudo mysql -p" to login to mysql console with a password and exited the console with the "exit" command.
 
+Next, Is to install PHP package, together with two other packages:Php-mysql which allows Php to communicates with mysql-base database and libapache2-mod-php which helps apache to handles Php files. Core Php packages will automatically be installed as dependencies 
