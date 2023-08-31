@@ -17,7 +17,7 @@
 <img width="868" alt="git-clone-in-Wpowershell" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/952e577a-75db-43b6-a68a-2c9970bc9b96">
 
 
-To get started,I had previously created and login to my  AWS ec2 instance and a virtual server with ubuntu operating system.
+To get started,I had previously set-up my AWS account , on a default port 80 TCP, and provisioned an ubuntu server, I just logged into my AWS ec2 instance on a defu
 
 <img width="838" alt="Captureec2 instance" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/e0d34487-0618-40c1-8790-28496622ed27">
 
@@ -36,4 +36,5 @@ Next, Is the Installing of apache2 and updating the fire wall!
  "Apache2 web server located in an index.html file. To locate this file in ubuntu ec2 instance, I changed directory to /var/www/htm. To display the content of the index.file, I used the cat command (cat index.html). To change  the files inside index.html, I used the vi editor and input "This is my first ever amazing webserver experience"
 
 <img width="926" alt="cat file" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/6fc89372-d015-4ed2-b1d7-a156371690d7">
+
  
