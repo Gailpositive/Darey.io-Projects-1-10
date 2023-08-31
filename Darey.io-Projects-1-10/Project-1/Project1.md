@@ -68,6 +68,9 @@ to executed a pre-installed security script to erase any insecured default setti
 <img width="458" alt="Running a security script check ,setting a password and exitig mysql console" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/d8fc79b6-3459-48b5-98ec-6cb7ef067b59">
 
 
- " To start the interactive script and validate password pluggins, I run this command "sudo mysql_secure_installation" 
+ " To start the interactive script by validating the password pluggins and improve security, I run this command "sudo mysql_secure_installation" 
 
 <img width="740" alt="mysql setup" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/f6bfa14f-5c75-4fda-af80-61af3ab76e75">
+
+"Atfer installing is complete, I  run this command " sudo mysql -p" to login to mysql console with a password and exited the console with the "exit" command.
+
