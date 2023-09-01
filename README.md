@@ -21,4 +21,5 @@ Furthermore, delving into the creation of a LAMP stack server provides an initia
 
 # PROJECT 2: LEMP STACK INPLEMENTAION IN AWS.
 Utilizing the capabilities of the Linux operating system, Nginx webserver, MySQL database, and PHP script code to bring an application to fruition. I delve into methods for managing user requests, interacting with database data, and implementing robust security measures in mysql database management system.
- 
+
+ To complete this project, I will be spinning an AWS EC2 instance, a virtual server running the Ubuntu server operating system , and a Git bash terminal. 
