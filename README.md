@@ -16,7 +16,7 @@ The "LAMP Stack Architecture" project offers an immersive introduction and pract
 
 This project revolves around hands-on learning, focusing on the construction and deployment of a web server through the utilization of LAMP stack technologies. The process involves establishing a Linux environment, configuring the Apache2 web server, overseeing MySQL database management, and crafting script code using PHP.
 
-Furthermore, delving into the creation of a LAMP stack server provides an initial exposure to the AWS console. This journey entails establishing a remote connection to the LAMP web server via the AWS free tier, effectively expanding one's understanding of cloud-based server management.
+Furthermore, delving into the creation of a LAMP stack server provides an initial exposure to the AWS console. This journey entails establishing a remote connection to the LAMP web server via the AWS Ec2 free tier, effectively expanding one's understanding of cloud-based server management.
 
 
  
