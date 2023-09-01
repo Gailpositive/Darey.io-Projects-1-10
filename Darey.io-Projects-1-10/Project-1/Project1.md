@@ -1,5 +1,5 @@
 
-# LAMP-STACK IMPLEMENTATION.
+# LAMP-STACK IMPLEMENTATION IN AWS.
 ## (Linux Ubuntu, Apache2 Http Server, Mysql Console and Php Package)
 
 
