@@ -1,7 +1,7 @@
 # LEMP-STACK IMPLEMENTATION IN AWS.
 
-
- ## PREPARING PREREQUISITES: In order to complete this project, I will be spinning up an AWS EC2 instance and a virtual server with ubuntu server operating system. My preferred choice terminal is Termuis.
+## (Linux os, Nginx webserver, Mysql database, Php language script)
+ ## Preparing Prerequisites: In order to complete this project, I will be spinning up an AWS EC2 instance and a virtual server with ubuntu server operating system. My preferred choice terminal is Termuis.
 
     "AWS EC2 is active and running"
 <img width="950" alt="ec2 instance" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/2eb423a1-a523-4377-9c66-391fcc3d95bf">
