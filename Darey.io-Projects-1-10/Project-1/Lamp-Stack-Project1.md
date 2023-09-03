@@ -1,6 +1,6 @@
 
 # LAMP-STACK IMPLEMENTATION IN AWS.
-## (Linux Ubuntu, Apache2 Http Server, Mysql Console and Php Package)
+## (Linux OS, Apache2 Http WebServer, Mysql Database and PHP Language Programming)
 
 
  "Attempting to experiment with different terminals to observe their individual functionalities and behavious, I initially performed a git clone operation into my github account on ubuntu virtualbox terminal"
