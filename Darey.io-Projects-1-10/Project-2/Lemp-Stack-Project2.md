@@ -1,6 +1,6 @@
 # LEMP-STACK IMPLEMENTATION IN AWS.
 
-## (Linux os, Nginx webserver, Mysql database, Php language script)
+## (Linux OS, Nginx Webserver, Mysql Database, PHP Language Script)
  ## Preparing Prerequisites: In order to complete this project, I will be spinning up an AWS EC2 instance and a virtual server with ubuntu server operating system. My preferred choice terminal is Termuis.
 
     "AWS EC2 is active and running"
