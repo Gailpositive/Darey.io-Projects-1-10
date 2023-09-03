@@ -3,13 +3,13 @@
 ## (Linux Ubuntu, Apache2 Http Server, Mysql Console and Php Package)
 
 
-" Attempting to experiment with different terminals to observe their individual functionalities and behavious, I initially performed a git clone operation into my github account on ubuntu virtualbox terminal"
+ "Attempting to experiment with different terminals to observe their individual functionalities and behavious, I initially performed a git clone operation into my github account on ubuntu virtualbox terminal"
 
 <img width="407" alt="git-clone-in vbox" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/f008da7f-03b1-47e7-9923-2727dba88432">
 
 
 
-" Git cloned into my github account on virtual studio code (vsc) terminal"
+ "Git cloned into my github account on virtual studio code (vsc) terminal"
 
 <img width="726" alt="git-clone-in-vscode" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/6e660436-8c50-4d2c-90a6-4efb831e9ddc">
 
