@@ -1,7 +1,8 @@
 # LEMP-STACK IMPLEMENTATION IN AWS.
 
 ## (Linux OS, Nginx Webserver, Mysql Database, PHP Language Script)
- ## Preparing Prerequisites: In order to complete this project, I will be spinning up an AWS EC2 instance and a virtual server with ubuntu server operating system. My preferred choice terminal is Termius.
+
+ ## Getting ready with the Prerequisites: In order to complete this project, I will be spinning up an AWS EC2 instance and a virtual server with ubuntu server operating system. My preferred choice terminal is Termius.
 
     "AWS EC2 instance is active and running"
 <img width="950" alt="ec2 instance" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/2eb423a1-a523-4377-9c66-391fcc3d95bf">
@@ -10,7 +11,7 @@
 <img width="838" alt="termuis" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/5d27a6fd-1f3a-4d57-b771-a29990674c85">
 
 
-   ## INSTALLING THE NGINX WEBSERVER.
+   ## Step 1: INSTALLING THE NGINX WEBSERVER.
    
       "To start up, I'll first update my server package index, using the " sudo apt update" command"   
    <img width="956" alt="sudo apt update my termuis terminal" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/1e714a8a-a9cc-4607-a90e-b251459cf10f">
@@ -34,8 +35,7 @@
 <img width="952" alt="nginx webserver up and running on the web" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/20c25292-327f-431c-ad73-456c6104af2a">
 
 
-
-## INSTALLING MYSQL DATABASE
+## Step 2: INSTALLING MYSQL DATABASE
 
 "Running the command  "sudo apt install mysql-server" to install mysql database management system"
 <img width="909" alt="sudo apt install mysql-server" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/f02ee3aa-c205-46ac-b5a3-8349a62a35a1">
@@ -51,5 +51,12 @@
 
 <img width="944" alt="secure password plugging 1" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/a49dfe7a-47a5-451b-8380-339594272782">
 
- "A continuation of the interactive script process"
+ "A continuation and finished process of the interactive script"
 <img width="946" alt="secure password pluggings 2" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/48eb67ed-ca6d-4e68-b573-7b1e8b7632fc">
+
+"To logged into my MYSQL console as a root user, I run the command "sudo mysql -p" and exited the console".
+
+
+## Step 3: Installing PHP script packages
+
+
