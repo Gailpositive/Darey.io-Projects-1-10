@@ -93,7 +93,27 @@
 
 
 ## Step 5: Testing PHP with Nginx.
-  
+
+ "To validate that nginx can correctly handle .php file off to my php processor, I created a test php file within my document root in my nano editor with the command "nano /var/www/mydomainname/info.php" 
+* And pasted a valid php code to return infomation about my server:
+  "<?php
+  phpinfo();"
+<img width="938" alt="valid php code" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/74609c23-a527-4fc1-84be-e84c57bac653">
+
+
+"My PHP file with detailed infomation about my server is now accessible on the web browser through this code "http://`my public IP address`/info.php"
+
+<img width="920" alt="php page on browser" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/783f45b3-352f-4707-aa52-a241eb2f3bb2">
+
+
+"After checking relevant info about my php page, I deleted the php page from the web for security reasons using the command "sudo rm /var/www/mydomainname/info.php"
+*  It can alway be access whenever require"
+
+<img width="893" alt="nginx removed" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/23bb553b-4765-4eca-8f36-2261401e2409">
+
+
+## Step 6: Retrieving data from MYSQL database with PHP
+ 
 
 
 
