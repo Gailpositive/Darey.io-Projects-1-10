@@ -54,9 +54,47 @@
  "A continuation and finished process of the interactive script"
 <img width="946" alt="secure password pluggings 2" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/48eb67ed-ca6d-4e68-b573-7b1e8b7632fc">
 
-"To logged into my MYSQL console as a root user, I run the command "sudo mysql -p" and exited the console".
+"To logged into my MYSQL console as a root user with the command "sudo mysql -p" , enter my password and exited the console".
+
+<img width="470" alt="sudo mysql -p" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/46675b97-5991-42fb-99fd-c4e3ed0a7ae5">
 
 
-## Step 3: Installing PHP script packages
+## Step 3: Installing PHP process codes.
+
+"Nginx differs from Apache in how it handles PHP. Nginx requires the setup of an external program called "php-fpm" to be able to process PHP processor , which enhances it performance. While PHP on the other hand, also requires the installation of a program called  "php-mysql" to establish communicate with MySQL databases. These core PHP packages installed automatically as dependencies  with the command "sudo apt install php-fpm php-mysql"
+
+<img width="954" alt="installing php" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/70828d21-5632-437c-b605-ad385b2ffbf2">
+
+
+## Step 4: Configuring Nginx to use PHP processor.
+
+ * Nginx can use server blocks (similar to Apache's virtual hosts) to manage multiple domains on a single server.
+ Ubuntu 20.04's default Nginx setup serves content from /var/www/html, but for multiple sites. I  created a separate directory structure within /var/www/ for each site, leaving /var/www/html as the default for unmatched requests.
+
+* "First, I run the "sudo mkdir /var/www/mydomainname" to create a root web directory for my domain name".
+*  "Next, I run the command " sudo chown -R $USER:$USER /var/www/mydomainname" to allocate ownership of the directory using $USER environment variable, which points to my present system user. (Image was lost)"
+* "Created a new configuration file within the nginx directory with the nano editor and pasted the bare bone configuration in the image below"
+* I enabled my configuration by linking to the config file from nginx sites enable directory using the command "sudo ln -s /etc/nginx/sites-available/projectLEMP /etc/nginx/sites-enabled/".
+* "Tested my systax for system error with the command "sudo nginx -t", systax is ok."
+*  "I disabled default nginx host currently configured to listen to port 80 with the command "sudo unlink /etc/nginx/sites-enabled/default"
+*  "Reloaded nginx again to apply the changes made with the command "sudo systemctl reload nginx"
+   
+<img width="959" alt="config nginx updated" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/31714eb8-0ab5-464b-bc6f-7856f8628102">
+
+"Bare-bone configuration in nano editor"
+<img width="954" alt="nano mydomainname" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/3894505a-5fc8-47fc-9b0d-5c58337f5264">
+
+
+  "My new website is up and running, but the web root directory at /var/www/mydomainname remains devoid of content. To address this, I generated an index.html file at that location with the command "sudo echo 'Hello LEMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/mydomainname/index.html, allowing me to verify the functionality of my new server block.
+* I enter the command "http://<Public-IP-Address>" to access my website on a browser"
+* My lemp stack is now fully configured!
+   
+<img width="917" alt="lemp activated on browser" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/219ba1a1-9266-4e66-9a2a-b00db751a397">
+
+
+## Step 5: Testing PHP with Nginx.
+  
+
+
 
 
