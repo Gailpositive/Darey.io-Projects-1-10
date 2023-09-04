@@ -32,3 +32,24 @@
 
  "Testing Nginx server response to request on the browser via the IP address, I executed the command "curl http://public Ip address" and yes, nginx is successfully installed and accessible through my firewall"
 <img width="952" alt="nginx webserver up and running on the web" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/20c25292-327f-431c-ad73-456c6104af2a">
+
+
+
+## INSTALLING MYSQL DATABASE
+
+"Running the command  "sudo apt install mysql-server" to install mysql database management system"
+<img width="909" alt="sudo apt install mysql-server" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/f02ee3aa-c205-46ac-b5a3-8349a62a35a1">
+
+  "Logged into mysql console via the "sudo mysql command"
+<img width="810" alt="sudo mysql" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/c977a814-dd5c-41f1-bc47-5cec683448a6">
+
+
+"Before running the pre-installed MYSQL security script, which is designed to eliminate any insecure default settings and secure access to my database system, I will first set a root user password and afterwards, Exiting the console"
+<img width="793" alt="security script and exit" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/a581bfa7-5f50-4e42-b551-1a4137a69753">
+
+  "To initiate the interactive script, I executed the "sudo mysql_secure_installation" command , which requested validation of the password plugin"
+
+<img width="944" alt="secure password plugging 1" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/a49dfe7a-47a5-451b-8380-339594272782">
+
+ "A continuation of the interactive script process"
+<img width="946" alt="secure password pluggings 2" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/48eb67ed-ca6d-4e68-b573-7b1e8b7632fc">
