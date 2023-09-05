@@ -2,7 +2,7 @@
 
 ## (Linux OS, Nginx Webserver, Mysql Database, PHP Language Script)
 
- ## Getting ready with the Prerequisites: In order to complete this project, I will be spinning up an AWS EC2 instance and a virtual server with ubuntu server operating system. My preferred choice terminal is Termius.
+ ## Prerequisites: In order to complete this project, I will be spinning up an AWS EC2 instance and a virtual server with ubuntu server operating system. My preferred choice terminal is Termius.
 
     "AWS EC2 instance is active and running"
 <img width="950" alt="ec2 instance" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/2eb423a1-a523-4377-9c66-391fcc3d95bf">
@@ -61,15 +61,14 @@
 
 ## Step 3: Installing PHP process codes.
 
-"Nginx differs from Apache in how it handles PHP. Nginx requires the setup of an external program called "php-fpm" to be able to process PHP processor , which enhances it performance. While PHP on the other hand, also requires the installation of a program called  "php-mysql" to establish communicate with MySQL databases. These core PHP packages installed automatically as dependencies  with the command "sudo apt install php-fpm php-mysql"
+## "Nginx differs from Apache in how it handles PHP. Nginx requires the setup of an external program called "php-fpm" to be able to process PHP processor , which enhances it performance. While PHP on the other hand, also requires the installation of a program called  "php-mysql" to establish communicate with MySQL databases. These core PHP packages installed automatically as dependencies  with the command "sudo apt install php-fpm php-mysql"
 
 <img width="954" alt="installing php" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/70828d21-5632-437c-b605-ad385b2ffbf2">
 
 
 ## Step 4: Configuring Nginx to use PHP processor.
 
- * Nginx can use server blocks (similar to Apache's virtual hosts) to manage multiple domains on a single server.
- Ubuntu 20.04's default Nginx setup serves content from /var/www/html, but for multiple sites. I  created a separate directory structure within /var/www/ for each site, leaving /var/www/html as the default for unmatched requests.
+ ## Nginx can use server blocks (similar to Apache's virtual hosts) to manage multiple domains on a single server. Ubuntu 20.04's default Nginx setup serves content from /var/www/html, but for multiple sites. I  created a separate directory structure within /var/www/ for each site, leaving /var/www/html as the default for unmatched requests.
 
 * "First, I run the "sudo mkdir /var/www/mydomainname" to create a root web directory for my domain name".
 *  "Next, I run the command " sudo chown -R $USER:$USER /var/www/mydomainname" to allocate ownership of the directory using $USER environment variable, which points to my present system user. (Image was lost)"
@@ -94,7 +93,7 @@
 
 ## Step 5: Testing PHP with Nginx.
 
- "To validate that nginx can correctly handle .php file off to my php processor, I created a test php file within my document root in my nano editor with the command "nano /var/www/mydomainname/info.php" 
+## "To validate that nginx can correctly handle .php file off to my php processor, I created a test php file within my document root in my nano editor with the command "nano /var/www/mydomainname/info.php" 
 * And pasted a valid php code to return infomation about my server:
   "<?php
   phpinfo();"
@@ -117,24 +116,38 @@
 ## I'll set up a test database containing a single "To-do list" and configure access to it, enabling the nginx website to retrieve data from the database and present it.
 
 * "First,I login to mysql console as a root user, with the command "sudo mysql -p".
-* "Created a database user with a password with the command "CREATE USER 'example_user'@'%' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';"
+* "Created a database user with a password with the command "CREATE USER 'gail_user'@'%' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';"
 * " Granted the user permission over the database just created with the command "mysql> GRANT ALL ON example_database.* TO 'example_user'@'%';"
 * Exited mysql console
 
-<img width='"827" alt="retrieving data from mysql database in php" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/e9098b61-807e-460d-885a-7eb7594cf459">
+<img width="827" alt="retrieving data from mysql database in php" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/2d774955-f468-4480-9737-cb763d9587d1">
 
 
 * "Testing to verify successful permission of the new user, I logged in to mysql console as a the new user  with this command "mysql -u example_user -p"
 * I access the database with the command "SHOW DATABASES;"
-
-  <img width="890" alt="mysql databases" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/48a772fc-8945-4c91-a7da-925cb433d1ac">
-
-  * Next, I created a "Todo_list" multiple times  with the statement "CREATE TABLE example_database.todo_list (item_id INT AUTO_INCREMENT,content VARCHAR(255),PRIMARY KEY(item_id));"
-  * To verify the data was successfuly saved, I run the command "SELECT * FROM example_database.todo_list;"
+  * Next, I created a "Todo_list"  with the statement "CREATE TABLE gail_database.todo_list (item_id INT AUTO_INCREMENT,content VARCHAR(255),PRIMARY KEY(item_id));"
+  * I inserted a few rows of content in the test table with the command INSERT INTO gail_database.todo_list (content) VALUES ("My first important item"), "(household items)" ect as seen in the below database table .
+ * To verify the data was successfuly saved, I run the command "SELECT * FROM gail_database.todo_list;"
   * "And got the following output"
 
 <img width="956" alt="create my database and create database to do list and exit" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/edf9cf38-4e1f-41cd-b2f9-aebf40f0bc64">
+* Upon validating my data in the table"
+*I exited mysql console with the exit command"
+
+## "Now, its time to create a PHP script that connects to mysql and querry my content. 
+* To create this script, I create a PHP file in my root directory using the nana editor" usint the code "nano /var/www/mydomainname/todo_list.php
+* And deleted the todo_list.PHP file from the web browser afterwards for security reasons"
+
+<img width="779" alt="nano into info php   sudo rm from web browser" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/15aa568e-4f05-43e1-81b2-e1d08cc19230">
+
+* "And paste the below script into my todo_list.php on my nano editor"
+*  "Save and close nano editor"
+
+  <img width="882" alt="vi php scripts connecting to mysql database 2" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/8e295261-4ac3-4e38-b55c-cf94772d70ab">
 
 
+* To access my todo_list.php on my browser, I executed the command "http://my Public IP/todo_list.php"
+
+   <img width="596" alt="access my todo list php on web browser" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/6865627d-50e8-4722-8ae5-843a26d2848c">
 
 
