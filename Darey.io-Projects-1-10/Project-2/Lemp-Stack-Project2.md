@@ -114,6 +114,26 @@
 
 ## Step 6: Retrieving data from MYSQL database with PHP
  
+## I'll set up a test database containing a single "To-do list" and configure access to it, enabling the nginx website to retrieve data from the database and present it.
+
+* "First,I login to mysql console as a root user, with the command "sudo mysql -p".
+* "Created a database user with a password with the command "CREATE USER 'example_user'@'%' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';"
+* " Granted the user permission over the database just created with the command "mysql> GRANT ALL ON example_database.* TO 'example_user'@'%';"
+* Exited mysql console
+
+<img width='"827" alt="retrieving data from mysql database in php" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/e9098b61-807e-460d-885a-7eb7594cf459">
+
+
+* "Testing to verify successful permission of the new user, I logged in to mysql console as a the new user  with this command "mysql -u example_user -p"
+* I access the database with the command "SHOW DATABASES;"
+
+  <img width="890" alt="mysql databases" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/48a772fc-8945-4c91-a7da-925cb433d1ac">
+
+  * Next, I created a "Todo_list" multiple times  with the statement "CREATE TABLE example_database.todo_list (item_id INT AUTO_INCREMENT,content VARCHAR(255),PRIMARY KEY(item_id));"
+  * To verify the data was successfuly saved, I run the command "SELECT * FROM example_database.todo_list;"
+  * "And got the following output"
+
+<img width="956" alt="create my database and create database to do list and exit" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/edf9cf38-4e1f-41cd-b2f9-aebf40f0bc64">
 
 
 
