@@ -1,6 +1,6 @@
 # PROJECT BASE LEARNING LEARNING (PBL) :PROJECT 1-10
 
- Welcome to my documentation process with darey.io as a devOps/cloud engineer. These projects outlines Practice project, Aux projects, introduction process into the world of Linux operating system, AWS console, Ubuntu virtual box, Redhat ,  Lamp & Lemp web-stack development, deployment and technologies. 
+ Welcome to my documentation process with darey.io as a Jnr devOps engineer. This program focuses on Project Base Learning (PBL) approach to DevOps projects and covers a range of topics, technologies and stacks including:  Aux projects, Linux operating system, AWS console, Git bash, VSCODE, Ubuntu virtual box, Redhat,Lamp & Lemp web-stack development, deployment and technologies, Shell Scripting, 
  
  A more detailed implementation of these projects are stored in the repository.
 
@@ -23,3 +23,7 @@ Furthermore, delving into the creation of a LAMP stack server provides an initia
 Utilizing the capabilities of the Linux operating system, Nginx webserver, MySQL database, and PHP script code to bring an application to fruition. I delve into methods for managing user requests, interacting with database data, and implementing robust security measures in mysql database management system.
 
  To complete this project, I will be spinning an AWS EC2 instance, a virtual server running the Ubuntu server operating system , and termuis terminal. 
+
+
+ # PROJECT 3: SHELL SCRIPTING.
+ 
