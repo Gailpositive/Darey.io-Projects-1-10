@@ -72,6 +72,14 @@
 
 ## File Operation And Sorting
 
+* Create a new file 'sorting.sh with the command 'touch'
+* Navigate to my vscode with the command 'code.' to executed some blocks of codes and back to my powershell.
+* On my vscode, I enter the first line of operation of the script, 'shebang '#!' follow by the interpreter '/bin/bash' command.
+* On powershell terminal, execute the command ./sorting.sh
+* "echo to print 'creating files' without actually creating the file with the 'touch' command
+* 'echo' to print  'file created'
+* 'echo' to print all 'files in their current order:
+* File1.txt, file3.txt, sorting.sh,  file2.txt, navigating-linux-filesystem.sh, user-input.sh
 <img width="459" alt="shell scripting 8" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/9f03793c-2434-4d37-a681-1e357c893af1">
 
 <img width="486" alt="shell scripting 9" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/50ecbbd7-6965-493d-ab37-e67903ff3160">
