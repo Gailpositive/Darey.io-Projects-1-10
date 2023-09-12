@@ -62,11 +62,6 @@
 *  Insert a non executable comment annotation, # List the files in the current directory again
 *  'Echo' to print  'files in the current directory'
 *  List files with the 'ls' command
-*  
-*  
-*  
-*  
-*  
 <img width="774" alt="shell scripting 4" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/b2372a5e-1893-43f6-8a74-377791bc35a5">
 
 
