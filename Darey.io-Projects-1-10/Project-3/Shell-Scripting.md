@@ -94,7 +94,6 @@
 
 <img width="486" alt="shell scripting 9" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/50ecbbd7-6965-493d-ab37-e67903ff3160">
 
-<img width="773" alt="267436512-27a888bb-9f95-443f-8465-b4b578341c59" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/cd09659a-78a7-401d-9cb4-432f7b082477">
 
 * On my vscode, I enter the first line of operation of the script, 'shebang '#!' follow by the interpreter '/bin/bash' command.
 * Insert a non executable comment annotation, # Create three files
@@ -109,8 +108,17 @@
 * list the files with the 'ls' command
 
 * Insert a non executable comment annotation, # Sort the files alphabetically
-* 'echo to print the result in stdout "sorting files alphabetically..."
-* 
+* 'echo command to print "sorting files alphabetically..." in stdout 
+* The command "ls" first list the files, '|' the pipe character combines both listed files and the sort  it to sort
+* echo command to print "Files sorted" in stdout
+
+* Insert a non executable comment annotation, # Display the sorted files
+* echo command to print "sorted files" in stdout
+* cat sorted_files.txt to  read and display the data in the file
+
+* Insert a non executable comment annotation, # Remove the original files
+* echo command to print "removing original files..."
+  
 
 <img width="773" alt="shell scripting 6" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/167cc803-eb30-4dbd-a385-c2c02650a10b">
 
