@@ -1,6 +1,7 @@
 # INTRODUCTION TO SHELL SCRIPTING AND USER INPUT
 ## "Prerequisites: I'll be using my Git Bash Terminal, Ubuntu Virtual Box and VSCODE Terminal"
 
+## My First Shell Script
 * First, I mkdir 'shell-scripting and cd into the directory. 
 * Created a file called 'user-input.sh with the 'touch' command.
 * I executed the code 'code .'  to navigate to vscode terminal to input some block of codes. then back to my powershell.
@@ -19,6 +20,8 @@
 * Save and exit
 <img width="728" alt="code   2" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/b658a733-dbc5-4bc3-9e89-ce0291305ebb">
 
+
+## Directory Manipulation And Navigation
 
 * With the 'touch' command, I created another file 'navigating-linux-filesystem.sh'
 * Navigate to my vscode with the command 'code.' to executed some blocks of codes and back to my powershell.
@@ -64,6 +67,14 @@
 *  List files with the 'ls' command
 <img width="774" alt="shell scripting 4" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/b2372a5e-1893-43f6-8a74-377791bc35a5">
 
-
 <img width="635" alt="shell scripting 5" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/96377381-6353-4b90-9951-df9182cbc6b5">
+
+
+## File Operation And Sorting
+
+<img width="459" alt="shell scripting 8" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/9f03793c-2434-4d37-a681-1e357c893af1">
+
+<img width="486" alt="shell scripting 9" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/50ecbbd7-6965-493d-ab37-e67903ff3160">
+
+
 
