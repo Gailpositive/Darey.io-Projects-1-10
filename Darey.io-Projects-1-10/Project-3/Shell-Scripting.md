@@ -127,6 +127,8 @@
 * echo command to print "files renamed" in stdout
 
 * Insert a non executable comment annotation, # Display the final sorted files
+* echo to print "Final sorted files." in stdout
+* cat sorted_files_sorted_alphabetically.txt to display content of the file
   
 
 <img width="773" alt="shell scripting 6" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/167cc803-eb30-4dbd-a385-c2c02650a10b">
