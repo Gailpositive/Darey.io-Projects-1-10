@@ -26,6 +26,8 @@ Utilizing the capabilities of the Linux operating system, Nginx webserver, MySQL
 
 
  # PROJECT 3: SHELL SCRIPTING.
- The Shell scripting program is meticulously crafted to with essential skills and knowledge crucial for task automation, workflow optimization, and efficiency enhancement.
+ The Shell scripting program is meticulously crafted  with essential skills and knowledge crucial for task automation, workflow optimization, and efficiency enhancement.
 
  From a technical perspective, the program covers a wide spectrum of topics. It commences with the fundamentals, encompassing the creation and execution of shell scripts, variable handling, control structures, and command substitution. It then progresses to more advanced subjects, including error handling, regular expressions, file manipulation, and process management. Also delving into harnessing the power of shell scripting to parse log files, extract data, manage file permissions, and automate system administrative duties. Additionally, the program emphasizes best practices for crafting clean, maintainable, and efficient scripts. It imparts techniques for debugging, optimizing performance, and organizing scripts for reusability,  to excel in the realm of shell scripting.
+
+ My terminal of choice is ubuntu virtual box, Bash and vscode.
