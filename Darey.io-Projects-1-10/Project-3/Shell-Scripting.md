@@ -97,29 +97,29 @@
 
 * On my vscode, I enter the first line of operation of the script, 'shebang '#!' follow by the interpreter '/bin/bash' command.
 * Insert a non executable comment annotation, # Create three files
-* input 'echo' command to print 'Creating files...."
-* 'echo' to print "This is file3." redirection operator '>' to "file3.txt"
-* 'echo' to print "This is file1." redirection operation '>' to "file1.txt"
-* 'echo' to print "This is file2." redirection operation '>' to  "file2.txt"
-* 'echo' to print "Files created."
+* 'echo' command to print 'Creating files...." in stdout
+* 'echo' to print "This is file3." and redirect it to "file3.txt  using the redirection command '>'.
+* 'echo' to print "This is file1." and redirect it to "file1.txt  using the redirection command '>'.
+* 'echo' to print "This is file2." and redirect it to "file2.txt  using the redirection command '>'.
+* 'echo' to print "Files created." in stdout
 
 *  Insert a non executable comment annotation, # Display the file in their correct order
-* 'echo' to print "Files in their current order"
-* list the files with the 'ls' command
+* 'echo' to print "Files in their current order" 
+* Now, list the files in their current order with the 'ls' command in stdout
 
 * Insert a non executable comment annotation, # Sort the files alphabetically
 * 'echo command to print "sorting files alphabetically..." in stdout 
-* The "ls" command list all the files, The pipe "|" character combines the listed stdout and sort it orderly using the "sort" command and redirect it to a file called "sorted_files.txt
+* The "ls" command list all the files in the PWD, The pipe "|" character combines the listed stdout and sort it orderly using the "sort" command and redirect it to a file called "sorted_files.txt
 * echo command to print "Files sorted" in stdout
 
 * Insert a non executable comment annotation, # Display the sorted files
 * echo command prints "sorted files" in stdout
-* "cat sorted_files.txt"  reads and display the data in the file
+* "cat sorted_files.txt" command,  reads and display the data of the file in stdout
 
 * Insert a non executable comment annotation, # Remove the original files
 * echo command prints "removing original files..."
-* 'rm' command removes file1.txt, file2.txt, file3.txt
-* echo command prints "original files removed."
+* 'rm' command removes file1.txt, file2.txt, file3.txt from PWD
+* echo command prints "original files removed." in stdout.
 
 * Insert a non executable comment annotation, # rename the sorted file to a more descriptive name
 * echo to print "renaming sorted files..."
