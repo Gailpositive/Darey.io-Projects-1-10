@@ -1,5 +1,5 @@
 # INTRODUCTION TO SHELL SCRIPTING AND USER INPUT
-## "Prerequisites: I'll be using my Git Bash Terminal, Ubuntu Virtual Box and VSCODE Terminal"
+## "Prerequisites: I'll be using my Git Bash Terminal, Ubuntu Virtual Box and VS-code Terminal"
 
 ## My First Shell Script
 * First, I mkdir 'shell-scripting and cd into the directory. 
