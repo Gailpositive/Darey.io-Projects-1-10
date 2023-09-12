@@ -109,15 +109,24 @@
 
 * Insert a non executable comment annotation, # Sort the files alphabetically
 * 'echo command to print "sorting files alphabetically..." in stdout 
-* The command "ls" first list the files, '|' the pipe character combines both listed files and the sort  it to sort
+* The "ls" command list all the files, The pipe "|" character combines the listed stdout and sort it orderly using the "sort" command and redirect it to a file called "sorted_files.txt
 * echo command to print "Files sorted" in stdout
 
 * Insert a non executable comment annotation, # Display the sorted files
-* echo command to print "sorted files" in stdout
-* cat sorted_files.txt to  read and display the data in the file
+* echo command prints "sorted files" in stdout
+* "cat sorted_files.txt"  reads and display the data in the file
 
 * Insert a non executable comment annotation, # Remove the original files
-* echo command to print "removing original files..."
+* echo command prints "removing original files..."
+* 'rm' command removes file1.txt, file2.txt, file3.txt
+* echo command prints "original files removed."
+
+* Insert a non executable comment annotation, # rename the sorted file to a more descriptive name
+* echo to print "renaming sorted files..."
+* mv command renames "sorted_files.txt to sorted_files_sorted_alphabetically.txt
+* echo command to print "files renamed" in stdout
+
+* Insert a non executable comment annotation, # Display the final sorted files
   
 
 <img width="773" alt="shell scripting 6" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/167cc803-eb30-4dbd-a385-c2c02650a10b">
