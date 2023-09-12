@@ -41,7 +41,30 @@
 *  Create a new directory with the command 'mkdir my_directory'
 *  Print 'new directory created' with 'echo' command
 *  Insert a non executable comment annotation, # Change to the new directory
-*  Print  change to the new directory with the 'echo' command
+*  Print change to the new directory with the 'echo' command
+*  cd into 'my_directory'
+*  Use the 'echo' command to print current directory follow with the $PWD system variable
+*  Insert a non executable comment annotation, # Create some files
+*  With the 'echo' command , print 'creating files...'
+*  With the 'touch' command , create two saperate txt files 'file1.txt, file2.txt
+*  Print 'files created' with the 'echo command
+*  Insert a non executable comment annotation, # List the files in the current directory
+*  With the 'echo' command, print files in the current directory
+*  And list the files with the 'ls' command
+*  Insert a non executable comment annotation, # Move one level up
+*  With the 'echo' command, print Moving one level up
+*  Cd .. to change directory to the previous directory 'shell scripting'
+*  Print with the 'echo' command 'current directory using the $PWD system variable
+*  Insert a non executable comment annotation, # Remove the new directory and its content
+*  'Echo' to print 'Removing the new directory...'
+*  Using the command flag 'rm -rf to remove 'my_directory" directory  recursively
+*  'echo' to print 'Directory removed'
+*  Insert a non executable comment annotation, # List the files in the current directory again
+*  'Echo' to print  'files in the current directory'
+*  List files with the 'ls' command
+*  
+*  
+*  
 *  
 *  
 <img width="774" alt="shell scripting 4" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/b2372a5e-1893-43f6-8a74-377791bc35a5">
