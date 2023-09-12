@@ -78,9 +78,20 @@
 * On powershell terminal, execute the command ./sorting.sh
 * "echo to print 'creating files' without actually creating the file with the 'touch' command
 * 'echo' to print  'file created'
-* 'echo' to print all 'files in their current order:
+* 'echo' to print all 'files in the shell-scripting in their current order:
 * File1.txt, file3.txt, sorting.sh,  file2.txt, navigating-linux-filesystem.sh, user-input.sh
+* 'echo' to print 'sorting files alphabetically...
+* encho to print files sorted
+* list of sorted files:file1.txt, file2.txt, file3.txt, navigating-linux-filesystem.sh, sorted_files.txt, sorting.sh, user-input.sh,
+* Remove original files
+* Renamed sorted files
 <img width="459" alt="shell scripting 8" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/9f03793c-2434-4d37-a681-1e357c893af1">
+
+
+<img width="773" alt="shell scripting 6" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/167cc803-eb30-4dbd-a385-c2c02650a10b">
+
+<img width="768" alt="shell scripting 7" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/373e48e0-9dbf-4898-8810-ed65e805c12c">
+
 
 <img width="486" alt="shell scripting 9" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/50ecbbd7-6965-493d-ab37-e67903ff3160">
 
