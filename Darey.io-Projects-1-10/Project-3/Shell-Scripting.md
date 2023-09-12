@@ -11,7 +11,8 @@
 <img width="459" alt="shell scripting 1" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/b3d93aa4-5a4c-40f6-b0fc-24daa3a0d9b0">
 
 
-* On my vscode terminal, I executed a block of code. I enter the first line of operation of the script, 'shebang '#!' follow by the interpreter '/bin/bash' command.
+* On my vscode terminal, I executed a block of code.
+* I enter the first line of operation of the script, 'shebang '#!' follow by the interpreter '/bin/bash' command.
 * Insert a non executable comment annotation: # promt the user for thier name.
 * Enter the 'echo' command  to print the statement 'Enter your name'.
 * Use the 'read' command to take input from my keyboard and assign it to a variable.
@@ -31,7 +32,7 @@
 * Cd into a new directory called 'my_directory'
 * Created two files, 'file1.txt, file2.txt' 
 * Cd .. back to previous directory 'shell-scripting'
-* rm  'my_directory' 
+* rm command to remove  'my_directory' directory
 * ls -al files in the current directory: 'navigating-linux-filesystem.com'
   
 <img width="457" alt="shell scripting 3" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/6ef008b7-d8a0-4e08-a95e-b473554134a4">
@@ -84,8 +85,10 @@
 * 'echo' to print 'files sorted'
 * list of sorted files:file1.txt, file2.txt, file3.txt, navigating-linux-filesystem.sh, sorted_files.txt, sorting.sh, user-input.sh,
 * 'echo' to print 'Remove original files'
-*echo' to print  'Renamed sorted files'
-'echo to print 'files renamed'
+* 'echo' to print  'Renamed sorted files'
+* 'echo' to print 'files renamed'
+*  Insert a non executable comment annotation, # Display the final sorted file
+*  'echo to print 'final sorted files: file1.txt, files2.txt, file3.txt, navigating-linux-filesystem.sh, sorted_files.txt, sorting.sh, user-input.sh
 
 <img width="459" alt="shell scripting 8" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/9f03793c-2434-4d37-a681-1e357c893af1">
 
