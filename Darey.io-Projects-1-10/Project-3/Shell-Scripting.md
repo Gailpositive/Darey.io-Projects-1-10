@@ -94,7 +94,23 @@
 
 <img width="486" alt="shell scripting 9" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/50ecbbd7-6965-493d-ab37-e67903ff3160">
 
+<img width="773" alt="267436512-27a888bb-9f95-443f-8465-b4b578341c59" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/cd09659a-78a7-401d-9cb4-432f7b082477">
 
+* On my vscode, I enter the first line of operation of the script, 'shebang '#!' follow by the interpreter '/bin/bash' command.
+* Insert a non executable comment annotation, # Create three files
+* input 'echo' command to print 'Creating files...."
+* 'echo' to print "This is file3." redirection operator '>' to "file3.txt"
+* 'echo' to print "This is file1." redirection operation '>' to "file1.txt"
+* 'echo' to print "This is file2." redirection operation '>' to  "file2.txt"
+* 'echo' to print "Files created."
+
+*  Insert a non executable comment annotation, # Display the file in their correct order
+* 'echo' to print "Files in their current order"
+* list the files with the 'ls' command
+
+* Insert a non executable comment annotation, # Sort the files alphabetically
+* 'echo to print the result in stdout "sorting files alphabetically..."
+* 
 
 <img width="773" alt="shell scripting 6" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/167cc803-eb30-4dbd-a385-c2c02650a10b">
 
