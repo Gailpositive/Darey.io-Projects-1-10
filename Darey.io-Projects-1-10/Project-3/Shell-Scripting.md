@@ -46,26 +46,27 @@
  
 * On my vscode, I enter the first line of operation of the script, 'shebang '#!' follow by the interpreter '/bin/bash' command.
 *  Insert a non executable comment annotation, # display current directory.
-*  Insert the 'echo' command to print my 'present working directory' follow by the $PWD system variable name
-*  Insert a non executable comment annotation, # Create a new directory.
-*  Use the 'echo' command to print 'Creating a new dicrectory...
-*  Create a new directory with the command 'mkdir my_directory'
-*  Print 'new directory created' with 'echo' command
+*  Insert the 'echo' command to print my 'present working directory' follow by the $PWD system variable
+*  A non executable comment annotation, # Create a new directory.
+*  The 'echo' command to prints 'Creating a new directory...
+*  Create "my_directory" with the command "mkdir" 
+*  Print 'New directory created' with 'echo' command
 *  Insert a non executable comment annotation, # Change to the new directory
-*  Print change to the new directory with the 'echo' command
+*  Print "changing to the new directory..."  with the 'echo' command
 *  cd into 'my_directory'
-*  Use the 'echo' command to print current directory follow with the $PWD system variable
+*  The 'echo' command prints "current directory" , follow with the $PWD system variable
 *  Insert a non executable comment annotation, # Create some files
-*  With the 'echo' command , print 'creating files...'
-*  With the 'touch' command , create two saperate txt files 'file1.txt, file2.txt
+*  The 'echo' command  prints 'creating files...'
+*  With the 'touch' command , creates two txt files 'file1.txt, file2.txt
 *  Print 'files created' with the 'echo command
 *  Insert a non executable comment annotation, # List the files in the current directory
-*  With the 'echo' command, print files in the current directory
+*  The 'echo' command, prints "files in the current directory"
 *  And list the files with the 'ls' command
 *  Insert a non executable comment annotation, # Move one level up
-*  With the 'echo' command, print Moving one level up
-*  Cd .. to change directory to the previous directory 'shell scripting'
-*  Print with the 'echo' command 'current directory using the $PWD system variable
+*  The 'echo' command prints "Moving one level up..."
+*  "Cd .." command to change directory to the last directory 'shell scripting'
+*  The 'echo' command prints 'current directory using the $PWD system variable
+*  
 *  Insert a non executable comment annotation, # Remove the new directory and its content
 *  'Echo' to print 'Removing the new directory...'
 *  Using the command flag 'rm -rf to remove 'my_directory" directory  recursively
