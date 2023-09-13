@@ -66,7 +66,6 @@
 *  The 'echo' command prints "Moving one level up..."
 *  "Cd .." command to change directory to the last directory 'shell scripting'
 *  The 'echo' command prints 'current directory using the $PWD system variable
-*  
 *  Insert a non executable comment annotation, # Remove the new directory and its content
 *  'Echo' to print 'Removing the new directory...'
 *  Using the command flag 'rm -rf to remove 'my_directory" directory  recursively
@@ -83,15 +82,14 @@
 
 * Create a new file 'sorting.sh with the 'touch' command 
 * Navigate to my vscode with the command 'code.' to executed some blocks of codes and back to my powershell.
-* On my vscode, I enter the first line of operation of the script, 'shebang '#!' follow by the interpreter '/bin/bash' command.
-* On powershell terminal, execute the script ./sorting.sh
-* "echo' command to print 'creating files... stdout
-* 'echo' command to print  'file created' stdout
-* Displays  all 'files in the shell-scripting in their current order:
-* File1.txt, file3.txt, sorting.sh,  file2.txt, navigating-linux-filesystem.sh, user-input.sh
-* Display 'sorting files alphabetically...
-*  Display 'files sorted' stdout
-* list of sorted files:file1.txt, file2.txt, file3.txt, navigating-linux-filesystem.sh, sorted_files.txt, sorting.sh, user-input.sh,
+* I execute the script './sorting.sh'
+* "echo' command to print 'creating files... 
+* Files created.
+* Files are created in their current order
+* Displaying all files in in the shell-scripting directory in their current order: File1.txt, file3.txt, sorting.sh,  file2.txt, navigating-linux-filesystem.sh, user-input.sh
+* 'sorting files alphabetically...
+* Files sorted, piped and redirected to a new file "sorted_files.txt
+* cat command to display data in the 'sorted files':  file1.txt, file2.txt, file3.txt, navigating-linux-filesystem.sh, sorted_files.txt, sorting.sh, user-input.sh,
 * 'echo' to print 'Remove original files'
 * 'echo' to print  'Renamed sorted files'
 * 'echo' to print 'files renamed'
