@@ -18,7 +18,6 @@
 * Insert a non executable comment annotation: # promt the user for their name.
 * Enter the 'echo' command  to print the statement 'Enter your name'.
 * The 'read' command takes input from my keyboard and assign it to a name variable.
-* 
 * Inserted a line of non executable annotation # Display a greeting with the entered name
 * The 'echo' command prints 'Hello, follow with the user variable "$name!", nice to meet you'
 * Save and exit
@@ -29,13 +28,18 @@
 
 * With the 'touch' command, I created another file 'navigating-linux-filesystem.sh'
 * Navigate to my vscode with the command 'code.' to executed some blocks of codes and back to my powershell.
-* Execute the file command './navigating-linux-filesystem.sh'
-* Display my current file directory 'shell-scripting'
-*  Created new directory 'my_directory'
-* Cd into a new directory called 'my_directory'
-* Created two files, 'file1.txt, file2.txt' 
+* Execute the script './navigating-linux-filesystem.sh'
+* Display my current directory 'shell-scripting'
+* Creates a new directory
+* Display new directory created 'my_directory'
+* Cd into 'my_directory'
+* Display present working directory "my_directory"
+* Creates files
+* files created
+* Dsiplay files in the present working directory
+* 'file1.txt, file2.txt' 
 * Cd .. back to previous directory 'shell-scripting'
-* rm command to remove  'my_directory' directory
+* 'my_drectory' directory was removed
 * ls -al files in the current directory: 'navigating-linux-filesystem.com'
   
 <img width="457" alt="shell scripting 3" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/6ef008b7-d8a0-4e08-a95e-b473554134a4">
