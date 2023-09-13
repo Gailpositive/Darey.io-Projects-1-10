@@ -90,11 +90,12 @@
 * 'sorting files alphabetically...
 * Files sorted, piped and redirected to a new file "sorted_files.txt
 * cat command to display data in the 'sorted files':  file1.txt, file2.txt, file3.txt, navigating-linux-filesystem.sh, sorted_files.txt, sorting.sh, user-input.sh,
-* 'echo' to print 'Remove original files'
-* 'echo' to print  'Renamed sorted files'
+* Remove original files..."
+* Renamed sorted files.txt'to a more discriptive name "sorted_files_sorted_alphabetically.txt" 
 * 'echo' to print 'files renamed'
 *  Insert a non executable comment annotation, # Display the final sorted file
-*  'echo to print 'final sorted files: file1.txt, files2.txt, file3.txt, navigating-linux-filesystem.sh, sorted_files.txt, sorting.sh, user-input.sh
+*  'echo to print 'final sorted files
+*  cat "sorted_files_sorted_alphabetically.txt" : file1.txt, files2.txt, file3.txt, navigating-linux-filesystem.sh, sorted_files.txt, sorting.sh, user-input.sh
 
 <img width="459" alt="shell scripting 8" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/9f03793c-2434-4d37-a681-1e357c893af1">
 
