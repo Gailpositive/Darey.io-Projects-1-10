@@ -2,22 +2,25 @@
 ## "Prerequisites: I'll be using my Git Bash Terminal, Ubuntu Virtual Box and VS-code Terminal"
 
 ## My First Shell Script
-* First, I mkdir 'shell-scripting and cd into the directory. 
-* Created a file called 'user-input.sh with the 'touch' command.
+* First, I created a directory with the 'mkdir'  command 'shell-scripting and cd into the directory. 
+* Created a file called 'user-input.sh' with the 'touch' command.
 * I executed the code 'code .'  to navigate to vscode terminal to input some block of codes. then back to my powershell.
-* I execute './shell-scripting' to get the output in the image below.
-* In addition, I run the command 'ls -al' to list the files to ensure it is executable. 
+* I execute the script './shell-scripting' to get the stdout.
+*  "Enter your name" , promt the user to enter their name 
+* And prints a response 'Hello, User name, Nice to meet you'
+* I run the command 'ls -al' to list the files in the directory to ensure it is executable else, I will use the command "chmod +x" to make it executable. 
 
 <img width="459" alt="shell scripting 1" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/b3d93aa4-5a4c-40f6-b0fc-24daa3a0d9b0">
 
 
 * On my vscode terminal, I executed a block of code.
 * I enter the first line of operation of the script, 'shebang '#!' follow by the interpreter '/bin/bash' command.
-* Insert a non executable comment annotation: # promt the user for thier name.
+* Insert a non executable comment annotation: # promt the user for their name.
 * Enter the 'echo' command  to print the statement 'Enter your name'.
-* Use the 'read' command to take input from my keyboard and assign it to a variable.
-* Inserted another line of non executable annotation
-* Use the 'echo' command to print 'Hello, follow with the  $name! user variable, nice to meet you'
+* The 'read' command takes input from my keyboard and assign it to a name variable.
+* 
+* Inserted a line of non executable annotation # Display a greeting with the entered name
+* The 'echo' command prints 'Hello, follow with the user variable "$name!", nice to meet you'
 * Save and exit
 <img width="728" alt="code   2" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/b658a733-dbc5-4bc3-9e89-ce0291305ebb">
 
