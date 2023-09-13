@@ -143,4 +143,11 @@
 <img width="768" alt="shell scripting 7" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/373e48e0-9dbf-4898-8810-ed65e805c12c">
 
 
+# WORKING WITH NUMBERS AND CALCULATORS
+
+*
+<img width="456" alt="shell scripting 11" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/9f978479-c040-4da4-ba47-ca9de670f10e">
+
+<img width="768" alt="shell scripting 10" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/262a2f80-60f1-4e99-a1d8-78f9a314b61e">
+
 
