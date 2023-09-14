@@ -177,7 +177,7 @@
 *  Insert a non executable comment annotation, # Display the result
 *  "echo" command to print "Number 1 raised to the power of 2: $power_of_2"
 *  "echo" command to print "Square root of number 2: $square_root"
-* 
 <img width="768" alt="shell scripting 10" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/262a2f80-60f1-4e99-a1d8-78f9a314b61e">
 
 
+## FILE BACKUP AND TIMESTAMPING
