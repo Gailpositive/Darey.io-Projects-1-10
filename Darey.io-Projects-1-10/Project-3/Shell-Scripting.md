@@ -142,14 +142,14 @@
 * Creates a "calculation.sh" file with "touch"command
 * Navigate to my vscode with the command 'code.' to executed some blocks of codes and back to my powershell.
 * I execute the script './calculation.sh'
-* Defining two variables "name" with numeric values: "number" 1: 10, "number" 2 (operator)=5
-* Finding the Sum (addition) of the variables values "number" 1 and "number" 2"  (operator)=15
-* Finding the difference (substraction) of the variables values "number" 1 and "number" 2 (operator)=5
-* Finding the product (multiplication) of the variables values  "number" 1 and "number" 2  (operator)=50
-* Finding the quotient (division) of the variables values "number" 1 and "number" 2  (operator)=2
-* Finding the remainder of the integer division of the variables values "number 1 % "number" 2  (operation)=0
+* Defining two variables "name" with numeric values: "number1": 10, "number2" =5
+* Finding the Sum (addition) of the variables values "number1": 10 and "number2" : 5" =15
+* Finding the difference (substraction) of the variables values "number1" "number2" =5
+* Finding the product (multiplication) of the variables values  "number1"  "number2"  =50
+* Finding the quotient (division) of the variables values "number1"  "number2"=2
+* Finding the remainder of the integer division of the variables values "number1" % "number2" =0
 * Awk and CMD command manipulates and automates script line:1: "BEGIN {sqrt=5; print sqrt} and Prints systax error twice
-* variable "Number"1 : 10 (base) raise to power 2 (exponent)  = 100.  That is 10 multiple by 10  
+* variable "Number1" : 10 (base) raise to power 2 (exponent)  = 100.  (That is 10 multiple by 10)
 <img width="456" alt="shell scripting 11" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/9f978479-c040-4da4-ba47-ca9de670f10e">
 
 
