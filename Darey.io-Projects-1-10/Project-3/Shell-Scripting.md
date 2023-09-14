@@ -149,7 +149,7 @@
 * Finding the quotient (division) of the variables values "number1"  "number2"=2
 * Finding the remainder of the integer division of the variables values "number1" % "number2" =0
 * Awk and CMD command manipulates and automates script line:1: "BEGIN {sqrt=5; print sqrt} and Prints systax error twice
-* variable "Number1" : 10 (base) raise to power 2 (exponent)  = 100.  (That is 10 multiple by 10)
+* variable "Number1" : 10 (base) raise to power 2 (exponent)  = 100.  (10 to the power of 2 can be expressed as 10^2 = 10 × 10 = 100)
 <img width="456" alt="shell scripting 11" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/9f978479-c040-4da4-ba47-ca9de670f10e">
 
 
