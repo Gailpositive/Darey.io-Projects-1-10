@@ -109,30 +109,24 @@
 * 'echo' to print "This is file1." and redirect it to "file1.txt  using the redirection command '>'.
 * 'echo' to print "This is file2." and redirect it to "file2.txt  using the redirection command '>'.
 * 'echo' to print "Files created." in stdout
-
 *  Insert a non executable comment annotation, # Display the file in their correct order
 * 'echo' to print "Files in their current order" 
 * Now, list the files in their current order with the 'ls' command in stdout
-
 * Insert a non executable comment annotation, # Sort the files alphabetically
 * 'echo command to print "sorting files alphabetically..." in stdout 
 * The "ls" command list all the files in the PWD, The pipe "|" character combines the listed stdout and sort it orderly using the "sort" command and redirect it to a file called "sorted_files.txt
 * echo command to print "Files sorted" in stdout
-
 * Insert a non executable comment annotation, # Display the sorted files
 * echo command prints "sorted files" in stdout
 * "cat sorted_files.txt" command,  reads and display the data of the file in stdout
-
 * Insert a non executable comment annotation, # Remove the original files
 * echo command prints "removing original files..."
 * 'rm' command removes file1.txt, file2.txt, file3.txt from PWD
 * echo command prints "original files removed." in stdout.
-
 * Insert a non executable comment annotation, # rename the sorted file to a more descriptive name
 * echo to print "renaming sorted files..."
 * mv command renames "sorted_files.txt to sorted_files_sorted_alphabetically.txt
 * echo command to print "files renamed" in stdout
-
 * Insert a non executable comment annotation, # Display the final sorted files
 * echo to print "Final sorted files." in stdout
 * cat sorted_files_sorted_alphabetically.txt to display content of the file
@@ -145,9 +139,21 @@
 
 # WORKING WITH NUMBERS AND CALCULATORS
 
-*
+* Creates a "calculation.sh" file with touch command
+* Navigate to my vscode with the command 'code.' to executed some blocks of codes and back to my powershell.
+* I execute the script './calculation.sh'
+* Defining two variable "name" with numeric value: "number" 1: 10, "number" 2:5
+* Finding the Sum (addition) of the variables values "number" 1 and "number" 2"  =(operator) =15
+* Finding the difference (substraction) of the variables values "number" 1 and "number" 2 =(operator) =5
+* Finding the product (multiplication) of the variables values  "number" 1 and "number" 2  =(operator) =50
+* Finding the quotient (division) of the variables values "number" 1 and "number" 2  =(operator) =2
+* Finding the remainder of the integer division of the variables values "number 1 % "number" 2  (operation) =0
+* 
 <img width="456" alt="shell scripting 11" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/9f978479-c040-4da4-ba47-ca9de670f10e">
 
+
+* On my vscode, I enter the first line of operation of the script, 'shebang '#!' follow by the interpreter '/bin/bash' command.
+* Insert a non executable comment annotation, # Create three files
 <img width="768" alt="shell scripting 10" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/262a2f80-60f1-4e99-a1d8-78f9a314b61e">
 
 
