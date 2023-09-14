@@ -154,7 +154,23 @@
 
 
 * On my vscode, I enter the first line of operation of the script, 'shebang '#!' follow by the interpreter '/bin/bash' command.
-* Insert a non executable comment annotation, # Create three files
+* Insert a non executable comment annotation, # Define two variables with numeric value"
+* variable "num1"=10
+* variable "num2"=5
+* Insert a non executable comment annotation, # Perform basic arthemetic operations
+* addition of the variables: sum=$((num1 + numb2))
+* Subtraction of the variables: difference=$((num1 - numb2))
+* Multiply the variables: product=$((num1 x numb2))
+* Divide the variables: quotient=$((num1 / numb2))
+* Remainder of  the variables:$((num1 % numb2))
+* Insert a non executable comment annotation, # Display the result
+* "echo" command prints "Number 1: $num1"
+* "echo" command prints the  "Number 2: $num2"
+* "echo" command prints "Sum: $sum"
+* "echo" command prints "Difference: $difference"
+* "echo" command prints "Product: $product"
+* "echo" command prints "Quotient : $quotient"
+* "echo" command prints "Remainder: $sum"
 <img width="768" alt="shell scripting 10" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/262a2f80-60f1-4e99-a1d8-78f9a314b61e">
 
 
