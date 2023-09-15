@@ -192,13 +192,29 @@
 * To change mode and execute the script, I run the command "sudo chmod +x ./backup.sh
 * Enter my password
 * backup completed. files copied to "path/to/source/directory"
-* 
+  
+<img width="401" alt="shell scripting 15" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/a6d88c13-288b-435a-9bb0-570bc857473b">
 
 
-<img width="430" alt="shell scripting 16" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/716c82c5-510d-4528-946b-fbe06e815e45">
-
-<img width="430" alt="shell scripting 16" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/716c82c5-510d-4528-946b-fbe06e815e45">
 
 
-* 
-<img width="767" alt="shell scripting 12" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/cf825394-7d63-4c33-ab16-1f47f90e64ad">
+*  On my ubuntu vscode, I enter the first line of operation of the script, 'shebang '#!' follow by the interpreter '/bin/bash' command.
+* Insert a non executable comment annotation, # Define the source directory and backup directory
+* Enter the source directory path Variable :source_dir= "path/to/source_directory"
+* Enter the backup directory path Variable :backup_dir= "path/to/backup_directory"
+* Insert a non executable comment annotation, # Create a timelime with the current date and time
+* variable "timestamp=$(date ="%Y%m%d%H%M%S")..The format is Year-month-dtae-hour-minuite-second
+* Insert a non executable comment annotation, # Create a backup directory with the timestamp
+* backup_dir_with_timestamp="$backup_dir/backup_$timestamp"
+* Insert a non executable comment annotation, # Create the backup directory
+* Make a backup_dir_with_timestamp directory with the command mkdir and a flag: "mkdir -p "$backup_dir_with_timestamp"
+* Insert a non executable comment annotation, # Copy all files from the source directory to the backup directory
+* Executing the "cp" command to copy recusively: cp -r "$source_dir"/* "$backup_dir_with_timestamp"
+* Insert a non executable comment annotation, #  Display a message indicating the backup process is complete
+* runing the "echo" command to print  "Backup completed. Files copied to: $backup_dir_with_timestamp"
+
+  <img width="398" alt="shell scripting ubuntu 14" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/7fe9cdc3-f6fb-4cbd-9ba3-697916372a22">
+
+  
+
+
