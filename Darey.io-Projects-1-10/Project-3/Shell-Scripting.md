@@ -181,3 +181,24 @@
 
 
 ## FILE BACKUP AND TIMESTAMPING
+
+* Login on my ubuntu virtual box
+* I make "shell-scripting" directory with the "mkdir" command
+* I cd into the directory
+* Create a "backup.sh" file with the "touch" command
+* Navigate to my vscode with the command 'code.' to executed some blocks of codes and back to my powershell.
+* I execute the script './backup.sh'
+* Script did not execute hence permission denied
+* To change mode and execute the script, I run the command "sudo chmod +x ./backup.sh
+* Enter my password
+* backup completed. files copied to "path/to/source/directory"
+* 
+
+
+<img width="430" alt="shell scripting 16" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/716c82c5-510d-4528-946b-fbe06e815e45">
+
+<img width="430" alt="shell scripting 16" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/716c82c5-510d-4528-946b-fbe06e815e45">
+
+
+* 
+<img width="767" alt="shell scripting 12" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/cf825394-7d63-4c33-ab16-1f47f90e64ad">
