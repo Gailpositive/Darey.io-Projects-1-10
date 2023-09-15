@@ -215,6 +215,9 @@
 
   <img width="398" alt="shell scripting ubuntu 14" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/7fe9cdc3-f6fb-4cbd-9ba3-697916372a22">
 
+  <img width="767" alt="shell scripting 12" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/ce83509b-2356-450b-85a3-fc982143980a">
+
+
   
 
 
