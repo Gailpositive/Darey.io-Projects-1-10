@@ -64,7 +64,12 @@ My Name is Abigail
 eg: cd ~ .   cd /
 ## NOTE: ~ IS USED TO DENOTE HOME DIRECTORY. / DENOTES ROOT DIRECTORY
 
-## STEPS TO CREATING A FILE
-* touch command to create a file with .sh extension
+## A MORE COMPREHENSIVE STEPS TO CREATING A SCRIPT AND INTERPRETING IT
+*First, mkdir with a .sh extension
+cd into the directory
+* Next, touch command to create a file with .txt extension
 * vi into the file
-* use the shebang and part directory: #!/ 
+* Enter the first line of operation of the script, 'shebang '#!' follow by the interpreter '/bin/bash' command.
+* Insert a non executable comment annotation: # (briefly explain what Im doing)
+* Write my script.
+* If it is a long script, take it step by step, adding a #comment to for annotation. Do not write all the script once.
