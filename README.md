@@ -4,12 +4,6 @@
  
  A more detailed implementation of these projects are stored in the repository.
 
-
- ## AUX PROJECT: BASIC GIT PROJECT
- The Git project serves as an introduction to Git Bash terminal and the GitHub version control system. Its purpose is to facilitate learning about GitHub, encompassing skills such as creating repositories, initializing them, creating branches, collaborating remotely effectively, and establishing connections with remote servers.
- 
- Within this project, I was also introduced to various other terminals, including Windows PowerShell, Termius, and the command prompt and basic systax in markdown cheat sheet among others.
-    
     
 # PROJECT 1: LAMP WEB-STACK IMPLEMENTATION IN AWS
 The "LAMP Stack Architecture" project offers an immersive introduction and practical experience within the realm of web servers.
@@ -31,3 +25,16 @@ Utilizing the capabilities of the Linux operating system, Nginx webserver, MySQL
  From a technical perspective, the program covers a wide spectrum of topics. It commences with the fundamentals, encompassing the creation and execution of shell scripts, variable handling, control structures, and command substitution. It then progresses to more advanced subjects, including error handling, regular expressions, file manipulation, and process management. Also delving into harnessing the power of shell scripting to parse log files, extract data, manage file permissions, and automate system administrative duties. Additionally, the program emphasizes best practices for crafting clean, maintainable, and efficient scripts. It imparts techniques for debugging, optimizing performance, and organizing scripts for reusability,  to excel in the realm of shell scripting.
 
  My terminal of choice is ubuntu virtual box, Bash and vscode.
+
+
+
+
+
+ ## AUX PROJECT: BASIC GIT PRATICE
+ The Git project serves as an introduction to Git Bash terminal and the GitHub version control system. Its purpose is to facilitate learning about GitHub, encompassing skills such as creating repositories, initializing them, creating branches, collaborating remotely effectively, and establishing connections with remote servers.
+ 
+ Within this project, I was also introduced to various other terminals, including Windows PowerShell, Termius, and the command prompt and basic systax in markdown cheat sheet among others.
+
+ ## AUX PROJECT: LINUX PRACTICE 
+
+ ## AUX PROJECT: SHELL SCRIPTING PRACTICE
