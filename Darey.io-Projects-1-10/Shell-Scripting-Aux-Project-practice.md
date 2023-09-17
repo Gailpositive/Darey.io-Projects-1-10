@@ -50,7 +50,11 @@ My Name is Abigail
 <img width="626" alt="shell 6" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/138a90d6-0bcc-49c9-89cc-47634aaebef7">
 
 
-##:
-* echo welcome to class five >> welcome.txt | cat welcome.txt, to print welcome to class five, append it to welcome.txt file and cat the file
+## Chain of command
+* echo welcome to class five >> welcome.txt | cat welcome.txt, to print welcome to class five, append/push it to welcome.txt file and read the file
 * If I repeat the last echo command, it will print incresing the last line command as seen in the image below
 <img width="646" alt="shell 7" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/ae8d72fc-5d64-4545-9910-6dd0f23a5791">
+
+eg: cd~ . cd/
+## NOTE: ~ IS USED TO DENOTE HOME DIRECTORY. / DENOTES ROOT DIRECTORY
+
