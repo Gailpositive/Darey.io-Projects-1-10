@@ -50,12 +50,21 @@ My Name is Abigail
 <img width="626" alt="shell 6" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/138a90d6-0bcc-49c9-89cc-47634aaebef7">
 
 
-## Chain of command (TO REDIRECT A SCRIPT TO A FILE CAN ALSO CALLED TO CHAIN THE SCRIPT TO THE FILE)
+## Chain of command 
+## TO REDIRECT A SCRIPT TO A FILE CAN ALSO BE CALLED TO CHAIN THE SCRIPT TO THE FILE
+## SOME SHORT SCRIPT FILES ENDS WITH .SH
+
+
+## THIS IS A SHORTER CUT TO CREATING A SCRIPT, RATHER THAN USING TOUCH FILE TO CREATE FILE AND VI INTO THE FILE TO WRITE CONTENT.
 * echo welcome to class five >> welcome.txt | cat welcome.txt, to print welcome to class five, append/push it to welcome.txt file and read the file
 * If I repeat the last echo command, it will print incresing the last line command as seen in the image below
-* THIS IS A SHORTER CUT, RATHER THAN USING TOUCH FILE TO CREATE FILE AND VI INTO THE FILE TO WRITE CONTENT.
+*
 <img width="646" alt="shell 7" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/ae8d72fc-5d64-4545-9910-6dd0f23a5791">
 
 eg: cd ~ .   cd /
 ## NOTE: ~ IS USED TO DENOTE HOME DIRECTORY. / DENOTES ROOT DIRECTORY
 
+## STEPS TO CREATING A FILE
+* touch command to create a file with .sh extension
+* vi into the file
+* use the shebang and part directory: #!/ 
