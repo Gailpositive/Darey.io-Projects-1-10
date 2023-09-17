@@ -50,7 +50,7 @@ My Name is Abigail
 <img width="626" alt="shell 6" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/138a90d6-0bcc-49c9-89cc-47634aaebef7">
 
 
-## Chain of command
+## Chain of command (TO REDIRECT A SCRIPT TO A FILE CAN ALSO CALLED TO CHAIN THE SCRIPT TO THE FILE)
 * echo welcome to class five >> welcome.txt | cat welcome.txt, to print welcome to class five, append/push it to welcome.txt file and read the file
 * If I repeat the last echo command, it will print incresing the last line command as seen in the image below
 * THIS IS A SHORTER CUT, RATHER THAN USING TOUCH FILE TO CREATE FILE AND VI INTO THE FILE TO WRITE CONTENT.
