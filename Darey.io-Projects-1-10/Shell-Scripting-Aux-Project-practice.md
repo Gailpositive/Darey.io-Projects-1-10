@@ -53,8 +53,9 @@ My Name is Abigail
 ## Chain of command
 * echo welcome to class five >> welcome.txt | cat welcome.txt, to print welcome to class five, append/push it to welcome.txt file and read the file
 * If I repeat the last echo command, it will print incresing the last line command as seen in the image below
+* THIS IS A SHORTER CUT, RATHER THAN USING TOUCH FILE TO CREATE FILE AND VI INTO THE FILE TO WRITE CONTENT.
 <img width="646" alt="shell 7" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/ae8d72fc-5d64-4545-9910-6dd0f23a5791">
 
-eg: cd~ . cd/
+eg: cd ~ .   cd /
 ## NOTE: ~ IS USED TO DENOTE HOME DIRECTORY. / DENOTES ROOT DIRECTORY
 
