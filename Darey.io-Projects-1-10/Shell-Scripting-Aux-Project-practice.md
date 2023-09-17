@@ -80,5 +80,5 @@ cd into the directory
 
 * Enter the first line of operation of the script, 'shebang '#!' follow by the interpreter '/bin/bash' command.
 * Insert a non executable comment annotation: # (briefly explain what Im doing)
-* Write my script.
+* Write my script starting with the echo command
 <img width="678" alt="shell 9" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/57fed460-fb60-4346-938e-595bb1bb592f">
