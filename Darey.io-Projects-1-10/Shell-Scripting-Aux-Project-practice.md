@@ -93,7 +93,7 @@ cd into the directory
 
 <img width="733" alt="shell 10" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/ed54b270-183b-43f7-af8c-a6d30c04d512">
 
-* Enter the first line of operation of the script, 'shebang '#!' follow by the interpreter '/bin/bash' command.
+* On my nano editor, Enter the first line of operation of the script, 'shebang '#!' follow by the interpreter '/bin/bash' command.
 * Insert a non executable comment annotation: # (briefly explain what Im doing)
   
 <img width="720" alt="shell 11" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/4cc6f6e4-f967-45d7-95b4-7fb462c2e8ef">
@@ -104,5 +104,43 @@ cd into the directory
 * chmod u+x script.sh , to make script executable 
 * ls -ltr again to view executable script
 * execute the script ./script.sh
-* 
 <img width="618" alt="shell 11" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/7ed5e9b2-6205-48f1-be5a-64fdce605d05">
+
+
+## Asking user to input their info
+
+* nano script.sh to write script and back to shell
+* ./script.sh
+* Input my name
+* input name of my school
+* input my student position
+* <img width="443" alt="bahah" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/8b391ebe-19b5-4d9f-8262-339281a9b8df">
+
+* On my nano editor, enter the first line of operation of the script, 'shebang '#!' follow by the interpreter '/bin/bash' command.
+* Insert a non executable comment annotation: # (briefly explain what Im doing)
+* echo command to print statement
+* 
+* Insert a non executable comment annotation: # (briefly explain what Im doing)
+* read command to read name
+* 
+* Insert a non executable comment annotation: # (briefly explain what Im doing)
+* echo command to print statement
+
+* 
+* Insert a non executable comment annotation: # (briefly explain what Im doing)
+* read command to read name
+
+*  
+* Insert a non executable comment annotation: # (briefly explain what Im doing)
+* echo command to print statement
+<img width="691" alt="olkl" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/ccfec6c9-c02e-4cdb-aa7d-6107018ba615">
+
+* 
+* Insert a non executable comment annotation: # (briefly explain what Im doing)
+* read command to read name
+* 
+* Insert a non executable comment annotation: # (briefly explain what Im doing)
+* sleep 3 : sleep command delays the responds after 3 mins
+* date command, add date to the script
+* 
+<img width="481" alt="zdf" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/bf9c7097-d58b-4e59-98e1-35095a996b01">
