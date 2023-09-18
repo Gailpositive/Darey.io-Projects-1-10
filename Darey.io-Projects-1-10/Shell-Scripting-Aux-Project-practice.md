@@ -144,3 +144,32 @@ cd into the directory
 * date command, add date to the script
 * 
 <img width="481" alt="zdf" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/bf9c7097-d58b-4e59-98e1-35095a996b01">
+
+
+* Mkdir practice.code
+* cd into practice.code
+* touch shell.sh to create file
+* nano shell.sh to write code and back to terminal
+* run script ./shell.sh
+* change mode: chmod u+x shell.sh
+* run script again "./shell.sh"
+* Enter my name
+  
+<img width="603" alt="009" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/e32a80ac-145d-466c-bc55-02b41f91142a">
+
+
+* On my nano editor, enter the first line of operation of the script, 'shebang '#!' follow by the interpreter '/bin/bash' command.
+* Insert a non executable comment annotation: # (briefly explain what Im doing)
+* echo to print
+
+* Insert a non executable comment annotation: # (briefly explain what Im doing)
+* read username
+
+*  Insert a non executable comment annotation: # (briefly explain what Im doing)
+* echo to print $username
+* sleep 3
+* date
+* Login sucessful...
+<img width="628" alt="bgq" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/710f4ec7-0eee-489c-a146-61e1e366d801">
+
+
