@@ -98,3 +98,11 @@ cd into the directory
   
 <img width="720" alt="shell 11" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/4cc6f6e4-f967-45d7-95b4-7fb462c2e8ef">
 
+## I have to execute the file
+* nano script.sh
+* ls -ltr to list script
+* chmod u+x script.sh , to make script executable 
+* ls -ltr again to view executable script
+* execute the script ./script.sh
+* 
+<img width="618" alt="shell 11" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/7ed5e9b2-6205-48f1-be5a-64fdce605d05">
