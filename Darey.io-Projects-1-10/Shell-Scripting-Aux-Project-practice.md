@@ -82,3 +82,19 @@ cd into the directory
 * Insert a non executable comment annotation: # (briefly explain what Im doing)
 * Write my script starting with the echo command
 <img width="678" alt="shell 9" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/57fed460-fb60-4346-938e-595bb1bb592f">
+
+## Using the nano editor
+* Mkdir to create a directory "practice.code"
+* cd into the directory "practice.code"
+* touch command to cretae file "script.sh"
+* ls to list
+* nano script.sh and back to shell
+* cat to read script
+
+<img width="733" alt="shell 10" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/ed54b270-183b-43f7-af8c-a6d30c04d512">
+
+* Enter the first line of operation of the script, 'shebang '#!' follow by the interpreter '/bin/bash' command.
+* Insert a non executable comment annotation: # (briefly explain what Im doing)
+  
+<img width="720" alt="shell 11" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/4cc6f6e4-f967-45d7-95b4-7fb462c2e8ef">
+
