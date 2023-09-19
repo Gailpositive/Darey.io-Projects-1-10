@@ -1,6 +1,6 @@
 # PROJECT BASE LEARNING LEARNING (PBL) :PROJECT 1-10
 
- Welcome to my documentation process with darey.io as a Jnr devOps engineer. This program focuses on Project Base Learning (PBL) approach to DevOps projects and covers a range of topics, technologies and stacks including:  Aux projects, Linux operating system, AWS console, Git bash, VSCODE, Ubuntu virtual box, Redhat,Lamp & Lemp web-stack development, deployment and technologies, Shell Scripting, 
+ Welcome to my documentation process with darey.io as a Jnr devOps engineer. This program focuses on Project Base Learning (PBL) approach and hands-on execises and practical to DevOps projects and covers a range of topics, technologies and stacks including:  Aux projects, Linux operating system, AWS console, Git bash, VSCODE, Ubuntu virtual box, Redhat,Lamp & Lemp web-stack development, deployment and technologies, Shell Scripting, Nginx web-server , Client server achitecture with mySQL and RDBMS, 
  
  A more detailed implementation of these projects are stored in the repository.
 
@@ -37,4 +37,30 @@ Utilizing the capabilities of the Linux operating system, Nginx webserver, MySQL
 
  ## AUX PROJECT: LINUX PRACTICE 
 
- ## AUX PROJECT: SHELL SCRIPTING PRACTICE
+ 
+
+ ## AUX PROJECT: Mastering Shell Scripting and  Automation Expertise
+
+Embarking on a transformative journey through my Shell Scripting Mastery Course, meticulously designed to equip me  with the essential skills and knowledge necessary to automate tasks, streamline workflows, and elevate my efficiency as a Linux user.
+
+Commencing with the fundamentals, I gained proficiency in crafting and executing shell scripts, grasp the nuances of variables, explore control structures, and delved into the art of command substitution. This course utilizes the powerful toolset of Visual Studio Code (VSCode) to facilitate interaction with the Linux system, enabling me  to execute complex operations and automate repetitive tasks with precision.
+
+As I progress, I ascended to advanced topics like, encompassing error handling strategies, the mastery of regular expressions, adept file manipulation techniques, and astute process management. I also uncover the art of harnessing shell scripting for parsing log files, extracting valuable data, managing file permissions, and automating intricate system administrative responsibilities.
+
+Beyond the technical facets, I imparted the best practices for scripting excellence. Discover the art of crafting clean, maintainable, and efficient scripts while acquiring invaluable techniques for debugging, performance optimization, and script organization to ensure maximum reusability.
+
+Prepare to embark on a transformative journey that empowers you to wield the power of shell scripting as a proficient Linux user, revolutionizing the way I interact with and manage Linux-based systems.
+
+
+ 
+ ## AUX PROJECT: Exploring Nginx High-Performance Capabilities for Web Applications
+
+In this comprehensive practice course, I  delved into the intricacies of Nginx, a renowned high-performance and versatile web server, to empower me with the knowledge needed to optimize and scale web applications effectively.
+
+I commenced with a foundational understanding of Nginx, comparing it to other web servers, highlighting its myriad advantages, and illustrating common use cases. Moving forward, I addressed the essential steps of installation and configuration, demonstrating how to tailor Nginx for diverse environments, including static content delivery, reverse proxy setup, and load balancing configurations.
+
+My journey extended to the mastery of Nginx's configuration for various scenarios, emphasizing resource optimization and robust security measures. I  delved into vital aspects such as virtual hosts, SSL/TLS implementation, caching, and compression, enabling me to ensure both speed and security in web content delivery.
+
+As I progressed further, I explored Nginx's advanced functionalities, including dynamic content handling, seamless integration with backend applications, and the management of intricate server configurations. I provided insights on fine-tuning Nginx to extract maximum performance, adeptly troubleshooting common issues, and adhering to industry best practices and standards.
+
+This comprehensive coverage extends to critical topics such as monitoring and logging, optimizing server response times, and ensuring scalability to meet the ever-growing demands of modern web applications. This course equiped me with the expertise needed to harness Nginx's full potential for my web projects.
