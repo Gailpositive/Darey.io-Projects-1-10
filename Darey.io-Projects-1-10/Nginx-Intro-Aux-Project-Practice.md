@@ -4,4 +4,7 @@
 
 ## Note: Nginx as a load balancer , receives requests from clients, first determines which server is available and online in a pool of servers, and then routes the request to the server and repeat the reverse proxy process.
 
+ ## Nginx also encrypt and decrypt data through request
 
+ ## Installing Nginx
+ 
