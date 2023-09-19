@@ -1,5 +1,6 @@
+# SHELL SCRIPTING CRASH COURSE
 
-##:
+
 * echo $SHELL to display my current shell
 * cat /etc/shells displays list of available shells
 * I can install any shell of choice that is not available eg:sudo apt install csh -y
