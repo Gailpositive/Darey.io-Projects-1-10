@@ -3,7 +3,7 @@
 
 ## (Linux OS, Apache2 Http WebServer, Mysql Database and PHP Language Programming)
 
-## Preparing Prerequisites: I spinned up an AWS EC2 instance and a virtual sewrver with my ubuntu server OS. I SSH my terminals  into my EC2 instance using its public IP address
+## Preparing Prerequisites: I spinned up an AWS EC2 instance and a virtual server with my ubuntu server OS. I SSH my terminals  into my EC2 instance using its public IP address
 
  "Attempting to experiment with different terminals to observe their individual functionalities and behavious, I initially performed a git clone operation into my github account on ubuntu virtualbox terminal"
 
