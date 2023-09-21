@@ -40,5 +40,8 @@ Then remotely  connected 'Server-A-db' local IP address as the user to  'Server-
 
 * To configure 'Server-A-db' to allow connection from remote host,
 * I execute the command "sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf"
-* And change the binding address to 0.0.0.0
+* Set the binding address to 0.0.0.0
+* 'Sudo systemctl restart mysql' command to restart mysql server
 <img width="906" alt="vi mysql server" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/84135664-61b9-4a6d-b5fd-79464b6713fc">
+
+
