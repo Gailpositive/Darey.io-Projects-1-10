@@ -36,3 +36,9 @@
 
 Then remotely  connected 'Server-A-db' local IP address as the user to  'Server-B-Client' as the host.
 <img width="732" alt="client connected to server updated" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/d4dd8aa5-35eb-45cc-915a-01c71c0334e1">
+
+
+* To configure 'Server-A-db' to allow connection from remote host,
+* I execute the command "sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf"
+* And change the binding address to 0.0.0.0
+<img width="906" alt="vi mysql server" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/84135664-61b9-4a6d-b5fd-79464b6713fc">
