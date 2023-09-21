@@ -34,8 +34,18 @@
 * Server-A-db uses TCP port 3306 by default, so I openned a new entry in "inbound rules" in Server-A-db  security groups
   <img width="747" alt="connecting mysql server to mysql client" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/c238f2c7-852f-4543-8989-cf3d93883064">
 
-Then remotely  connected 'Server-A-db' local IP address as the user to  'Server-B-Client' as the host.
-<img width="732" alt="client connected to server updated" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/d4dd8aa5-35eb-45cc-915a-01c71c0334e1">
+* To allow connections from remote host, I have to install mysql database on Server-A-db
+* I "sudo mysql secure_installation"
+* Validate password and pluggings
+<img width="835" alt="sudo mysql secure installation 2" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/5da74471-12c7-4935-bd18-8ef8931d04f4">
+
+* I "sudo mysql"
+* With the command, CREATE USER name 'remote_user'@'%', IDENTIFIED WITH mysql_native_password BY 'password'; (% here means that any IP address can be use by the remote and the user should be identified with mysql native password)
+* Create the database name 'test_db'
+* Granted all privileges on the database name "test_db" to remote user
+* And flush the priviledges
+<img width="680" alt="sudo mysql updated updated" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/5e184690-55c9-4e1f-a1f6-2f414cc72dbf">
+
 
 
 * To configure 'Server-A-db' to allow connection from remote host,
@@ -44,4 +54,6 @@ Then remotely  connected 'Server-A-db' local IP address as the user to  'Server-
 * 'Sudo systemctl restart mysql' command to restart mysql server
 <img width="906" alt="vi mysql server" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/84135664-61b9-4a6d-b5fd-79464b6713fc">
 
-
+* Then remotely  connected 'Server-A-db' local IP address as the user to  'Server-B-Client' as the host.
+* Show database
+<img width="732" alt="client connected to server updated" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/d4dd8aa5-35eb-45cc-915a-01c71c0334e1">
