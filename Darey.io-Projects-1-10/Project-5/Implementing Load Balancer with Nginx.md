@@ -21,7 +21,7 @@
 <img width="759" alt="security port 80 load balancer" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/ee702148-9dd6-4f55-8f38-6a70b2a02cc4">
 
 
-# Step 3 : SSH webserver and install apache
+# Step 3 : SSH webserver and install apache2
 * Webserver 1: On my terminal, I ssh webserver 1 EC2 instance public Ip 
 * Updating and installing apache 2 using the double ampersand operator
 * I execute "sudo apt update -y && sudo systemctl install apache2 -y"
@@ -38,21 +38,32 @@
 <img width="767" alt="apt update   apache2 install on webserver 2" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/e91ffdb7-ddeb-4a73-a1d4-17352ed23e97">
 
 
-* Webserver 2: To comfirm Apache 2 is active and running,
+* Webserver 2: To comfirm Apache2 is active and running,
 * I execute the command "sudo systemctl status apache2
 <img width="607" alt="apache 2 running on server 1" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/e6c9c31a-f370-4069-9f4a-016c3dc36e6b">
 
 
-# Step 4 : On webserver 1, I Config Apache2 to serve content on port 8000
+# Step 4 :I Config Apache2 to serve content on port 8000
+* On webserver 1, 
 * I execute the following command on vi
 * "sudo vi /etc/apache2/ports.conf"
 * Then edit the block of codes by adding a new a listening "Listen 8000"
 * <img width="623" alt="add a new listening 8000" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/5a915ff6-1353-42e8-bb02-e2f73a2d37c3">
 
 
-# On webserver 2, I Config Apache2 to serve content on port 8000
+* On webserver 2, I Config Apache2 to serve content on port 8000
 * I execute the following command on vi
 * "sudo vi /etc/apache2/ports.conf"
 * Then edit the block of codes by adding a new a listening "Listen 8000"
 * <img width="683" alt="sudo config port 8000 on webserver 2" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/30a2fc3d-6927-48f5-8ac3-dc83d2198142">
+
+
+* On webserver 1, I  change port 80 to 8000 on virtualhost
+* I open the file and execute the command "sudo vi /etc/apache2/sites-available/000-default.conf"
+* <img width="830" alt="vi change to port 8000" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/c62134c5-add9-4e25-a6b9-94adfd766ee5">
+
+
+* On webserver 2, I  change port 80 to 8000 on virtualhost
+* I open the file and execute the command "sudo vi /etc/apache2/sites-available/000-default.conf"
+* <img width="869" alt="sudo vi config 8000 on webserver 2" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/906b0809-7cbc-4060-9d33-9ea7497cd28f">
 
