@@ -61,9 +61,30 @@
 * On webserver 1, I  change port 80 to 8000 on virtualhost
 * I open the file and execute the command "sudo vi /etc/apache2/sites-available/000-default.conf"
 * <img width="830" alt="vi change to port 8000" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/c62134c5-add9-4e25-a6b9-94adfd766ee5">
+* Then execute the command "sudo systemctl restart apache2" to restart apache2
+
 
 
 * On webserver 2, I  change port 80 to 8000 on virtualhost
 * I open the file and execute the command "sudo vi /etc/apache2/sites-available/000-default.conf"
 * <img width="869" alt="sudo vi config 8000 on webserver 2" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/906b0809-7cbc-4060-9d33-9ea7497cd28f">
+* And run the command "sudo systemctl restart apache2" to restart apache2
+
+# Step 5: Create a new html file
+* On webserver 1,
+* To open the html file 
+* I switch to the vi editor of the file with the command "sudo vi index.html"
+* Paste  some blocks of code
+* Replace the paceholder text with webserver 1 public IP address
+* <img width="496" alt="server 2 IP address" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/fcecaad9-a023-45d8-85c6-4e1f2ec4455c">
+
+
+On webserver 2,
+* To open the html file 
+* I switch to the vi editor of the file with the command "sudo vi index.html"
+* Paste  some blocks of code
+* Replace the paceholder text with webserver 2 public IP address
+<img width="565" alt="vi html file adding EC2 IP" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/09fc12df-2b17-4429-8c37-f092e05edc9d">
+
+* 
 
