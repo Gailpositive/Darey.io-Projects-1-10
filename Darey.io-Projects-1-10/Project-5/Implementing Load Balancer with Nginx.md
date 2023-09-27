@@ -56,7 +56,7 @@
 
 
 * On Apache2 webserver 1, I  change port 80 to 8000 on virtualhost
-* I open the file and execute the command "sudo vi /etc/apache2/sites-available/000-default.conf"
+* I open a VI file and execute the command "sudo vi /etc/apache2/sites-available/000-default.conf"
 * <img width="830" alt="vi change to port 8000" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/c62134c5-add9-4e25-a6b9-94adfd766ee5">
 * Then execute the command "sudo systemctl restart apache2" to restart apache2
 
