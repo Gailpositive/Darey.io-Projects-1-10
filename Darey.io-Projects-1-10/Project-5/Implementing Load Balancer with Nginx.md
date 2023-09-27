@@ -115,3 +115,8 @@
 * Nginx running and active
 <img width="705" alt="nginx active and enabled" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/5c42e9c8-763d-4262-91bd-8708e6c81942">
 
+
+
+
+
+<img width="487" alt="last image" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/ae4b9c96-f8c6-4487-8f4f-9a0ea6a27e31">
