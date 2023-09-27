@@ -116,7 +116,19 @@
 <img width="705" alt="nginx active and enabled" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/5c42e9c8-763d-4262-91bd-8708e6c81942">
 
 
+# Step 8: Open Nginx config file 
+* To open Nginx config file, I execute and VI the command "sudo vi /etc/nginx/conf.d/loadbalancer.conf"
+* Paste the config file blocks of code to config Nginx to act as a load balancer 
+* I edit the file
+* I insert the public IP's and ports of webserver 1 and 2 upstreams backend's server
+* To listen on port 80 public IP of the Load balancer server IP address
+<img width="698" alt="updated vi to port 8000" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/5c4ec7de-ca30-4f64-b45d-5a9ff3f0bf26
 
 
+* Test the config is ok and successful with the command 'sudo nginx -t'
+<img width="514" alt="ngix config successful" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/c133e058-e865-419b-8c20-c2c11cbf768f">
+* Restart Nginx to load the new config with the command: "sudo systemctl restart nginx"
 
+
+* Paste the public IP of the Nginx load balancer on my browser 
 <img width="487" alt="last image" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/ae4b9c96-f8c6-4487-8f4f-9a0ea6a27e31">
