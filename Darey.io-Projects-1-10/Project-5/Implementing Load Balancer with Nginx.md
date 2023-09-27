@@ -88,14 +88,22 @@
 
 
 # step 6: Change file ownership of the index.html file
-*To change the file ownership, I execute the command: 'sudo chown www-data:www-data ./index.html"
+* On webserver 1, To change the file ownership, I execute the command: 'sudo chown www-data:www-data ./index.html"
 * To override the default html file of apache2 webserver with the new html file,
 * I execute the command "sudo cp -f ./index.html /var/www/html/index.html"
 * I restart the webserver to load the new config with the command "sudo systemctl restart apache2"
 * I enter the public IP address and the TCP port 8000 on my browser
 * <img width="750" alt="web browser listening at port 8000" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/104cd282-58be-40ce-a133-85fb81f33591">
+* Web browser is listening on port 8000
 
 
+* On webserver 2, To change the file ownership, I execute the command: 'sudo chown www-data:www-data ./index.html"
+* To override the default html file of apache2 webserver with the new html file,
+* I execute the command "sudo cp -f ./index.html /var/www/html/index.html"
+* I restart the webserver to load the new config with the command "sudo systemctl restart apache2"
+* I enter the public IP address and the TCP port 8000 on my browser
+* <img width="564" alt="2 webserver listnenin on port 8000" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/d49a6bd5-57b4-4a33-8f36-042dcc50ec3f">
+* Web browser is listening on port 8000
 
 
 
