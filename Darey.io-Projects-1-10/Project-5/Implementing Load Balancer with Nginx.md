@@ -18,7 +18,7 @@
 <img width="745" alt="webserver 2 port 8000" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/8ea025f3-f008-4f0e-b648-1c15c43d4b4f">
 
 
-# Step 3 : SSH webserver and install apache2
+# Step 3 : SSH webserver on my terminal and install apache2
 * Apache2 Webserver 1: On my terminal, I ssh webserver 1 EC2 instance public Ip 
 * Updating and installing apache 2 using the double ampersand operator
 * I execute "sudo apt update -y && sudo systemctl install apache2 -y"
