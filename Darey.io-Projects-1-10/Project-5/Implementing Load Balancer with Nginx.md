@@ -94,6 +94,7 @@
 * Web browser is listening on port 8000
 
 
+
 * On webserver 2, To change the file ownership, I execute the command: 'sudo chown www-data:www-data ./index.html"
 * To override the default html file of apache2 webserver with the new html file,
 * I execute the command "sudo cp -f ./index.html /var/www/html/index.html"
