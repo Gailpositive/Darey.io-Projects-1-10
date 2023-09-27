@@ -5,7 +5,7 @@
 
 # Step 1: 
 
-* Spinning of Two instances
+* Spinning Two EC2 instances
 <img width="805" alt="three ec2 instances running" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/acf5e690-92a9-4d84-8c16-9f0f95427984">
 
 
