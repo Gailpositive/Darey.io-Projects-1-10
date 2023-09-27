@@ -5,7 +5,7 @@
 
 # Step 1: 
 
-* Spinning of Three instances
+* Spinning of Two instances
 <img width="805" alt="three ec2 instances running" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/acf5e690-92a9-4d84-8c16-9f0f95427984">
 
 
@@ -16,9 +16,6 @@
 
 * Apache2 Webserver 2 running on TCP port 8000
 <img width="745" alt="webserver 2 port 8000" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/8ea025f3-f008-4f0e-b648-1c15c43d4b4f">
-
-* Nginx Load balancer server on TCP port 80
-<img width="759" alt="security port 80 load balancer" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/ee702148-9dd6-4f55-8f38-6a70b2a02cc4">
 
 
 # Step 3 : SSH webserver and install apache2
@@ -105,5 +102,16 @@
 * <img width="564" alt="2 webserver listnenin on port 8000" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/d49a6bd5-57b4-4a33-8f36-042dcc50ec3f">
 * Web browser is listening on port 8000
 
+# Step 7: Config Nginx as a load balancer.
 
+* Spinning up an EC2 instance
+* Editing the inbound rules and openning Nginx Load balancer server on TCP port 80
+<img width="759" alt="security port 80 load balancer" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/ee702148-9dd6-4f55-8f38-6a70b2a02cc4">
+
+
+* Nginx updated and install 
+* <img width="661" alt="sudo update and install nginx on server 2" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/8f9969ae-f42d-4316-bf00-8146187cfd20">
+
+* Nginx running and active
+<img width="705" alt="nginx active and enabled" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/5c42e9c8-763d-4262-91bd-8708e6c81942">
 
