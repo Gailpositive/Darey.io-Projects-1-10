@@ -30,7 +30,7 @@
 
 
 * Apache2 Webserver 2: On my terminal, I ssh webserver 2 EC2 instance public Ip 
-* Updating and installing apache 2 using the double ampersand operator
+* Updating and installing apache 2 at the same time ,using the double ampersand operator
 * I execute "sudo apt update -y  && sudo systemctl install apache2 -y"
 <img width="767" alt="apt update   apache2 install on webserver 2" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/e91ffdb7-ddeb-4a73-a1d4-17352ed23e97">
 
