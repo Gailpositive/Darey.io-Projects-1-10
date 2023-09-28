@@ -27,6 +27,20 @@ Utilizing the capabilities of the Linux operating system, Nginx webserver, MySQL
  My terminal of choice is ubuntu virtual box, Bash and vscode.
 
 
+# PROJECT 4:  UNDERSTANDING CLIENT-SERVER ARCHITECTURE WITH MYSQL AS RDBMS
+* Understanding client-server architecture with MySQL involves comprehending data management, connectivity, and communication between clients and servers through insightful explanations and practical examples.
+
+Client-server architecture, in essence, entails connecting two or more computers over a network to exchange requests and responses.
+
+In this communication, each machine has its designated role: the machine initiating requests is typically referred to as the "Client," and the machine responding or serving is the "Server."
+
+
+
+# PROJECT 5: IMPLEMENTING LOAD BALANCER WITH NGINX
+
+
+
+# PROJECT 6: AUTOMATING LOADBALANCER CONFIGURATION WITH SHELL SCRIPTING AND JENKINS 
 
 
 
