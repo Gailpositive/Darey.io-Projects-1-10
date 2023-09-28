@@ -29,15 +29,15 @@ Utilizing the capabilities of the Linux operating system, Nginx webserver, MySQL
 
 # PROJECT 4:  UNDERSTANDING CLIENT-SERVER ARCHITECTURE WITH MYSQL AS RDBMS
 Understanding client-server architecture with MySQL involves comprehending data management, connectivity, and communication between clients and servers through insightful explanations and practical examples.
-
 Client-server architecture, in essence, entails connecting two or more computers over a network to exchange requests and responses.
-
 In this communication, each machine has its designated role: the machine initiating requests is typically referred to as the "Client," and the machine responding or serving is the "Server."
 
 
 
 # PROJECT 5: IMPLEMENTING LOAD BALANCER WITH NGINX
+Load balancing involves distributing tasks or workloads among multiple computers or servers to prevent any single computer from becoming overloaded. This ensures smooth operation and maintains the speed and responsiveness of websites and apps. To evenly distribute traffic among webservers, a load balancer is deployed in front of them. All incoming traffic first reaches the load balancer, which then evenly allocates it among the set of webservers. This approach prevents any individual webserver from being overwhelmed, thereby enhancing system performance.
 
+Nginx is a highly versatile software capable of functioning as a webserver, reverse proxy, and load balancer. Proper configuration is all that's needed to tailor it to the specific use case.
 
 
 # PROJECT 6: AUTOMATING LOADBALANCER CONFIGURATION WITH SHELL SCRIPTING AND JENKINS 
