@@ -28,7 +28,7 @@ Utilizing the capabilities of the Linux operating system, Nginx webserver, MySQL
 
 
 # PROJECT 4:  UNDERSTANDING CLIENT-SERVER ARCHITECTURE WITH MYSQL AS RDBMS
-* Understanding client-server architecture with MySQL involves comprehending data management, connectivity, and communication between clients and servers through insightful explanations and practical examples.
+Understanding client-server architecture with MySQL involves comprehending data management, connectivity, and communication between clients and servers through insightful explanations and practical examples.
 
 Client-server architecture, in essence, entails connecting two or more computers over a network to exchange requests and responses.
 
