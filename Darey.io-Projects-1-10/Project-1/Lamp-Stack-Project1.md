@@ -90,3 +90,6 @@ to executed a pre-installed security script to erase any insecured default setti
 "And Php package was successfully installed. I run this command "php -v" to confirm my Php version as seen below"
 
 <img width="777" alt="php" src="https://github.com/Gailpositive/Darey.io-Projects-1-10/assets/111061512/605636af-c71c-4022-b6a1-c90ad9bddb7e">
+
+# Enable PHP on website
+* More info, refer to source code repo
