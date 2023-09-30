@@ -16,7 +16,7 @@
 * <img width="873" alt="sudo vi apache1 updated" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/b81b3410-bf7f-4fb5-aa25-37cea2ec964f">
 
 # Step 2
-* On my web browser, I enter the IP address and port 8000
+* On my web browser, I enter the IP address and port 8000 is listening
 <img width="586" alt="web browser server 1" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/bb47478e-576b-4939-9ee0-d24f603c2f98">
 
 # Step 3
@@ -27,7 +27,7 @@
 <img width="826" alt="sudo vi server 2 apache script" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/052bf10e-0d6f-475d-89f7-1cbea880397b">
 
 # Step 4
-*On my web browser, I enter the IP address and port 8000
+*On my web browser, I enter the IP address and port 8000 is listening
 * <img width="572" alt="web browser server 2" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/4827e7bb-b25e-4365-9b46-872d474cf358">
 
 
