@@ -2,7 +2,7 @@
 
 ## IN PROJECT 5, THREE BACK-END SERVERS WERE CONFIGURED AND DEPLOYED MANUALLY. IN THIS PROJECT, I WILL BE AUTOMATING THE DEPLOYMENT OF BACKEND-SERVERS.
 
-## To get started, I will be configing and deploying three back-end servers on the  AWS EC2 Instance running ubuntu: Two loadbalancer server and one Nginx server, open on port 8000, 8000 and 80 respectively .
+## To get started, I will be configing and deploying three back-end servers on the  AWS EC2 Instance running ubuntu: Two loadbalancer servers and one Nginx server, open on port 8000, 8000 and 80 respectively .
 
 
 # Step 1
