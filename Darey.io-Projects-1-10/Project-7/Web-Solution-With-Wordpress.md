@@ -78,6 +78,36 @@
 sudo lsblk"
 <img width="960" alt="Entire setup verified 18" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/8a93c5ad-bf78-401d-a0fb-9115a951a442">
 
+* Format the LV with the command "mkfs.ext4"
 <img width="906" alt="format logical volumes 19" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/b9014f42-17a4-4169-b99c-96d17e99ca75">
 
+  ## Step 9
+  * Create a  "/var/www/html" dir to store website files, 
 <img width="654" alt="create directory, store backup log data and mount LV 20" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/f203d2a1-c482-4e30-86d5-1bdc432a5d1b">
+
+* Create another dir "/home/recovery/logs" to store backup of log data
+<img width="870" alt="using rsync to back up  files in var log to home recovery log 21" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/79e5387a-341f-4ff8-a55a-848631335e2f">
+
+## Step 10
+* Mount /var/www/html on apps-lv
+<img width="581" alt="sudo mount dev web data  22" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/c661f75b-1d22-4f7c-8f84-4c42100f7b80">
+
+* After previously deleting existing data on /var/log, I executed the command  "sudo mount /dev/webdata-vg/logs-lv /var/log" to mount /var/log on logs/lv logical volume
+
+* I "sudo rsync -av /home/recovery/logs/log/. /var/log" to restore deleted log data back to /var/log
+
+* Before mounting up the file system, I use  the rsync utility to backup all files in /var/log to /home/recovery/logs
+<img width="954" alt="sudo rsync -av home 23" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/e0fca952-d055-46f5-8e73-15f8a9ff3d8e">
+
+* I "sudo blkid" to display information about block devices
+<img width="919" alt="sudo blkid 24" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/7c3501b1-b4c3-4906-9373-1d7ca3046bd9">
+
+* I sudo vi "/etc/fstab" to update my UUID (Universally Unique identifier)
+<img width="851" alt="sudo vo etc-fstab 25" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/3d9656c7-5439-4ae4-91d2-170493de1dc7">
+
+
+* Test the configuration and reload the deamon, 
+<img width="418" alt="sudo mount -a and sudo systemctl deamon reload  25" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/9846f41b-c4ec-4ec1-a2d8-6cdce365bc01">
+
+* Setup is running
+<img width="685" alt="verify setup with the command df -h 26" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/8f382bf2-1743-43b3-a17c-980f688c8af5">
