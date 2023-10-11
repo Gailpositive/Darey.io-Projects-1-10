@@ -65,11 +65,17 @@
 *  I "sudo vgs" to verify group was successful and running
 <img width="588" alt="volume group running  using command 15" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/4b5d6727-1e77-43dd-bd19-66e5bcde19e0">
 
-* 
+
+## Step 7
+* I use the "lvcreate" service/utility, to create two volumes: apps-lv(stores data in the website) and log-lv (stores data in the log). Both volumes will split the PV size equally, 
 <img width="663" alt="two logical volumes created 16" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/1d1f11d4-80c4-4adb-9e8d-fb0e90f65e60">
 
+* "Sudo lvs" verifys creation of logical volumes was successful and running
 <img width="727" alt="sudo lvs running 17" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/9f75bfa6-cd19-437c-9100-830400a2f927">
 
+## Step 8
+* To verify the entire complete setup, I execute the command "sudo vgdisplay -v #view complete setup - VG, PV, and LV
+sudo lsblk"
 <img width="960" alt="Entire setup verified 18" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/8a93c5ad-bf78-401d-a0fb-9115a951a442">
 
 <img width="906" alt="format logical volumes 19" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/b9014f42-17a4-4169-b99c-96d17e99ca75">
