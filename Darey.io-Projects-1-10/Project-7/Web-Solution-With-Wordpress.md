@@ -38,5 +38,5 @@
 * Execute the command "sudo gdisk /dev/nvme0n1p3" to create a single partition on disk 3
 <img width="741" alt="disk-two 7" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/46c724a8-1527-40f4-8d2a-1746abbb6cd8">
 
-* Execute the command "sudo gdisk /dev/nvme0n1p3" to create a single partition on disk 3
+* Execute the command "sudo gdisk /dev/nvme0n1p4" to create a single partition on disk 4
 <img width="703" alt="disk -one 6" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/c544fd96-0f54-4701-ab0b-4c7bfcc9b2e9">
