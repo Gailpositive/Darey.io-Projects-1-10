@@ -40,3 +40,4 @@
 
 * Execute the command "sudo gdisk /dev/nvme0n1p4" to create a single partition on disk 4
 <img width="703" alt="disk -one 6" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/c544fd96-0f54-4701-ab0b-4c7bfcc9b2e9">
+
