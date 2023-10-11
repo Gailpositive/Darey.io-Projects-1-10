@@ -44,22 +44,34 @@
 * With the "lsblk" utility or service command, I can view the 3 storage/disk partition I just configured 
 <img width="547" alt="review lsblk 9" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/3ff306a7-44ea-422a-a116-2008cecb9b26">
 
+## Step 4
 * To install 'lvm2 package to manage logical partition, I run the command "sudo yum install lvm2"
 <img width="936" alt="sudo yum install lvm2 10" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/2386ed33-1bdd-427d-9829-b3da0a8fb547">
 
 * I execute the command "sudo lvmdiskscan" command to check for available partition
 <img width="669" alt="sudo lumdiskscan 11" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/4e20f8e6-ca34-4458-a50f-ad896c4371b6">
 
+## Step 5
 * To successfully create pysical volume on all 3 storage, I execute the command "sudo pvcreate /dev/nvme0n1p2, sudo pvcreate /dev/nvme0n1p3, sudo pvcreate /dev/nvme0n1p4
 <img width="674" alt="pysical volume created 12" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/1c4dd4ee-a234-4cd4-a081-1b16a29702c7">
-
 
 *  I "sudo pvs" to confirm that my pysical volume was successful and running
 <img width="551" alt="pvs created 13" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/824c7939-9f7a-46e5-ab14-71b77dca47b7">
 
+## Step 6
 * I run the "vgcreate" utility/service to add all three pysical volumes to one single volume group "Webdata-vg" 
 <img width="872" alt="add all three volume to a volume group 14" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/cfc8aefb-d972-4f7c-8f21-a43eee88da51">
 
 *  I "sudo vgs" to verify group was successful and running
 <img width="588" alt="volume group running  using command 15" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/4b5d6727-1e77-43dd-bd19-66e5bcde19e0">
-  
+
+* 
+<img width="663" alt="two logical volumes created 16" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/1d1f11d4-80c4-4adb-9e8d-fb0e90f65e60">
+
+<img width="727" alt="sudo lvs running 17" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/9f75bfa6-cd19-437c-9100-830400a2f927">
+
+<img width="960" alt="Entire setup verified 18" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/8a93c5ad-bf78-401d-a0fb-9115a951a442">
+
+<img width="906" alt="format logical volumes 19" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/b9014f42-17a4-4169-b99c-96d17e99ca75">
+
+<img width="654" alt="create directory, store backup log data and mount LV 20" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/f203d2a1-c482-4e30-86d5-1bdc432a5d1b">
