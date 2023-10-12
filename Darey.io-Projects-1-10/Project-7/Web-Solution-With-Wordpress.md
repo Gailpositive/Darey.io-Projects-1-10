@@ -1,5 +1,5 @@
-#  WEB SOLUTION WORDPRESS WITH LVM (Logical Volume Mangement) STORAGE MANAGEMENT
-## Understanding Three Tier Architecture
+#  WEB SOLUTION WORDPRESS WITH LVM STORAGE MANAGEMENT AND CONFIGURING TO USE MYSQL DATABASE.
+## (Understanding Three Tier Architecture)
 ## Prerequisite: Provisioning Of Two AWS Ec2 Instances, Redhat Distribution For Web and Database Servers.
 
 
@@ -111,3 +111,26 @@ sudo lsblk"
 
 * Setup is running
 <img width="685" alt="verify setup with the command df -h 26" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/8f382bf2-1743-43b3-a17c-980f688c8af5">
+
+
+# PART 2: CONFIGURING MYSQL DATABASE
+
+* Step 1:
+* Spined up a Database Ec2 instance
+* Created 3 volume and attached to Database Server
+  
+Execute the command "lsblk" to view blocks attached to server
+<img width="477" alt="db1" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/5d99dbe2-d8c3-43ee-a42e-b0b69b25ce35">
+
+* Run "dh -f" to view all mounts and free space in server
+<img width="495" alt="db2" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/18af12c8-a244-425e-a0ce-27f5af3b9831">
+
+* Execute "sudo gdisk /dev/nvme0n1p4" to write partition on  disk
+<img width="517" alt="db3" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/ecc0846d-0465-4e02-8118-fc7f6dc1fe93">
+
+* Execute "sudo gdisk /dev/nvme0n1p3" to write partition on  disk
+<img width="691" alt="db4" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/45d7ff4b-e352-476c-a74c-2e56b27756ae">
+
+* Execute "sudo gdisk /dev/nvme0n1p2" to write partition on  disk
+<img width="730" alt="db5" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/c546aa46-c688-4661-8475-cbfb646a6cc2">
+ 
