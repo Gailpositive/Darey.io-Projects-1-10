@@ -115,7 +115,7 @@ sudo lsblk"
 
 # PART 2: CONFIGURING MYSQL DATABASE
 
-* Step 1:
+## Step 1:
 * Spined up a Database Ec2 instance
 * Created 3 volume and attached to Database Server
   
@@ -125,12 +125,49 @@ Execute the command "lsblk" to view blocks attached to server
 * Run "dh -f" to view all mounts and free space in server
 <img width="495" alt="db2" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/18af12c8-a244-425e-a0ce-27f5af3b9831">
 
-* Execute "sudo gdisk /dev/nvme0n1p4" to write partition on  disk
+## Step 2
+* Execute "sudo gdisk /dev/nvme0n1p4" to write partition on  disk 4
 <img width="517" alt="db3" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/ecc0846d-0465-4e02-8118-fc7f6dc1fe93">
 
-* Execute "sudo gdisk /dev/nvme0n1p3" to write partition on  disk
+* Execute "sudo gdisk /dev/nvme0n1p3" to write partition on  disk 3
 <img width="691" alt="db4" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/45d7ff4b-e352-476c-a74c-2e56b27756ae">
 
-* Execute "sudo gdisk /dev/nvme0n1p2" to write partition on  disk
+* Execute "sudo gdisk /dev/nvme0n1p2" to write partition on  disk 2
 <img width="730" alt="db5" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/c546aa46-c688-4661-8475-cbfb646a6cc2">
- 
+
+ *  Execute the "lsblk" command to view configured partition disk
+<img width="450" alt="db6" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/fb829efc-209f-40a9-976e-fcbb91b0dd9d">
+
+## Step 3
+* Installing "lvm2" packaging
+<img width="913" alt="db7" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/244a25b4-eac8-4d9d-b432-a8b58cdbbc45">
+
+  * checking available partition
+<img width="473" alt="db8" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/068775a0-6e6b-4a0e-a604-19d84b8bb31e">
+
+* Successfully run the "pvcreate" command to mark each of the 3 disk as pysical volumes to be use by LVM
+<img width="439" alt="db9" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/c75e7366-e100-4a42-806b-358e0395b79b">
+
+* Physical volumes successfully created
+<img width="409" alt="db10" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/167ec17e-4243-4b26-8a8f-e8a9aa7d038d">
+
+* Execute the "vgcreate" command to add a 3 physical volume to a volume group
+<img width="553" alt="db11" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/8baecb03-6da7-47b9-9b87-5816c35e6eed">
+
+* Created two logical volumes: "db-lv: and "logs-lv"
+<img width="514" alt="db12" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/e0610d92-df87-4ab8-85e0-f214cad44712">
+
+* Volume group successfully created
+<img width="668" alt="db13" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/33e7bb68-85ae-4ad5-9f22-86f28b949ab6">
+
+* Complete verification of setup of Volume Group
+<img width="544" alt="db14a" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/e992d85c-0b95-4b2c-8993-6e17a7f780de">
+
+* Complete verification of setup of db-lv
+<img width="552" alt="db14b" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/bcfa6ad9-2fa3-41d0-8ff8-53df11f15058">
+
+* Complete verification of setup of logs-lv
+<img width="797" alt="db14c" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/0607f1d5-2369-42d7-814c-077403e855a7">
+
+* Complete verification of setup of Physical volume
+<img width="644" alt="db14d" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/b4cd793e-c2c3-47fd-a931-3fe953235b13">
