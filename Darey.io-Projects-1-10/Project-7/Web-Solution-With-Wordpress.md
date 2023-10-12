@@ -148,12 +148,15 @@ Execute the command "lsblk" to view blocks attached to server
 * Successfully run the "pvcreate" command to mark each of the 3 disk as pysical volumes to be use by LVM
 <img width="439" alt="db9" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/c75e7366-e100-4a42-806b-358e0395b79b">
 
+## Step 4
 * Physical volumes successfully created
 <img width="409" alt="db10" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/167ec17e-4243-4b26-8a8f-e8a9aa7d038d">
 
+## Step 5
 * Execute the "vgcreate" command to add a 3 physical volume to a volume group
 <img width="553" alt="db11" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/8baecb03-6da7-47b9-9b87-5816c35e6eed">
 
+## Step 6
 * Created two logical volumes: "db-lv: and "logs-lv"
 <img width="514" alt="db12" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/e0610d92-df87-4ab8-85e0-f214cad44712">
 
@@ -171,3 +174,23 @@ Execute the command "lsblk" to view blocks attached to server
 
 * Complete verification of setup of Physical volume
 <img width="644" alt="db14d" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/b4cd793e-c2c3-47fd-a931-3fe953235b13">
+
+* "sudo "lsblk"
+<img width="646" alt="db15 sudo lsblk" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/6fe880d0-de65-428b-b4ca-9a3856ac7232">
+
+## Step 7
+* Formating Logical Volumes with ext4
+<img width="685" alt="db16" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/54e60a09-cf05-40f0-8595-da308686bdca">
+
+## Step 8
+* Create "/db" directory to store database files
+* Create "/home/recovery/logs" to backup log data
+* Mount "db-lv" on "/db"
+<img width="398" alt="db17" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/276d9ef3-04fb-4b23-a0a0-2d6eea55de0f">
+
+*  Backup files in the /var/log directory to /home/recovery/log
+<img width="824" alt="db19" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/a8858684-a7ef-49b3-8ca4-4f46f34259ac">
+
+* 
+<img width="832" alt="db20" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/a76c7abd-4fb1-43bd-99ac-e35413295082">
+
