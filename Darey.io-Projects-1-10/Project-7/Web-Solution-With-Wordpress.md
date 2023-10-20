@@ -113,7 +113,8 @@ sudo lsblk"
 <img width="685" alt="verify setup with the command df -h 26" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/8f382bf2-1743-43b3-a17c-980f688c8af5">
 
 
-# PART 2: CONFIGURING MYSQL DATABASE
+# PART 2: INSTALLING WORDPRESS AND CONFIGURING IT TO USE MYSQL DATABASE
+## PREPARING DATABASE ERVER
 
 ## Step 1:
 * Spined up a Database Ec2 instance
@@ -200,6 +201,7 @@ Execute the command "lsblk" to view blocks attached to server
 * and update it
 <img width="835" alt="db cont 1" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/632bd6ac-05ee-4391-8230-430bf702cb4d">
 
+## Step 9
 * To test the configuration, I execute the command
 * "sudo mount -a"
 * "sudo systemctl daemon-reload"
@@ -208,17 +210,48 @@ Execute the command "lsblk" to view blocks attached to server
 * Verify setup with the command "df -h"
  <img width="471" alt="db cont 3" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/417d8df6-674d-4694-8f3c-e926418d8835">
 
-* 
+## INSTALLING WORDPRESS ON MY WEB SERVER EC2
+* To update the repository, I execute the command
+* "sudo yum -y update"
 <img width="723" alt="db cont 4 sudo yum update" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/3296e583-e1c9-4299-bf45-0b25b8122000">
 
-* <img width="821" alt="db cont 5 install wget Apache and dependencies" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/f781141b-3fbf-40bc-8a2e-2817cfa58378">
+* To install wget, Apache and its dependencies, I execute the following commands,
+* "sudo yum -y install wget httpd php php-mysqlnd php-fpm php-json
+<img width="821" alt="db cont 5 install wget Apache and dependencies" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/f781141b-3fbf-40bc-8a2e-2817cfa58378">
 
-* <img width="795" alt="db cont 6 start Apache" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/9ca8a0a3-eef8-4850-9ff6-e8cb56be0e80">
+* To start Apache, I run the following commands
+* "sudo systemctl enable httpd"
+* "sudo systemctl start httpd"
+<img width="795" alt="db cont 6 start Apache" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/9ca8a0a3-eef8-4850-9ff6-e8cb56be0e80">
 
-* <img width="858" alt="db cont 7 install php and its dependencies" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/d42bf7e7-087a-41b3-a628-03dfc4f93065">
+* To install php and it dependencies, I run the following commands/script,
+* sudo yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+* sudo yum install yum-utils http://rpms.remirepo.net/enterprise/remi-release-8.rpm
+* sudo yum module list php
+* sudo yum module reset php
+* sudo yum module enable php:remi-7.4
+* sudo yum install php php-opcache php-gd php-curl php-mysqlnd
+* sudo systemctl start php-fpm
+* sudo systemctl enable php-fpm
+* setsebool -P httpd_execmem 1
+<img width="858" alt="db cont 7 install php and its dependencies" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/d42bf7e7-087a-41b3-a628-03dfc4f93065">
 
-* <img width="533" alt="db cont 8 restart Apache" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/537f6710-0460-40a1-8738-c884a560f384">
+* Restart Apache
+<img width="533" alt="db cont 8 restart Apache" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/537f6710-0460-40a1-8738-c884a560f384">
 
-* <img width="825" alt="db cont 9 download wordpress and copy to varwwwhtml" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/cbd9cb46-719e-4a3c-8296-e3ba03c3b0b8">
+* To download wordpress and copy it to /var/www/html, I execute the following commands
+* mkdir wordpress
+* cd wordpress
+* sudo wget http://wordpress.org/latest.tar.gz
+* sudo tar xzvf latest.tar.gz
+* sudo rm -rf latest.tar.gz
+* cp wordpress/wp-config-sample.php wordpress/wp-config.php
+* cp -R wordpress /var/www/html/
+ <img width="825" alt="db cont 9 download wordpress and copy to varwwwhtml" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/cbd9cb46-719e-4a3c-8296-e3ba03c3b0b8">
 
-* <img width="758" alt="db cont 10 configure SELinux policies" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/f7cae675-7ad5-459b-ab17-f28a43c38be1">
+* To config SELinux policies,I run the following scripts,
+*  sudo chown -R apache:apache /var/www/html/wordpress
+ * sudo chcon -t httpd_sys_rw_content_t /var/www/html/wordpress -R
+*  sudo setsebool -P httpd_can_network_connect=1
+
+
