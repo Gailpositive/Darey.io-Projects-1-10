@@ -191,6 +191,34 @@ Execute the command "lsblk" to view blocks attached to server
 *  Backup files in the /var/log directory to /home/recovery/log
 <img width="824" alt="db19" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/a8858684-a7ef-49b3-8ca4-4f46f34259ac">
 
-* 
+* "sudo blkid"
 <img width="832" alt="db20" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/a76c7abd-4fb1-43bd-99ac-e35413295082">
 
+## (Pls Take note: My AWS instances above had issues which was later recified. So, I started afresh from here but this time with two volumes instead of three. There are slight changes but the proceduces are same) 
+
+* "sudo vi /etc/fstab
+* and update it
+<img width="835" alt="db cont 1" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/632bd6ac-05ee-4391-8230-430bf702cb4d">
+
+* To test the configuration, I execute the command
+* "sudo mount -a"
+* "sudo systemctl daemon-reload"
+<img width="427" alt="db cont 2" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/418eb83a-42e6-4025-b645-5bdb8474fe83">
+
+* Verify setup with the command "df -h"
+ <img width="471" alt="db cont 3" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/417d8df6-674d-4694-8f3c-e926418d8835">
+
+* 
+<img width="723" alt="db cont 4 sudo yum update" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/3296e583-e1c9-4299-bf45-0b25b8122000">
+
+* <img width="821" alt="db cont 5 install wget Apache and dependencies" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/f781141b-3fbf-40bc-8a2e-2817cfa58378">
+
+* <img width="795" alt="db cont 6 start Apache" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/9ca8a0a3-eef8-4850-9ff6-e8cb56be0e80">
+
+* <img width="858" alt="db cont 7 install php and its dependencies" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/d42bf7e7-087a-41b3-a628-03dfc4f93065">
+
+* <img width="533" alt="db cont 8 restart Apache" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/537f6710-0460-40a1-8738-c884a560f384">
+
+* <img width="825" alt="db cont 9 download wordpress and copy to varwwwhtml" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/cbd9cb46-719e-4a3c-8296-e3ba03c3b0b8">
+
+* <img width="758" alt="db cont 10 configure SELinux policies" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/f7cae675-7ad5-459b-ab17-f28a43c38be1">
