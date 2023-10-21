@@ -255,3 +255,7 @@ Execute the command "lsblk" to view blocks attached to server
 *  sudo setsebool -P httpd_can_network_connect=1
 
 
+
+## NOTE TO DAREY.IO MENTOR:My status health has be 1/2 and sometimes blank for about a week now. So I cant keep waiting, I have to submit this half task so I can move to the next course on the learning part. I will  complete this project once the status health is back to 2/2. Thanks for understanding 
+
+
