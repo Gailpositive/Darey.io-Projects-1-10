@@ -119,3 +119,6 @@
 * sudo systemctl start nfs-server.service
 * sudo systemctl enable nfs-server.service
 * sudo systemctl status nfs-server.service
+
+
+# NOTE:Make  
