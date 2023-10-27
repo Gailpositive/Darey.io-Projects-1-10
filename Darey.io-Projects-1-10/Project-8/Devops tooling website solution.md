@@ -1,3 +1,4 @@
 # BUILDING A COMPREHENSIVE BUSINESS  WEBSITE SOLUTION AND INTEGRATION OF VARIOUS TOOLS AND TECHNOLOGIES.
 ## A THREE-TIER WEB APPLICATION ARCHITECTURE, A SINGLE REMOTE MYSQL DATABASE AND AN NFS SERVER AS SHARED BACKEND STORAGE FILES. 
 ## Solution Prerequisites: Infrastruction: AWS. Three-Tier Webservers Linux: Redhat.  Database Server: Ubuntu + Mysql (Preferable but I used Redhat).  Storage server: Redhat + NFS Server.  Programming language: PHP. Code Repository: Github.  
+# NOTE: Not all storage is suitable, hence it is important to know the suitable storage solution for every use case. Such as: what data will be stored, in what format, how this data will be accessed, by whom, from where, how frequently etc. Based on theses questions, I will be able to choose the right suitable storage for my solution. 
