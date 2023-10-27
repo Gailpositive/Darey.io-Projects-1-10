@@ -18,3 +18,16 @@
 * Mount 'lv-apps' on "/mnt/apps"
 * Mount 'lv-logs' on "/mnt/logs"
 * 
+
+ * Three volumes created and attached to an NFS  server
+ <img width="735" alt="three volumes attach 2" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/666f35fb-5c71-4e2b-8154-f9001c74be38">
+
+* Running the command "lsblk" to inspect the names of  three blocks devices attached to the server :"xvdf", "xvdg", "xvdh".
+<img width="530" alt="lsblk 3" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/d85bc123-8aac-47b0-bada-e0762669b0cb">
+  
+* Running the "ls/dev/ to view all three created blocks devices
+ <img width="815" alt="ls dev 4" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/f55f4bef-8eba-49e8-922c-7b72f790ec82">
+
+* With the "df-h" command, I can view all mounts and available space on my server
+<img width="445" alt="view available space in dick 5" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/7b955231-7cb6-4f0b-bb79-74bd0058e896">
+ 
