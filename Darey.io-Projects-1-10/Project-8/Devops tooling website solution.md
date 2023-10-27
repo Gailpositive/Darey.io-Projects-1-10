@@ -41,4 +41,5 @@
 <img width="659" alt="partition three updated and correct" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/f7b4238b-8f0c-4826-aa04-311c5c568fd7">
 
 * Executed the command "lsblk" to view a three partioned disks
-<img width="583" alt="partition one updated and correct" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/743f3bd7-7d32-4d1b-82a0-15f1e49783e1">
+<img width="522" alt="partition lsblk updated 4" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/01e6fd38-ea33-4b5d-a033-3d249539564b">
+
