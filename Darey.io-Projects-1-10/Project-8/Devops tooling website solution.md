@@ -43,3 +43,8 @@
 * Executed the command "lsblk" to view a three partioned disks
 <img width="522" alt="partition lsblk updated 4" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/01e6fd38-ea33-4b5d-a033-3d249539564b">
 
+* Installing lvms packaging
+<img width="852" alt="sudo yum install lvm2" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/83eb3122-1987-4f22-8770-22d20954ddd8">
+
+* Checking for available partition
+<img width="445" alt="sudo lvmdiskscan" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/eb05f419-8a71-45b0-a3aa-03fb9a6b247e">
