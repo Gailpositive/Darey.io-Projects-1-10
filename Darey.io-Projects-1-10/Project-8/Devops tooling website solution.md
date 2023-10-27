@@ -8,8 +8,8 @@
 * Block-level storage https://en.wikipedia.org/wiki/Block-level_storage and how it is used by cloud providers, and how it differs from Object Storage https://en.wikipedia.org/wiki/Object_storage.
 * On the example of AWS services https://dzone.com/articles/confused-by-aws-storage-options-s3-ebs-amp-efs-explained, understand the difference between Block storage, Object storage and Network file system. 
 
-## Creating a Business Website Using NFS For The Backend File Storage.
-## STEP 1:PREPARE NFS SERVER
+## STEP 1: Creating a Business Website Using NFS For The Backend File Storage.
+# PREPARE NFS SERVER
 * Spin up AWS redhat instance
 * Configure and attach 3 logical volumes (LVM) on the server: "lv-opt", "lv-apps", "lv-logs".
 * Format the disk as "xfs"
@@ -110,3 +110,12 @@
 
 * Setup running
 <img width="572" alt="verify set running df -h" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/f0bbd966-b821-40b9-867c-3ba8857552a0">
+
+
+## STEP 2: INSTALLING AND CONFIGURE NFS Server
+* Run the following script:
+* sudo yum -y update
+* sudo yum install nfs-utils -y
+* sudo systemctl start nfs-server.service
+* sudo systemctl enable nfs-server.service
+* sudo systemctl status nfs-server.service
