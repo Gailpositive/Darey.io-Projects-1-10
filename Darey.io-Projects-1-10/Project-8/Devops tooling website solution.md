@@ -55,8 +55,20 @@
 * PV has been created
  <img width="378" alt="sudo pvs" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/b04cd710-681e-4b1c-9ba3-38b9840d8ead">
  
-* 3 logical volumes created.lv-apps stores website data. lv-logs stores log data, lv-opt stores ..... data.
+* Three logical volumes created.lv-apps stores website data. lv-logs stores log data, lv-opt stores ..... data.
 <img width="493" alt="sudo lvcreate" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/c9ade003-6bd5-409e-b514-de3606ba8bcf">
 
 * Logical volumes created and running.
 <img width="600" alt="sudo lvs" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/70174253-5a51-4084-8ea6-96e1a78823e1">
+
+* Verifying the entire set up with the command "sudo vgdisplay -v #view complete setup - VG, PV, and LV"
+<img width="743" alt="verify entire set up 1" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/c180afc5-bb70-4931-8aa7-5f61b36fee21">
+
+<img width="772" alt="verify entire set up 2" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/59a10e02-128c-498d-b8a2-8d095c1f1b2e">
+
+<img width="868" alt="verify entire set up 3 n4" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/3c808ee8-5a71-471f-aef3-0b9e74631b32">
+
+<img width="675" alt="verify entire set up 5" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/1f83b924-f4f9-4017-a980-e59075484d59">
+
+* "sudo lsbik"
+<img width="578" alt="lsbik comes after mounting LV directories" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/f7cae3a0-b0ca-488a-863c-70755d63af96">
