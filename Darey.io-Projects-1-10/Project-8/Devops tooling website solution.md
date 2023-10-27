@@ -95,4 +95,18 @@
 *  Run "sudo rsync -av /home/recovery/logs/. /var/log" to restore log files back into "/var/log directory
 <img width="666" alt="This process comes immediately before mounting" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/46bcb384-57fd-4471-ad21-4508982d9854">
 
+* "lsblk"
+<img width="666" alt="This process comes immediately before mounting" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/bce52bee-3a97-4b41-a2b2-324a123ee51c">
 
+* "sudo blkid"
+<img width="806" alt="sudo blkid," src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/2fb0f9cb-cc64-4827-8133-03c6110b08cf">
+
+* Update "/etc/fstab" using my UUID
+* "sudo vi /etc/fstab"
+<img width="681" alt="sudo vi etc fstab" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/d0c6ede9-0a36-4bca-9cb3-ae09380af1c6">
+
+* Test the config and reload deamon
+<img width="513" alt="sudo mount to test config and reload deamon 2" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/8779efe7-b7f9-42b4-86e3-d2deb828a355">
+
+* Setup running
+<img width="572" alt="verify set running df -h" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/f0bbd966-b821-40b9-867c-3ba8857552a0">
