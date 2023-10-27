@@ -55,3 +55,8 @@
 * PV has been created
  <img width="378" alt="sudo pvs" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/b04cd710-681e-4b1c-9ba3-38b9840d8ead">
  
+* 3 logical volumes created.lv-apps stores website data. lv-logs stores log data, lv-opt stores ..... data.
+<img width="493" alt="sudo lvcreate" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/c9ade003-6bd5-409e-b514-de3606ba8bcf">
+
+* Logical volumes created and running.
+<img width="600" alt="sudo lvs" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/70174253-5a51-4084-8ea6-96e1a78823e1">
