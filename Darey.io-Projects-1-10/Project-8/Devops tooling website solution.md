@@ -30,4 +30,15 @@
 
 * With the "df-h" command, I can view all mounts and available space on my server
 <img width="445" alt="view available space in dick 5" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/7b955231-7cb6-4f0b-bb79-74bd0058e896">
- 
+
+* To partition the three disks individually, I run the command 'sudo fdisk /dev/xvdf
+ <img width="624" alt="partition two updated and correct" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/c73618fa-6a83-40df-b9ab-0ef3fcc33ef9">
+
+* On the second disk,  I run the command 'sudo fdisk /dev/xvdg
+<img width="583" alt="partition one updated and correct" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/743f3bd7-7d32-4d1b-82a0-15f1e49783e1">
+
+* And on the three disk,  I run the command 'sudo fdisk /dev/xvdh
+<img width="659" alt="partition three updated and correct" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/f7b4238b-8f0c-4826-aa04-311c5c568fd7">
+
+* Executed the command "lsblk" to view a three partioned disks
+<img width="583" alt="partition one updated and correct" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/743f3bd7-7d32-4d1b-82a0-15f1e49783e1">
