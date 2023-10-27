@@ -7,3 +7,14 @@
 * Storage area network (SAN) https://en.wikipedia.org/wiki/Storage_area_network, and related protocol like NFS(s), FTP, SMB, iSCSI.
 * Block-level storage https://en.wikipedia.org/wiki/Block-level_storage and how it is used by cloud providers, and how it differs from Object Storage https://en.wikipedia.org/wiki/Object_storage.
 * On the example of AWS services https://dzone.com/articles/confused-by-aws-storage-options-s3-ebs-amp-efs-explained, understand the difference between Block storage, Object storage and Network file system. 
+
+## Creating a Business Website Using NFS For The Backend File Storage.
+## STEP 1:PREPARE NFS SERVER
+* Spin up AWS redhat instance
+* Configure and attach 3 logical volumes (LVM) on the server: "lv-opt", "lv-apps", "lv-logs".
+* Format the disk as "xfs"
+* Create mount points on: "/mnt"
+* Mount 'lv-opt' on "/mnt/opt"
+* Mount 'lv-apps' on "/mnt/apps"
+* Mount 'lv-logs' on "/mnt/logs"
+* 
