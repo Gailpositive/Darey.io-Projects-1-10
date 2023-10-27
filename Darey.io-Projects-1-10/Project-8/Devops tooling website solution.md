@@ -43,7 +43,7 @@
 * Executed the command "lsblk" to view a three partioned disks
 <img width="522" alt="partition lsblk updated 4" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/01e6fd38-ea33-4b5d-a033-3d249539564b">
 
-* Installing lvms packaging
+* Installing lvm2 packaging
 <img width="852" alt="sudo yum install lvm2" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/83eb3122-1987-4f22-8770-22d20954ddd8">
 
 * Checking for available partition
@@ -54,8 +54,15 @@
 
 * PV has been created
  <img width="378" alt="sudo pvs" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/b04cd710-681e-4b1c-9ba3-38b9840d8ead">
+
+* Use "pvcreate" to add all three PV to one  volumes group called "webdata-vg"
+<img width="544" alt="df -h sudo mount" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/2fa10a0a-b72f-4281-90c0-b4653df943d1">
+
+* "VG successfully created
+<img width="579" alt="webdata-vg created" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/8d03247d-99f0-4fce-9a76-097155f65c3b">
+
  
-* Three logical volumes created.lv-apps stores website data. lv-logs stores log data, lv-opt stores ..... data.
+* Three logical volumes created: lv-apps stores website data. lv-logs stores log data, lv-opt stores ..... data.
 <img width="493" alt="sudo lvcreate" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/c9ade003-6bd5-409e-b514-de3606ba8bcf">
 
 * Logical volumes created and running.
@@ -72,3 +79,20 @@
 
 * "sudo lsbik"
 <img width="578" alt="lsbik comes after mounting LV directories" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/f7cae3a0-b0ca-488a-863c-70755d63af96">
+
+* Format logical volumes with "ext4" filesystem
+ <img width="637" alt="sudo mkfs -t xfs devwebdata-vglv-apps" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/33a51f25-af82-4157-87b1-0ea2e660b270">
+
+* Create mount point "/mnt"
+<img width="486" alt="create mounts point" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/26fae9a5-72e4-48df-a81a-15b664d51226">
+
+* Create directory to store web files and recovery log to back up log data
+* Can also use "sudo mkdir -p /var/www/html
+  <img width="420" alt="create mnt directory to store to store website file and create recovry files" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/e034fa96-7741-4b0a-9917-216af30e0d9b">
+
+* Mount on all three LV on "/mnt"
+*  and use the rsyn utility tool to backup all files in the log directory "/var/log" into the "/home/recovery/log"
+*  Run "sudo rsync -av /home/recovery/logs/. /var/log" to restore log files back into "/var/log directory
+<img width="666" alt="This process comes immediately before mounting" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/46bcb384-57fd-4471-ad21-4508982d9854">
+
+
