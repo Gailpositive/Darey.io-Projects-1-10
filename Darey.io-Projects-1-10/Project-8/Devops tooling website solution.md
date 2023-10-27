@@ -48,3 +48,10 @@
 
 * Checking for available partition
 <img width="445" alt="sudo lvmdiskscan" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/eb05f419-8a71-45b0-a3aa-03fb9a6b247e">
+
+* Employing the "pvcreate" tool to designate each of the three disks as physical volumes for utilization by LVM
+<img width="488" alt="pvcreate" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/33f822ef-982e-43ea-891f-8c85f3d1e8ef">
+
+* PV has been created
+ <img width="378" alt="sudo pvs" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/b04cd710-681e-4b1c-9ba3-38b9840d8ead">
+ 
