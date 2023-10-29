@@ -195,18 +195,18 @@
 
 * To Mount "/var/www" and target NFS export for "Apps", I execute the command:
 * sudo mkdir /var/www
-<img width="810" alt="step 4 8 preparing the webserver, just before forking darey repo" src="https://github.com/Gailpositive/Dev<Ops-Projects-1-10/assets/111061512/066512ef-0bb9-41cf-bb0d-fa1c242ab094">
-
-
 * sudo mount -t nfs -o rw,nosuid <NFS-Server-Private-IP-Address>:/mnt/apps /var/www
 
+* Verify NFS is mounted correctly running the command "dh-f"
+* Ensure changes persist after rebooting
 
 
-
-
+* sudo vi /etc/fstab
+<img width="305" alt="step 4 9 tooling" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/7721b781-a267-4af6-b10a-4f33a5b0736c">
 
 * "ls" mysql to check for "tooling"
-<img width="305" alt="step 4 9 tooling" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/6a618657-6974-4ab0-89c9-f3171c2916e9">
+
+
 
 * "cd tooling"
 <img width="633" alt="step 4 10 cp html file to var www html" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/0b4d53f2-0836-458a-bcad-8187e6064025">
@@ -214,5 +214,6 @@
 * I run the command "sudo systemctl status httpd" to check mysql status and it is dead/inactive
 * I run ti the following command to start it "sudo systemctl start status"
 * And "sudo systemctl status httpd" to check status, this time is it active and running
-* 
 <img width="748" alt="step 4 11 resart httpd and disable setenforce 0" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/f626d1e3-6f97-408c-a3c8-95e0b2c68956">
+
+<img width="869" alt="step 4 12 webserver active" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/d54daac0-69d3-4e30-905e-c1747f7682a5">
