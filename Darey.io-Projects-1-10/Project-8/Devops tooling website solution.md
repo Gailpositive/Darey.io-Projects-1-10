@@ -18,6 +18,7 @@
 ## STEP 1: Creating a Business Website Using NFS For The Backend File Storage.
 # PREPARE NFS SERVER
 * Spin up AWS redhat instance
+* Create security protocol and point it to "TCP 2049"
 * Configure and attach 3 logical volumes (LVM) on the server: "lv-opt", "lv-apps", "lv-logs".
 * Format the disk as "xfs"
 * Create mount points on: "/mnt"
@@ -95,7 +96,7 @@
 
 * Create directory to store web files and recovery log to back up log data
 * Can also use "sudo mkdir -p /var/www/html
-  <img width="420" alt="create mnt directory to store to store website file and create recovry files" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/e034fa96-7741-4b0a-9917-216af30e0d9b">
+<img width="420" alt="create mnt directory to store to store website file and create recovry files" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/e034fa96-7741-4b0a-9917-216af30e0d9b">
 
 * Mount on all three LV on "/mnt"
 *  and use the rsyn utility tool to backup all files in the log directory "/var/log" into the "/home/recovery/log"
