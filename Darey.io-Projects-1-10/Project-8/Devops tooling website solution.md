@@ -178,6 +178,27 @@
 <img width="919" alt="mysql 3 security tcp" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/47800ee4-7f2d-4969-9e4c-1fe9aa67327b">
 
 
+## STEP 3: PREPARING THE WEBSERVERS
+* Next, I will be configuing NFS client on all three web servers, this is compulsory
+* Deploying a "tooling" application to our webservers into a shared "NFS" folder
+* Config all three web servers to work with one database 
+* ## NOTE: Ensure all three webservers can server the same content from the shared storage solution, in this case: Mysql database and NFS server
+* ## The databse can be accessed by multiple clients for "read" and "write"
+* ## To save files that webservers will use, I will utilize "NFS" and mount previously created logical volumes"lv-apps"to the folder where Apache stores files to be serve to the user "/var/www" .
+* ## This approach will make the webservers stateless, this means I will be able to add new ones or remove them whenever needed, and the integrity of the data in the both the database and NFS will be preserve.
+
+* Launch a redhat EC2 instance
+* Install NFS client with the command:
+* "sudo yum install nfs-utils nfs4-acl-tools -y"
+<img width="859" alt="client server 1 installation" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/265ff166-8a10-4034-88da-ad064df2ba2b">
+
+
+* To Mount "/var/www" and target NFS export for "Apps", I execute the command:
+* sudo mkdir /var/www
+<img width="810" alt="step 4 8 preparing the webserver, just before forking darey repo" src="https://github.com/Gailpositive/Dev<Ops-Projects-1-10/assets/111061512/066512ef-0bb9-41cf-bb0d-fa1c242ab094">
+
+
+* sudo mount -t nfs -o rw,nosuid <NFS-Server-Private-IP-Address>:/mnt/apps /var/www
 
 
 
