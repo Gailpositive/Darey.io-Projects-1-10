@@ -196,25 +196,52 @@
 * To Mount "/var/www" and target NFS export for "Apps", I execute the command:
 * sudo mkdir /var/www
 * sudo mount -t nfs -o rw,nosuid <NFS-Server-Private-IP-Address>:/mnt/apps /var/www
-
 * Verify NFS is mounted correctly running the command "dh-f"
 * Ensure changes persist after rebooting
+<img width="544" alt="df -h sudo mount" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/d9580ecb-639f-4f30-ae4b-85113125a4e9">
 
 
 * sudo vi /etc/fstab
 <img width="810" alt="step 4 8 preparing the webserver, just before forking darey repo" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/19f75b29-000c-4eb6-a1b5-4481d94c01b8">
  
 
-* "ls" mysql to check for "tooling"
+
+* I run the command "sudo systemctl status httpd" to check mysql status and it is dead/inactive
+* I run ti the following command to start it "sudo systemctl start status"
+* And "sudo systemctl status httpd" to check status, this time is it active and running
+<img width="675" alt="step 4 18 php and dependencies installed, active and running" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/065ffaec-d502-4792-b847-147580ec675f">
+
+* Webserver is active on browser
+<img width="869" alt="step 4 12 webserver active" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/d54daac0-69d3-4e30-905e-c1747f7682a5">
+
+## STEP 4:INSTALL REMI'S REPO , APACHE AND PHP
+* sudo yum install httpd -y
+* sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+* sudo dnf install dnf-utils http://rpms.remirepo.net/enterprise/remi-release-9.rpm
+* sudo dnf module reset php
+* sudo dnf module enable php:remi-7.4
+* sudo dnf install php php-opcache php-gd php-curl php-mysqlnd
+* sudo systemctl start php-fpm
+* sudo systemctl enable php-fpm
+* setsebool -P httpd_execmem 1
+
+## Repeat same steps for other two server
+* Verify Apach files and directories are available in the webserver in /var/www
+* And also on the NFS server in /mnt/apps
+* If I see same file, it means NFS is properly mounted
+* create a touch test.txt from one webserver and check that the same file is accessible from another webserver
+
+* Create log folder for apache on the webserver and mount it to NFS server export's for log. Verify it was mounted succefuly with the command "df -h", reboot to ensure it is properly mounted.
+
+* Fork tooling code source from"Darey.io guthub account" to my github account
+* "ls"  command  "tooling"
 <img width="305" alt="step 4 9 tooling" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/7721b781-a267-4af6-b10a-4f33a5b0736c">
 
 
 * "cd tooling"
 <img width="633" alt="step 4 10 cp html file to var www html" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/0b4d53f2-0836-458a-bcad-8187e6064025">
 
-* I run the command "sudo systemctl status httpd" to check mysql status and it is dead/inactive
-* I run ti the following command to start it "sudo systemctl start status"
-* And "sudo systemctl status httpd" to check status, this time is it active and running
-<img width="748" alt="step 4 11 resart httpd and disable setenforce 0" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/f626d1e3-6f97-408c-a3c8-95e0b2c68956">
+* Deploy the tooling website code to the webserver and ensure "html" from the reposotory is is deployed to /var/www/html
+<img width="633" alt="step 4 10 cp html file to var www html" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/211e420e-05ae-41c2-a728-fb88ec087bfa">
 
-<img width="869" alt="step 4 12 webserver active" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/d54daac0-69d3-4e30-905e-c1747f7682a5">
+* Open security group port 80
