@@ -202,10 +202,11 @@
 
 
 * sudo vi /etc/fstab
-<img width="305" alt="step 4 9 tooling" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/7721b781-a267-4af6-b10a-4f33a5b0736c">
+<img width="810" alt="step 4 8 preparing the webserver, just before forking darey repo" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/19f75b29-000c-4eb6-a1b5-4481d94c01b8">
+ 
 
 * "ls" mysql to check for "tooling"
-
+<img width="305" alt="step 4 9 tooling" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/7721b781-a267-4af6-b10a-4f33a5b0736c">
 
 
 * "cd tooling"
