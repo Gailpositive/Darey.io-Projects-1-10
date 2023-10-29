@@ -168,6 +168,21 @@
 * If it refused to connect due to socket error them do this:
 * sudo service mysqld start( This will display redirecting to /bin/systemctl start mysqld.service)
 * sudo systemctl status mysqld
+<img width="731" alt="mysql 1" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/5cc43dc5-e61f-435c-9635-4993c3346a50">
+
+* Database "tooling" created
+<img width="641" alt="mysql 2 tooling" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/785dd097-f297-4eb9-b0e9-3163beca1654">
+<img width="541" alt="mysql 4 database" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/ffedcfc2-917f-49b3-a4aa-8a59c01c477b">
+
+* Database security group created and set at:Mysql/Aurora, Port range:3306, CICR Block:NFS IP address  
+<img width="919" alt="mysql 3 security tcp" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/47800ee4-7f2d-4969-9e4c-1fe9aa67327b">
+
+
+
+
+
+
+
 
 * "ls" mysql to check for "tooling"
 <img width="305" alt="step 4 9 tooling" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/6a618657-6974-4ab0-89c9-f3171c2916e9">
