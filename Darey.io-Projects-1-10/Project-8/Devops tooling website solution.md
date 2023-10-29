@@ -150,7 +150,11 @@
 * sudo exportfs -arv
 <img width="396" alt="step 4 nfs 6" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/e07d5980-5450-4117-97ea-de1ed1ce55e1">
 
+*  Check the NFS port , open and add inbound rules
+*  Run this command "rpcinfo -p | grep nfs"
+<img width="384" alt="step 4 7 check which nfs ports openning" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/97511502-0932-45eb-99ed-da49a757a285">
 
+* In order for NFS to be accessible from my client, I must also open the three webservers sercurity group and create the three inbound rules:"TCP 111", "UDP 111" and "UDP 2049"
+<img width="709" alt="step 4 nfs 8 theree security port openned" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/435f5742-c375-4680-9618-625ebffeb121">
 
-
-  
+## STEP THREE: CONFIGURE BACKEND MYSQL-DATABASE AS PART OF THREE TIER ARCHITECTURE   
