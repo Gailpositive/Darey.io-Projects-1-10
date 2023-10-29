@@ -120,13 +120,37 @@
 <img width="572" alt="verify set running df -h" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/f0bbd966-b821-40b9-867c-3ba8857552a0">
 
 
-## STEP 2: INSTALLING AND CONFIGURE NFS Server
+## STEP 2: INSTALLING AND CONFIGURE NFS Server TO START ON REBOOTH AND ENABLED
 * Run the following script:
 * sudo yum -y update
 * sudo yum install nfs-utils -y
 * sudo systemctl start nfs-server.service
 * sudo systemctl enable nfs-server.service
 * sudo systemctl status nfs-server.service
+<img width="761" alt="step 4 nfs server installation" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/969ee11e-9255-4615-bc9c-f783440747ad">
+
+* Export the mount for webservers "subnet cidr" to conect as clients.
+* Install all three webserevrs inside the same subnet
+* In my NFS server, I locate "Networking" and open a sub link as seen in the two images below
+* ## NOTE: But in production setup, I will seperate each tier inside each own subnet cidr for high level of security.
+<img width="912" alt="step 4 nfs 2" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/9e80374a-3a0a-4423-a238-ae9f2d15f373">
+
+<img width="907" alt="step 4 nfs 3" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/00aac8a6-8ffe-4c56-9a0b-f4ab91e4dac4">
+
+* Set up permmision to allow to allow all three webservers to write, read and execute files on NFS
+<img width="614" alt="step 4 nfs 4" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/d584e9e2-b223-4718-aa54-5d66218cee87">
+
+* Configure access to NFS for clients within same subnet(example of Subnet CIDR -172.31.32.0/20
+* First,  "sudo vi /etc/exports" the following 
+* /mnt/apps 172.31.32.0/20(rw,sync,no_all_squash,no_root_squash)
+* /mnt/logs 172.31.32.0/20(rw,sync,no_all_squash,no_root_squash)
+* /mnt/opt 172.31.32.0/20(rw,sync,no_all_squash,no_root_squash)
+<img width="621" alt="step 4 nfs 5 sudo vi etc exports" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/183f6ba2-4082-4621-819a-f7fdc6eb2fc4">
+
+* sudo exportfs -arv
+<img width="396" alt="step 4 nfs 6" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/e07d5980-5450-4117-97ea-de1ed1ce55e1">
 
 
-# NOTE:Make  
+
+
+  
