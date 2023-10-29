@@ -162,4 +162,21 @@
 * Create a database and name it "tooling"
 * Create a database user and name it "webaccess"
 * Create permission to "webaccess" user on "tooling" database to do anything only from the webservers "subnet cidr"
-*  
+* Mysqld installation script on redhat:
+*  sudo yum install mysql-server -y
+* sudo mysql
+* If it refused to connect due to socket error them do this:
+* sudo service mysqld start( This will display redirecting to /bin/systemctl start mysqld.service)
+* sudo systemctl status mysqld
+
+* "ls" mysql to check for "tooling"
+<img width="305" alt="step 4 9 tooling" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/6a618657-6974-4ab0-89c9-f3171c2916e9">
+
+* "cd tooling"
+<img width="633" alt="step 4 10 cp html file to var www html" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/0b4d53f2-0836-458a-bcad-8187e6064025">
+
+* I run the command "sudo systemctl status httpd" to check mysql status and it is dead/inactive
+* I run ti the following command to start it "sudo systemctl start status"
+* And "sudo systemctl status httpd" to check status, this time is it active and running
+* 
+<img width="748" alt="step 4 11 resart httpd and disable setenforce 0" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/f626d1e3-6f97-408c-a3c8-95e0b2c68956">
