@@ -158,3 +158,8 @@
 <img width="709" alt="step 4 nfs 8 theree security port openned" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/435f5742-c375-4680-9618-625ebffeb121">
 
 ## STEP THREE: CONFIGURE BACKEND MYSQL-DATABASE AS PART OF THREE TIER ARCHITECTURE   
+* Install Mysql
+* Create a database and name it "tooling"
+* Create a database user and name it "webaccess"
+* Create permission to "webaccess" user on "tooling" database to do anything only from the webservers "subnet cidr"
+*  
