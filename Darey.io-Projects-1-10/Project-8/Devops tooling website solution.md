@@ -245,3 +245,22 @@
 <img width="633" alt="step 4 10 cp html file to var www html" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/211e420e-05ae-41c2-a728-fb88ec087bfa">
 
 * Open security group port 80
+
+* To disables "sudo sentenforce 0"
+* sudo vi /etc/sysconfig/selinux
+* * Set selinux Disabled
+<img width="930" alt="new1" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/b580ec94-ebdf-4ef6-93e1-7d1c0486da0e">
+
+* Quikly go the database, do some config to make sure of the connection
+ <img width="491" alt="step 4 15 redhat mysql conf file" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/c85d4fb8-e0f6-4ef3-a439-33d1debb2cf1">
+
+ * Back on the webserver, 
+* Update the website configuration to to connect to the database in /var/www/html/functions.php
+* sudo vi /va/www/html/functions.php
+
+<img width="906" alt="new5 database php" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/c5ca0a20-e72f-43e9-8ca2-59be7ba9b957">
+
+<img width="673" alt="step 4 13 config function" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/9703196a-8d7f-4271-b832-cb789905d421">
+* Make sure mysql-y is installed
+* cd "tooling"
+* mysql-h(private db server ip -u webaccess -p tooling < tooling -db.sql
