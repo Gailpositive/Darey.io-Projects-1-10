@@ -240,13 +240,14 @@
 <img width="305" alt="step 4 9 tooling" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/7721b781-a267-4af6-b10a-4f33a5b0736c">
 
 
-* "cd tooling"
 9, Deploy the tooling website code to the webserver and ensure "html" from the reposotory is is deployed to /var/www/html
+* "cd tooling"
 * sudo cp -R html/. /var/www/html
+* If I created the "text.txt" file earlier, it will display here along the html
 <img width="633" alt="step 4 10 cp html file to var www html" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/0b4d53f2-0836-458a-bcad-8187e6064025">
 
 * Open security group port 80
-* 
+  
 *Next,  disables sentenforce
 * "sudo sentenforce 0"
 * sudo vi /etc/sysconfig/selinux
