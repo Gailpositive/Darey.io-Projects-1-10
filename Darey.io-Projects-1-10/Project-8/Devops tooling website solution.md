@@ -258,10 +258,9 @@
 * "mysql-h < private db server ip -u webaccess -p tooling < tooling -db.sql" ( injecting the tooling-db-sql schema to the database server that I provided the details for (IP address, password and the user)
 * Open the security port to: "MYSQL/AURORA" 
  <img width="742" alt="new6 security port" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/0720eb71-f69e-47a7-b33d-ac7f7de8f491">
-<img width="871" alt="new7 mysql ip adress webaccess" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/c57f10ad-c292-4230-9754-c34fc5f0e89e">
+<img width="871" alt="new7 mysql ip adress webaccess" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/8a8ce8a6-625e-42fa-b290-8a7793126973">
 
 
- 
 * Quickly go the database, and do some config to make sure of the connection
 * sudo vi /etc/my.cnf
 * Change the binding address  to "0.0.0.0"
