@@ -187,16 +187,16 @@
 * ## To save files that webservers will use, I will utilize "NFS" and mount previously created logical volumes"lv-apps"to the folder where Apache stores files to be serve to the user "/var/www" .
 * ## This approach will make the webservers stateless, this means I will be able to add new ones or remove them whenever needed, and the integrity of the data in the both the database and NFS will be preserve.
 
-* Launch a redhat EC2 instance
-* Install NFS client with the command:
+1,  Launch a redhat EC2 instance
+2, Install NFS client with the command:
 * "sudo yum install nfs-utils nfs4-acl-tools -y"
 <img width="859" alt="client server 1 installation" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/265ff166-8a10-4034-88da-ad064df2ba2b">
 
 
-* To Mount "/var/www" and target NFS export for "Apps", I execute the command:
+3, To Mount "/var/www" and target NFS export for "Apps", I execute the command:
 * sudo mkdir /var/www
 * sudo mount -t nfs -o rw,nosuid <NFS-Server-Private-IP-Address>:/mnt/apps /var/www
-* Verify NFS is mounted correctly running the command "dh-f"
+4, Verify NFS is mounted correctly running the command "dh-f"
 * Ensure changes persist after rebooting
 <img width="544" alt="df -h sudo mount" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/d9580ecb-639f-4f30-ae4b-85113125a4e9">
 
@@ -214,7 +214,7 @@
 * Webserver is active on browser
 <img width="869" alt="step 4 12 webserver active" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/d54daac0-69d3-4e30-905e-c1747f7682a5">
 
-## STEP 4:INSTALL REMI'S REPO , APACHE AND PHP
+## 5, STEP 4:INSTALL REMI'S REPO , APACHE AND PHP
 * sudo yum install httpd -y
 * sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
 * sudo dnf install dnf-utils http://rpms.remirepo.net/enterprise/remi-release-9.rpm
@@ -225,27 +225,26 @@
 * sudo systemctl enable php-fpm
 * setsebool -P httpd_execmem 1
 
-## Repeat same steps for other two server
+## 6, Repeat same steps for other two server
 * Verify Apach files and directories are available in the webserver in /var/www
 * And also on the NFS server in /mnt/apps
 * If I see same file, it means NFS is properly mounted
 * create a touch test.txt from one webserver and check that the same file is accessible from another webserver
 
-* Create log folder for apache on the webserver and mount it to NFS server export's for log. Verify it was mounted succefuly with the command "df -h", reboot to ensure it is properly mounted.
+7,  Create log folder for apache on the webserver and mount it to NFS server export's for log. Verify it was mounted succefuly with the command "df -h", reboot to ensure it is properly mounted.
 
-* Fork tooling code source from"Darey.io guthub account" to my github account
+8,  Fork tooling code source from"Darey.io guthub account" to my github account
 * "ls"  command  "tooling"
 <img width="305" alt="step 4 9 tooling" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/7721b781-a267-4af6-b10a-4f33a5b0736c">
 
 
 * "cd tooling"
-* Deploy the tooling website code to the webserver and ensure "html" from the reposotory is is deployed to /var/www/html
+9, Deploy the tooling website code to the webserver and ensure "html" from the reposotory is is deployed to /var/www/html
 * sudo cp -R html/. /var/www/html
 <img width="633" alt="step 4 10 cp html file to var www html" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/0b4d53f2-0836-458a-bcad-8187e6064025">
 
-
 * Open security group port 80
-
+* 
 *Next,  disables sentenforce
 * "sudo sentenforce 0"
 * sudo vi /etc/sysconfig/selinux
@@ -278,13 +277,13 @@
  <img width="491" alt="step 4 15 redhat mysql conf file" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/c85d4fb8-e0f6-4ef3-a439-33d1debb2cf1">
 
 
- * Back on the webserver 1, 
+ 9,  Back on the webserver 1, 
 * Update the website configuration to to connect to the database in /var/www/html/functions.php
 * sudo vi /var/www/html/functions.php
 
 <img width="906" alt="new5 database php" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/c5ca0a20-e72f-43e9-8ca2-59be7ba9b957">
 
-* Website openned in broswer
+10, Website openned in broswer
 <img width="941" alt="new10 admin admin as both user name and passwird in the last page" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/fbbd0d5e-a645-4f04-9aa2-ca0217ce73a0">
 
 # "THE END'
