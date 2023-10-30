@@ -234,6 +234,8 @@
 7,  Create log folder for apache on the webserver and mount it to NFS server export's for log. Verify it was mounted succefuly with the command "df -h", reboot to ensure it is properly mounted.
 
 8,  Fork tooling code source from"Darey.io guthub account" to my github account
+* First install git
+* use the "git clone" command to clone the github "http repo"
 * "ls"  command  "tooling"
 <img width="305" alt="step 4 9 tooling" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/7721b781-a267-4af6-b10a-4f33a5b0736c">
 
