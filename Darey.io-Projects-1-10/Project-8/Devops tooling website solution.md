@@ -260,6 +260,10 @@
  <img width="742" alt="new6 security port" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/0720eb71-f69e-47a7-b33d-ac7f7de8f491">
 <img width="871" alt="new7 mysql ip adress webaccess" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/8a8ce8a6-625e-42fa-b290-8a7793126973">
 
+* "cd tooling"
+* "mysql -h 172.31.25.99 -u webaccess -p tooling < tooling-db.sql"
+* Enter "mypassword"
+<img width="663" alt="new8 tooling mypassword" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/26f7dcf8-2963-411b-a0a3-3e319b3518ca">
 
 * Quickly go the database, and do some config to make sure of the connection
 * sudo vi /etc/my.cnf
