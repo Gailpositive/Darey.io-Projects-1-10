@@ -265,11 +265,17 @@
 * Enter "mypassword"
 <img width="663" alt="new8 tooling mypassword" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/26f7dcf8-2963-411b-a0a3-3e319b3518ca">
 
+* sudo mysql
+* Follow the image
+ <img width="797" alt="new9 show database" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/83de3fc1-0e64-4782-ae1c-ec0921c49ab3">
+
+
+
 * Quickly go the database, and do some config to make sure of the connection
 * sudo vi /etc/my.cnf
 * Change the binding address  to "0.0.0.0"
 * Restart the system, "sudo systemctl restart mysqld"
-*  <img width="491" alt="step 4 15 redhat mysql conf file" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/c85d4fb8-e0f6-4ef3-a439-33d1debb2cf1">
+ <img width="491" alt="step 4 15 redhat mysql conf file" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/c85d4fb8-e0f6-4ef3-a439-33d1debb2cf1">
 
 
  * Back on the webserver 1, 
