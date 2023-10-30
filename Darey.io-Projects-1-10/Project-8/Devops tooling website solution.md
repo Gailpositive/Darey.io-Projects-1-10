@@ -284,3 +284,7 @@
 
 <img width="906" alt="new5 database php" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/c5ca0a20-e72f-43e9-8ca2-59be7ba9b957">
 
+* Website openned in broswer
+<img width="941" alt="new10 admin admin as both user name and passwird in the last page" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/fbbd0d5e-a645-4f04-9aa2-ca0217ce73a0">
+
+# "THE END'
