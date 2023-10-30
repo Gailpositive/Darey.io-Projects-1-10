@@ -239,14 +239,15 @@
 
 
 * "cd tooling"
+* Deploy the tooling website code to the webserver and ensure "html" from the reposotory is is deployed to /var/www/html
+* sudo cp -R html/. /var/www/html
 <img width="633" alt="step 4 10 cp html file to var www html" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/0b4d53f2-0836-458a-bcad-8187e6064025">
 
-* Deploy the tooling website code to the webserver and ensure "html" from the reposotory is is deployed to /var/www/html
-<img width="633" alt="step 4 10 cp html file to var www html" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/211e420e-05ae-41c2-a728-fb88ec087bfa">
 
 * Open security group port 80
 
-* To disables "sudo sentenforce 0"
+*Next,  disables sentenforce
+* "sudo sentenforce 0"
 * sudo vi /etc/sysconfig/selinux
 * Set selinux Disabled
 <img width="930" alt="new1" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/b580ec94-ebdf-4ef6-93e1-7d1c0486da0e">
