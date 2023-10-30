@@ -254,7 +254,7 @@
 
 * Make sure mysql-y is installed
 * cd "tooling"
-* mysql-h(private db server ip -u webaccess -p tooling < tooling -db.sql
+* mysql-h < private db server ip -u webaccess -p tooling < tooling -db.sql
 * Open the security port to: "MYSQL/AURORA" 
  <img width="742" alt="new6 security port" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/0720eb71-f69e-47a7-b33d-ac7f7de8f491">
  
@@ -267,7 +267,7 @@
 
  * Back on the webserver 1, 
 * Update the website configuration to to connect to the database in /var/www/html/functions.php
-* sudo vi /va/www/html/functions.php
+* sudo vi /var/www/html/functions.php
 
 <img width="906" alt="new5 database php" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/c5ca0a20-e72f-43e9-8ca2-59be7ba9b957">
 
