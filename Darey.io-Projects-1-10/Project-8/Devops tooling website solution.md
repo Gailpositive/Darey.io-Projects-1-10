@@ -248,16 +248,8 @@
 
 * To disables "sudo sentenforce 0"
 * sudo vi /etc/sysconfig/selinux
-* * Set selinux Disabled
+* Set selinux Disabled
 <img width="930" alt="new1" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/b580ec94-ebdf-4ef6-93e1-7d1c0486da0e">
-
-* 
-
- * Back on the webserver, 
-* Update the website configuration to to connect to the database in /var/www/html/functions.php
-* sudo vi /va/www/html/functions.php
-
-<img width="906" alt="new5 database php" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/c5ca0a20-e72f-43e9-8ca2-59be7ba9b957">
 
 
 * Make sure mysql-y is installed
@@ -265,7 +257,17 @@
 * mysql-h(private db server ip -u webaccess -p tooling < tooling -db.sql
 * Open the security port to: "MYSQL/AURORA" 
  <img width="742" alt="new6 security port" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/0720eb71-f69e-47a7-b33d-ac7f7de8f491">
-* Quikly go the database, do some config to make sure of the connection
+ 
+* Quiukly go the database, and do some config to make sure of the connection
 * sudo vi /etc/my.cnf
-* Change the binding to 0.0.0.0
- <img width="491" alt="step 4 15 redhat mysql conf file" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/c85d4fb8-e0f6-4ef3-a439-33d1debb2cf1">
+* Change the binding address  to "0.0.0.0"
+* Restart the system, "sudo systemctl restart mysqld"
+*  <img width="491" alt="step 4 15 redhat mysql conf file" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/c85d4fb8-e0f6-4ef3-a439-33d1debb2cf1">
+
+
+ * Back on the webserver 1, 
+* Update the website configuration to to connect to the database in /var/www/html/functions.php
+* sudo vi /va/www/html/functions.php
+
+<img width="906" alt="new5 database php" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/c5ca0a20-e72f-43e9-8ca2-59be7ba9b957">
+
