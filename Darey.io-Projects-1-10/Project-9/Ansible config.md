@@ -35,3 +35,7 @@
 
 * On build steps, build job configured to save (**) files
 <img width="952" alt="Config5" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/d5c970fe-c906-442a-b85d-52046ecb5d75"> 
+
+## 5, STEP 3: TEST SETUP BY MAKING SOME CHANGINGS IN README.MD FILE IN MAIN BRANCH , MAKE SURE BUILDS STARTS AUTOMATICALLY AND JENKINS BUILDS ARTIFACTS IN FOLLOWING ORDER.
+
+* 
