@@ -38,4 +38,11 @@
 
 ## 5, STEP 3: TEST SETUP BY MAKING SOME CHANGINGS IN README.MD FILE IN MAIN BRANCH , MAKE SURE BUILDS STARTS AUTOMATICALLY AND JENKINS BUILDS ARTIFACTS IN FOLLOWING ORDER.
 
-* 
+* Webhook successfully created
+<img width="844" alt="webhook sucessful" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/cc13f592-8795-414c-bda6-bda558a60bf1">
+
+* Readme file editted
+<img width="635" alt="testing the readme" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/12ffc663-38e2-43d5-947d-97357ff8c02c">
+
+* Jenkins builds automatically
+<img width="284" alt="testing jenkins  builds auto" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/51130079-aa69-4a44-8b41-e197aea385c6">
