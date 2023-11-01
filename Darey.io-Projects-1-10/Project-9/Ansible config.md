@@ -48,12 +48,15 @@
 <img width="284" alt="testing jenkins  builds auto" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/51130079-aa69-4a44-8b41-e197aea385c6">
 
 * On my Terminal
-* I "cd /var/lib/jenkins/workspaces/"
-* ls
-* ll
-* cd Ansible
-* ls
-* cat README.md
+<img width="655" alt="j terminal" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/f9797ef6-8843-4367-bd7a-06dd75fc0ebd">
 
 
 ## Note: everytime I stop/start my my Ansible server, I will have to reconfig github webhook Ip address. To avoid this, I can allocate an Elastic Ip to the server.Elastic IP is only free when allocated to an EC2 instance, so remenber to release Elastic Ip once I terminate Instance.
+
+ ## 6, STEP 4: PREPARING THE DEVELOPMENT AREA USING VSCODE
+ * Config to vscode via codespace in github
+ <img width="960" alt="git in vscode" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/9883645e-fe77-47b6-8d4f-29e3559249d7">
+ 
+ * Clone down ansible-config-mgt repo to Ansible instance
+<img width="569" alt="git clone ansible repo" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/938dbe9c-7bb3-43a7-a218-c52e24ed1601">
+
