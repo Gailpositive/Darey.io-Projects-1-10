@@ -46,3 +46,14 @@
 
 * Jenkins builds automatically
 <img width="284" alt="testing jenkins  builds auto" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/51130079-aa69-4a44-8b41-e197aea385c6">
+
+* On my Terminal
+* I "cd /var/lib/jenkins/workspaces/"
+* ls
+* ll
+* cd Ansible
+* ls
+* cat README.md
+
+
+## Note: everytime I stop/start my my Ansible server, I will have to reconfig github webhook Ip address. To avoid this, I can allocate an Elastic Ip to the server.Elastic IP is only free when allocated to an EC2 instance, so remenber to release Elastic Ip once I terminate Instance.
