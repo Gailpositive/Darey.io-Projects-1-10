@@ -60,3 +60,12 @@
  * Clone down ansible-config-mgt repo to Ansible instance
 <img width="569" alt="git clone ansible repo" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/938dbe9c-7bb3-43a7-a218-c52e24ed1601">
 
+## 7, STEP 5: ANSIBLE DEVELOPMENT
+* In the ansible-config.mgt repo, create a development branch that, will be used for a new feature.
+<img width="468" alt="developemnt branch" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/ccce6bf0-fc09-4e3a-a0a2-c4d71faf9c65">
+
+* Checkout/switch to the newly created branch
+* cd into cloned repo
+* sudo mkdir playbooks and inventory 
+<img width="447" alt="create playbook" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/489da9a5-b58d-43cf-a8cb-4cb03223ecf0">
+
