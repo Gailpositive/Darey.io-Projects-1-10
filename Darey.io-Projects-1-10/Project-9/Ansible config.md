@@ -64,8 +64,16 @@
 * In the ansible-config.mgt repo, create a development branch that, will be used for a new feature.
 <img width="468" alt="developemnt branch" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/ccce6bf0-fc09-4e3a-a0a2-c4d71faf9c65">
 
-* Checkout/switch to the newly created branch
-* cd into cloned repo
-* sudo mkdir playbooks and inventory 
-<img width="447" alt="create playbook" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/489da9a5-b58d-43cf-a8cb-4cb03223ecf0">
+* Checkout/switch to the newly created branch "Development"
+<img width="409" alt="git 3 created new branch" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/d4aa0861-ed4e-4f1a-8490-9019e8aa197a">
+ 
+* Create a directory and name it "playbook"
+* Create another directory and name it i"nventory"
+* Within the playbooks folder, create a playbook file called "common.yml"
+* Within the inventory folder, create an inventory file each for the following environments :Dev, staging, uat (testing), prod respectively
+* These inventory files uses .ini languages to style to config ansible host
+<img width="569" alt="git 6" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/26e0ec32-9c3a-4375-a146-3c66e5a67f0c">
+
+
+
 
