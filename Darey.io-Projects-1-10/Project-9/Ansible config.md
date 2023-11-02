@@ -73,6 +73,9 @@
 * Within the inventory folder, create an inventory file each for the following environments :Dev, staging, uat (testing), prod respectively
 * These inventory files uses .ini languages to style to config ansible host
 <img width="569" alt="git 6" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/26e0ec32-9c3a-4375-a146-3c66e5a67f0c">
+<img width="492" alt="git 8" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/10e300ca-ef00-4651-99c6-a36316917da4">
+
+<img width="916" alt="git 9" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/a969dca0-8c26-43ba-87ea-3d0d05ae97eb">
 
 
 
