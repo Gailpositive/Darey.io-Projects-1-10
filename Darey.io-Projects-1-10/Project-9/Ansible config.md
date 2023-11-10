@@ -125,7 +125,7 @@ State : NotPresent
 * Start the sshd service
 "Start-Service sshd"
 
- *OPTIONAL but recommended:
+* OPTIONAL but recommended:
 "Set-Service -Name sshd -StartupType 'Automatic'"
 
 * Confirm the Firewall rule is configured. It should be created automatically by setup. Run the following to verify
