@@ -51,11 +51,17 @@ A Jump Server (sometimes also referred as Bastion Host) is an intermediary serve
 * Readme file editted
 <img width="635" alt="testing the readme" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/12ffc663-38e2-43d5-947d-97357ff8c02c">
 
-* Jenkins builds automatically
+* Jenkins builds artifacts automatically
 <img width="284" alt="testing jenkins  builds auto" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/51130079-aa69-4a44-8b41-e197aea385c6">
 
 * On my Terminal
 <img width="655" alt="j terminal" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/f9797ef6-8843-4367-bd7a-06dd75fc0ebd">
+
+## Note: Trigger Jenkins project execution only for /main (master) branch.
+
+Now, my setup looks like this:
+![image](https://github.com/travdevops/PBL-DevOps/assets/111061512/db84f534-eed6-4689-a4e2-16bd9f08e9f5)
+
 
 
 ## Note: everytime I stop/start my my Ansible server, I will have to reconfig github webhook Ip address. To avoid this, I can allocate an Elastic Ip to the server.Elastic IP is only free when allocated to an EC2 instance, so remenber to release Elastic Ip once I terminate Instance.
