@@ -111,24 +111,24 @@ Development ‘DevOps’ means I will require to write some codes and I shall ha
 * Now I need to import my key into ssh-agent: To learn how to setup SSH agent and connect VS Code to your Jenkins-Ansible instance, please see this video:
 * • ( https://www.youtube.com/watch?v=OplGrY74qog) for Windows users – ssh-agent on windows
 * • ( https://www.youtube.com/watch?v=OplGrY74qog) for Linux users – ssh-agent on linux
-* I setup my SSH agent using my windows power shell terminal using the following script:
 
-1. *  "Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'"
+  ## I setup my SSH agent using my windows power shell terminal using the following script:
 
-2. * " Name  : OpenSSH.Client~~~~0.0.1.0"
+*  Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
+
+*   Name  : OpenSSH.Client~~~~0.0.1.0
 State : NotPresent
 
-* "Name  : OpenSSH.Server~~~~0.0.1.0"
+*  Name  : OpenSSH.Server~~~~0.0.1.0
 State : NotPresent
 
-
-3. # Start the sshd service
+* Start the sshd service
 "Start-Service sshd"
 
-4. # OPTIONAL but recommended:
+ *OPTIONAL but recommended:
 "Set-Service -Name sshd -StartupType 'Automatic'"
 
-5. # Confirm the Firewall rule is configured. It should be created automatically by setup. Run the following to verify
+* Confirm the Firewall rule is configured. It should be created automatically by setup. Run the following to verify
 " (!(Get-NetFirewallRule -Name "OpenSSH-Server-In-TCP" -ErrorAction SilentlyContinue | Select-Object Name, Enabled)) {
     Write-Output "Firewall Rule 'OpenSSH-Server-In-TCP' does not exist, creating it..."
     New-NetFirewallRule -Name 'OpenSSH-Server-In-TCP' -DisplayName 'OpenSSH Server (sshd)' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22
