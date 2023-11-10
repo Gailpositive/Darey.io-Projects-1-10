@@ -69,7 +69,6 @@ Now, my setup looks like this:
 ![image](https://github.com/travdevops/PBL-DevOps/assets/111061512/db84f534-eed6-4689-a4e2-16bd9f08e9f5)
 
 
-
 ## Note: everytime I stop/start my my Ansible server, I will have to reconfig github webhook Ip address. To avoid this, I can allocate an Elastic Ip to the server.Elastic IP is only free when allocated to an EC2 instance, so remenber to release Elastic Ip once I terminate Instance.
 
  ## 6, STEP 4: PREPARING THE DEVELOPMENT AREA USING VSCODE
@@ -108,12 +107,42 @@ Development ‘DevOps’ means I will require to write some codes and I shall ha
 * An Ansible inventory file defines the hosts and groups of hosts upon which commands, modules, and tasks in a playbook operate. Since our intention is to execute Linux commands on remote hosts, and ensure that it is the intended configuration on a particular server that occurs. It is important to have a way to organize our hosts in such an Inventory.
 * Save below inventory structure in the inventory/dev file to start configuring the development servers. Ensure to replace the IP addresses according to my own setup.
 * Note: Ansible uses TCP port 22 by default, which means it needs to ssh into target servers from Jenkins-Ansible host – for this I can implement the concept of ssh-agent.
+
 * Now I need to import my key into ssh-agent: To learn how to setup SSH agent and connect VS Code to your Jenkins-Ansible instance, please see this video:
 * • ( https://www.youtube.com/watch?v=OplGrY74qog) for Windows users – ssh-agent on windows
 * • ( https://www.youtube.com/watch?v=OplGrY74qog) for Linux users – ssh-agent on linux
+* I setup my SSH agent using my windows power shell terminal using the following script:
 
- * eval `ssh-agent -s`
+1. *  "Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'"
+
+2. * " Name  : OpenSSH.Client~~~~0.0.1.0"
+State : NotPresent
+
+* "Name  : OpenSSH.Server~~~~0.0.1.0"
+State : NotPresent
+
+
+3. # Start the sshd service
+"Start-Service sshd"
+
+4. # OPTIONAL but recommended:
+"Set-Service -Name sshd -StartupType 'Automatic'"
+
+5. # Confirm the Firewall rule is configured. It should be created automatically by setup. Run the following to verify
+" (!(Get-NetFirewallRule -Name "OpenSSH-Server-In-TCP" -ErrorAction SilentlyContinue | Select-Object Name, Enabled)) {
+    Write-Output "Firewall Rule 'OpenSSH-Server-In-TCP' does not exist, creating it..."
+    New-NetFirewallRule -Name 'OpenSSH-Server-In-TCP' -DisplayName 'OpenSSH Server (sshd)' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22
+} else {
+    Write-Output "Firewall rule 'OpenSSH-Server-In-TCP' has been created and exists."
+}
+
+<img width="915" alt="powershell1" src="https://github.com/travdevops/PBL-DevOps/assets/111061512/ff78a63e-f860-4548-be48-cb172d63ed28">
+<img width="960" alt="powershell2" src="https://github.com/travdevops/PBL-DevOps/assets/111061512/68e32bc7-55aa-44a0-9a2b-3b4d450a850e">
+<img width="945" alt="powershell3" src="https://github.com/travdevops/PBL-DevOps/assets/111061512/c9ae04d3-3de4-4c0a-ad0c-160b22fc6988">
+
+
+* eval `ssh-agent -s`
 * ssh-add <path-to-private-key>
-
 *Confirm the key has been added with the command below, you should see the name of your key ssh-add -l
 * Now, ssh into your Jenkins-Ansible server using ssh-agent ssh -A ubuntu@public-ip
+<img width="588" alt="process to loging in remotely via ssh 9" src="https://github.com/travdevops/PBL-DevOps/assets/111061512/1a5e1cb4-422d-4601-b0f5-bd1a8ef37ba1">
