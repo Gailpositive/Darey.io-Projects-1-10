@@ -249,13 +249,56 @@ Execute the command "lsblk" to view blocks attached to server
 * cp -R wordpress /var/www/html/
  <img width="825" alt="db cont 9 download wordpress and copy to varwwwhtml" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/cbd9cb46-719e-4a3c-8296-e3ba03c3b0b8">
 
-* To config SELinux policies,I run the following scripts,
-*  sudo chown -R apache:apache /var/www/html/wordpress
- * sudo chcon -t httpd_sys_rw_content_t /var/www/html/wordpress -R
-*  sudo setsebool -P httpd_can_network_connect=1
+* ## Configure Selinux Policies
+- sudo chown -R apache:apache /var/www/html/wordpress
+- sudo chcon -t httpd_sys_rw_content_t /var/www/html/wordpress -R
+- sudo setsebool -P httpd_can_network_connect=1
+
+* ## Install Mysql On DB Server
+* sudo yum install mysql-server
+* Verify that the service is up and running by using sudo systemctl status mysqld, if it is not running, restart the service and enable it so it will be running even after reboot:
+* sudo systemctl enable mysqld
+
+## CONFIGURE DB TO WORK WITH WORDPRESS
+- CREATE DATABASE wordpress;
+- CREATE USER `myuser`@`<Web-Server-Private-IP-Address>` IDENTIFIED BY 'mypass';
+- GRANT ALL ON wordpress.* TO 'myuser'@'<Web-Server-Private-IP-Address>';
+- FLUSH PRIVILEGES;
+- SHOW DATABASES;
+- exit
 
 
+## CONFIGURE WORDPRESS TO CONNECT TO THE REMOTE DATABASE
+- Open MySQL port 3306 on DB Server EC2. For extra security, you shall allow access to the DB server ONLY from your Web Server’s IP address, so in the Inbound Rule - 
+configuration specify source as /32
+- Install MySQL client and test that you can connect from your Web Server to your DB server by using mysql-client
+- sudo yum install mysql
+- Now edit mysql configuration file by typing sudo nano /etc/my.cnf. Add the following at the end of the file
+<img width="545" alt="binding" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/3259c49e-33dc-4fb5-8e9f-7e025b2a086d">
 
-## NOTE TO DAREY.IO MENTOR:My status health has be 1/2 and sometimes blank for about a week now. So I cant keep waiting, I have to submit this half task so I can move to the next course on the learning part. I will  complete this project once the status health is back to 2/2. Thanks for understanding 
 
+* Restart mysqld service using :"sudo systemctl restart mysqld"
 
+* Change permissions and configuration so Apache could use WordPress: Enable TCP port 80 in Inbound Rules configuration for your Web Server EC2 (enable from everywhere 0.0.0.0/0 or from your workstation’s IP)
+
+* On the web server, edit wordpress configuration file.
+
+* Get into the wordpress directory
+* "cd /var/www/html/wordpress"
+* "sudo nano wp-config.php"
+* 
+* Disable the default page of apache so that I can view the wordpress on the internet.
+ * "sudo mv /etc/httpd/conf.d/welcome.conf /etc/httpd/conf.d/welcome.conf_backup
+
+* Restart httpd: "sudo systemctl restart httpd
+  
+* Verify if i can successfully execute command and see a list of existing databases.
+* sudo mysql -u admin -p -h <DB-Server-Private-IP-Address> 
+*  show databases;
+* (Add DB-Private iIP Adress after the P -h above)
+   
+* Change permissions and configuration so Apache could use WordPress:
+- sudo chcon -t httpd_sys_content_t /var/www/html/wordpress -R
+- sudo setsebool -P httpd_can_network_connect=1
+- sudo setsebool -P httpd_can_network_connect_db 1
+Try to access from your browser the link to your WordPress http:///wordpress/
