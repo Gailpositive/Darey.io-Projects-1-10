@@ -152,6 +152,12 @@ State : NotPresent
 * From the Jenkins-Ansible, ssh into all the remote servers with the same command ssh user@public-ip
 <img width="702" alt="ssh into all Nodes 7" src="https://github.com/travdevops/PBL-DevOps/assets/111061512/0d069913-043a-484c-b060-2479d6b71a17">
 
+* We currently have a few servers we want Ansible and ssh to communicate with to be able to run our playbooks:
+1 Nfs server - RHEL-based
+2 Webservers - RHEL-based
+1 Database Server - RHEL-based
+1 Loadbalancer Server - Ubuntu-based
+  
 * Note: Ubuntu-based servers user is "ubuntu" and user for RHEL-based servers is "ec2-user".
 
 ## Update your inventory/dev.yml file with this snippet of code:
