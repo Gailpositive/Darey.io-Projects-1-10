@@ -149,15 +149,68 @@ State : NotPresent
 * ssh -A ubuntu@public-ip
 <img width="588" alt="process to loging in remotely via ssh 9" src="https://github.com/travdevops/PBL-DevOps/assets/111061512/1a5e1cb4-422d-4601-b0f5-bd1a8ef37ba1">
 
-* From the Jenkins-Ansible, ssh into all the remote servers with the same command ssh user@public-ip
+* From the Jenkins-Ansible Controller, ssh into all the remote servers with the same command ssh user@public-ip and install wireshark with the command:
+* For ubuntu: "sudo apt install wireshark" and "wireshark --version" to check the version
+* For RHEL: "sudo yum install wireshark" and "wireshark --version" to check version 
 <img width="702" alt="ssh into all Nodes 7" src="https://github.com/travdevops/PBL-DevOps/assets/111061512/0d069913-043a-484c-b060-2479d6b71a17">
 
-* We currently have a few servers we want Ansible and ssh to communicate with to be able to run our playbooks:
-1 Nfs server - RHEL-based
-2 Webservers - RHEL-based
-1 Database Server - RHEL-based
-1 Loadbalancer Server - Ubuntu-based
+* I currently have a few servers  I want Ansible and ssh to talk to, to be able to run our playbooks:
+* 1 Nfs server - RHEL-based
+* 2 Webservers - RHEL-based
+* 1 Database Server - RHEL-based
+* 1 Loadbalancer Server - Ubuntu-based
   
 * Note: Ubuntu-based servers user is "ubuntu" and user for RHEL-based servers is "ec2-user".
 
-## Update your inventory/dev.yml file with this snippet of code:
+## On vscode, Update my inventory/dev.yml file with the snippet of code below:
+* [nfs]
+ 172.31.24.221 ansible_ssh_user='ec2-user'
+
+* [webservers]
+172.31.22.59 ansible_ssh_user='ec2-user'
+172.31.25.29 ansible_ssh_user='ec2-user'
+
+* [db]
+172.31.27.205 ansible_ssh_user='ec2-user'
+
+* lb]
+172.31.23.195 ansible_ssh_user='ubuntu'
+
+<img width="814" alt="inventory file modified 8" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/45868885-91ab-4106-99cc-59b10167fb33">
+
+## STEP 5: CREATE A COMMON PLAYBOOK
+* It is time to start giving Ansible the instructions needed to be performed on all servers listed in inventory/dev.
+
+* In common.yml playbook, I will write configuration for repeatable, re-usable, and multi-machine tasks that is common to systems within the infrastructure.
+
+## Update my playbooks/common.yml file with following code:
+
+*  ---
+- name: update web, nfs and db servers
+  hosts: webservers, nfs, db
+  remote_user: ec2-user
+  become: yes
+  become_user: root
+  tasks:
+    - name: ensure wireshark is installed and at its latest version
+      yum:
+        name: wireshark
+        state: latest
+
+- name: update LB server
+  hosts: lb
+  remote_user: ubuntu
+  become: yes
+  become_user: root
+  tasks:
+    - name: Update apt repo
+      apt: 
+        update_cache: yes
+
+    - name: ensure wireshark is installed and at its latest version
+      apt:
+        name: wireshark
+        state: latest
+<img width="884" alt="create a common playbook step 5 7" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/06d25d97-34bf-4980-81d7-ba008d377a16">
+* Examine the code above and try to make sense out of it. This playbook is divided into two parts, each of them is intended to perform the same task: install wireshark utility (or make sure it is updated to the latest version) on my RHEL and Ubuntu servers. It uses root user to perform this task and respective package manager: yum for RHEL and apt for Ubuntu.
+      
