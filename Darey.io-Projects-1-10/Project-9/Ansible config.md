@@ -140,9 +140,11 @@ State : NotPresent
 <img width="960" alt="powershell2" src="https://github.com/travdevops/PBL-DevOps/assets/111061512/68e32bc7-55aa-44a0-9a2b-3b4d450a850e">
 <img width="945" alt="powershell3" src="https://github.com/travdevops/PBL-DevOps/assets/111061512/c9ae04d3-3de4-4c0a-ad0c-160b22fc6988">
 
-
+## Import my key into SSH agent
 * eval `ssh-agent -s`
 * ssh-add <path-to-private-key>
-*Confirm the key has been added with the command below, you should see the name of your key ssh-add -l
-* Now, ssh into your Jenkins-Ansible server using ssh-agent ssh -A ubuntu@public-ip
+*Confirm the key has been added with the command below, you should see the name of your key:
+* ssh-add -l
+* Now, ssh into your Jenkins-Ansible server using ssh-agent:
+*  ssh -A ubuntu@public-ip
 <img width="588" alt="process to loging in remotely via ssh 9" src="https://github.com/travdevops/PBL-DevOps/assets/111061512/1a5e1cb4-422d-4601-b0f5-bd1a8ef37ba1">
