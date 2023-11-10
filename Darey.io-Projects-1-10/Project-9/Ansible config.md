@@ -254,14 +254,26 @@ State : NotPresent
 * Firstly, we will try to ping all the servers just to check if our ansible connection is setup properly with the ansible ping module
 * "ansible all -i inventory/dev.yml -m ping"
 *<img width="960" alt="run playbooks successfull" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/b4307bd3-bdb4-4710-804f-472d2f0b6c83">
-* Only was Nodes were successful
+* Only three Nodes were successful
 
 * Now, We will run our playbooks.
 * "ansible-playbook -i inventory/dev.yml playbooks/common.yml"
 
 
+* Optional step – Repeat once again - Another Task.
+
+* Update your ansible playbook with some new Ansible tasks
+
+* Here, I will ask ansible to install Nginx
+
+* Go through the full checkout -> change codes -> commit -> PR -> merge -> build -> ansible-playbook cycle again to run it.
+* SEE HOW EASILY YOU CAN MANAGE A SERVERS FLEET OF ANY SIZE WITH JUST ONE COMMAND!
+
+
 * My updated  Ansible architecture now looks like this:
 ![image](https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/01af22b4-5fa6-46cf-a775-b33da861ab3a)
+## Congratulations-On-The-Automating-Of-My-Routine-Tasks-By-Implementing-My-First-Ansible-Project)
 
-* 
+
+![image](https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/32f46fcf-04c7-4ebe-8df3-ce97f7df8aa9)
 
