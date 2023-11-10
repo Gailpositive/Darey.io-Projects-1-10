@@ -21,7 +21,11 @@ A Jump Server (sometimes also referred as Bastion Host) is an intermediary serve
 * I update my server with the command "Sudo apt update"
 * To install ansible, I run the command "sudo apt install ansible -y
 * To check the version, I run the command "ansible--version"
-<img width="809" alt="ansible version config none" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/033dff36-2c29-4fc7-8692-d9b9f8ad85a0">
+* Notice there is no ansible config file 
+<img width="814" alt="Ansible version 101" src="https://github.com/travdevops/PBL-DevOps/assets/111061512/c6e95bab-3f3b-4adc-971d-e3d142396c38">
+
+* To install ansible config file, I use the "touch" command to create it
+<img width="822" alt="ansible 102" src="https://github.com/travdevops/PBL-DevOps/assets/111061512/0f806fbc-d954-4cf0-805c-892a48abe10b">
 
  ## 4,  STEP 2: CONFIG JENKINS TO BUILD JOB TO ARCHIVE MY REPOSITORY CONTENT EVERY TIME I SAVE IT.
 * Create a freestyle project "ansible" in Jenkens and point it to "ansible-config.mgt" repository
@@ -80,15 +84,18 @@ Development ‘DevOps’ means I will require to write some codes and I shall ha
  * Clone down ansible-config-mgt repo to my Jenkins-Ansible instance with the command: "git clone <ansible-config-mgt repo link>"
 <img width="569" alt="git clone ansible repo" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/938dbe9c-7bb3-43a7-a218-c52e24ed1601">
 
-## 7, STEP 5: Begin ANSIBLE DEVELOPMENT
-* In the ansible-config.mgt repo, create a development branch that, will be used for a new feature.
+## 7, STEP 5: BEGIN ANSIBLE DEVELOPMENT
+* In my ansible-config-mgt GitHub repository, I create a new branch called "Development" which I latter change to "hotfix" , that will be used for development of a new feature.
+  
+* Tip: Give the branches descriptive and comprehensive names, for example, if I use Jira or Trello as a project management tool – include ticket number (e.g. PRJ-145) in the name of my branch and add a topic and a brief description what this branch is about – a bugfix, hotfix, feature, release (e.g. feature/prj-145-lvm)
+
 <img width="468" alt="developemnt branch" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/ccce6bf0-fc09-4e3a-a0a2-c4d71faf9c65">
 
 * Checkout/switch to the newly created branch "Development"
 <img width="409" alt="git 3 created new branch" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/d4aa0861-ed4e-4f1a-8490-9019e8aa197a">
  
 * Create a directory and name it "playbook"
-* Create another directory and name it i"nventory"
+* Create another directory and name it "inventory"
 * Within the playbooks folder, create a playbook file called "common.yml"
 * Within the inventory folder, create an inventory file each for the following environments :Dev, staging, uat (testing), prod respectively
 * These inventory files uses .ini languages to style to config ansible host
@@ -97,6 +104,16 @@ Development ‘DevOps’ means I will require to write some codes and I shall ha
 
 <img width="916" alt="git 9" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/a969dca0-8c26-43ba-87ea-3d0d05ae97eb">
 
+## 8, Step 4, SET AN ANSIBLE INVENTORY
+* An Ansible inventory file defines the hosts and groups of hosts upon which commands, modules, and tasks in a playbook operate. Since our intention is to execute Linux commands on remote hosts, and ensure that it is the intended configuration on a particular server that occurs. It is important to have a way to organize our hosts in such an Inventory.
+* Save below inventory structure in the inventory/dev file to start configuring the development servers. Ensure to replace the IP addresses according to my own setup.
+* Note: Ansible uses TCP port 22 by default, which means it needs to ssh into target servers from Jenkins-Ansible host – for this I can implement the concept of ssh-agent.
+* Now I need to import my key into ssh-agent: To learn how to setup SSH agent and connect VS Code to your Jenkins-Ansible instance, please see this video:
+* • ( https://www.youtube.com/watch?v=OplGrY74qog) for Windows users – ssh-agent on windows
+* • ( https://www.youtube.com/watch?v=OplGrY74qog) for Linux users – ssh-agent on linux
 
+ * eval `ssh-agent -s`
+* ssh-add <path-to-private-key>
 
-
+*Confirm the key has been added with the command below, you should see the name of your key ssh-add -l
+* Now, ssh into your Jenkins-Ansible server using ssh-agent ssh -A ubuntu@public-ip
