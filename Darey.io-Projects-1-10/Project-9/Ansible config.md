@@ -54,6 +54,8 @@ A Jump Server (sometimes also referred as Bastion Host) is an intermediary serve
 * Jenkins builds artifacts automatically
 <img width="284" alt="testing jenkins  builds auto" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/51130079-aa69-4a44-8b41-e197aea385c6">
 
+ls /var/lib/jenkins/jobs/ansible/builds/<build_number>/archive/
+
 * On my Terminal
 <img width="655" alt="j terminal" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/f9797ef6-8843-4367-bd7a-06dd75fc0ebd">
 
@@ -67,13 +69,18 @@ Now, my setup looks like this:
 ## Note: everytime I stop/start my my Ansible server, I will have to reconfig github webhook Ip address. To avoid this, I can allocate an Elastic Ip to the server.Elastic IP is only free when allocated to an EC2 instance, so remenber to release Elastic Ip once I terminate Instance.
 
  ## 6, STEP 4: PREPARING THE DEVELOPMENT AREA USING VSCODE
+Development ‘DevOps’ means I will require to write some codes and I shall have proper tools that will make my coding and debugging comfortable. I need an Integrated development environment (IDE) or Source-code Editor. There is a plethora of different IDEs and Source-code Editors for different languages with their own advantages and drawbacks, I can choose whichever I am comfortable with. Visual Studio Code is what I will use in this project.
+
+* After you have successfully installed VSC, I 'll configure it to connect to my newly created GitHub repository: "ansible-config-mgt".
+
+ 
  * Config to vscode via codespace in github
  <img width="960" alt="git in vscode" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/9883645e-fe77-47b6-8d4f-29e3559249d7">
  
- * Clone down ansible-config-mgt repo to Ansible instance
+ * Clone down ansible-config-mgt repo to my Jenkins-Ansible instance with the command: "git clone <ansible-config-mgt repo link>"
 <img width="569" alt="git clone ansible repo" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/938dbe9c-7bb3-43a7-a218-c52e24ed1601">
 
-## 7, STEP 5: ANSIBLE DEVELOPMENT
+## 7, STEP 5: Begin ANSIBLE DEVELOPMENT
 * In the ansible-config.mgt repo, create a development branch that, will be used for a new feature.
 <img width="468" alt="developemnt branch" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/ccce6bf0-fc09-4e3a-a0a2-c4d71faf9c65">
 
