@@ -213,4 +213,55 @@ State : NotPresent
         state: latest
 <img width="884" alt="create a common playbook step 5 7" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/06d25d97-34bf-4980-81d7-ba008d377a16">
 * Examine the code above and try to make sense out of it. This playbook is divided into two parts, each of them is intended to perform the same task: install wireshark utility (or make sure it is updated to the latest version) on my RHEL and Ubuntu servers. It uses root user to perform this task and respective package manager: yum for RHEL and apt for Ubuntu.
-      
+* Feel free to update this playbook with the following tasks:
+* Create a directory and a file inside
+* Create time zones on all servers
+* Run some shell script
+
+* For a better understanding of Ansible playbooks – watch this video (https://youtu.be/ZAdJ7CdN7DY) from RedHat and read this article(https://www.redhat.com/en/topics/automation/what-is-an-ansible-playbook).
+
+## Step 6: Update git with the latest code
+* Now all of my directories and files live on my machine
+* git switch to the local development "hotfix" branch,  Merge them to the local main branch and push the changes made locally to the remote GitHub.
+* Working with an organization, It is always advicable to make a pull request first to update changes made remotely down to the local branch before pushing the changes made on the local branch.
+
+* Commit your code into GitHub:
+* use git commands to add, commit and push your branch to GitHub.
+
+* `git status`
+
+* `git add <selected files>`
+
+* `git commit -m "commit message"`
+
+
+* Create a Pull request (PR)
+
+* Act as a reviewer. If the reviewer is happy with your hotfix development, merge the code to the main/master branch.
+
+* Head back on your terminal, checkout from the hotfix branch into the main/master, and pull down the latest changes.
+
+<img width="782" alt="git pull 12" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/f86bae87-d02f-4ce2-8047-74e2e1161ced">
+
+* Once your code changes appear in main/master branch – Jenkins will do its job and save all the files (build artifacts) to /var/lib/jenkins/jobs/ansible/builds/<build_number>/archive/ directory on Jenkins-Ansible server.
+
+<img width="579" alt="build artifact updated" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/b901d826-ad93-4a1c-955a-14c5dfb357c7">
+
+## Step 7- Run First Ansible Test
+* Now, it is time to execute ansible-playbook command and verify if your playbook actually works:
+* On the Jenkins-Ansible controller server,
+* "cd ansible-config-mgt"
+* Firstly, we will try to ping all the servers just to check if our ansible connection is setup properly with the ansible ping module
+* "ansible all -i inventory/dev.yml -m ping"
+*<img width="960" alt="run playbooks successfull" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/b4307bd3-bdb4-4710-804f-472d2f0b6c83">
+* Only was Nodes were successful
+
+* Now, We will run our playbooks.
+* "ansible-playbook -i inventory/dev.yml playbooks/common.yml"
+
+
+* My updated  Ansible architecture now looks like this:
+![image](https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/01af22b4-5fa6-46cf-a775-b33da861ab3a)
+
+* 
+
