@@ -145,10 +145,12 @@ State : NotPresent
 * ssh-add <path-to-private-key>
 *Confirm the key has been added with the command below, you should see the name of your key:
 * ssh-add -l
+* Now,ssh into your Jenkins-Ansible server using ssh-agent:
+* ssh -A ubuntu@public-ip
 <img width="588" alt="process to loging in remotely via ssh 9" src="https://github.com/travdevops/PBL-DevOps/assets/111061512/1a5e1cb4-422d-4601-b0f5-bd1a8ef37ba1">
-* Now, ssh into your Jenkins-Ansible server using ssh-agent:
-*  ssh -A ubuntu@public-ip
-<img width="702" alt="ssh into all Nodes 7" src="https://github.com/travdevops/PBL-DevOps/assets/111061512/8daced42-16df-4a76-abbb-329ac55c2fc5">
+
+* From the Jenkins-Ansible, ssh into all the remote servers with the same command ssh user@public-ip
+<img width="702" alt="ssh into all Nodes 7" src="https://github.com/travdevops/PBL-DevOps/assets/111061512/0d069913-043a-484c-b060-2479d6b71a17">
 
 * Note: Ubuntu-based servers user is "ubuntu" and user for RHEL-based servers is "ec2-user".
 
