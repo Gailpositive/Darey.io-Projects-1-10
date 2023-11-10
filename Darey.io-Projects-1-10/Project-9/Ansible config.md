@@ -83,6 +83,8 @@ Development ‘DevOps’ means I will require to write some codes and I shall ha
  * Clone down ansible-config-mgt repo to my Jenkins-Ansible instance with the command: "git clone <ansible-config-mgt repo link>"
 <img width="569" alt="git clone ansible repo" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/938dbe9c-7bb3-43a7-a218-c52e24ed1601">
 
+<img width="679" alt="updated connect host" src="https://github.com/Gailpositive/ansible-config-mgt/assets/111061512/0a387391-4491-4612-8c32-6c5def8c917b">
+
 ## 7, STEP 5: BEGIN ANSIBLE DEVELOPMENT
 * In my ansible-config-mgt GitHub repository, I create a new branch called "Development" which I latter change to "hotfix" , that will be used for development of a new feature.
   
