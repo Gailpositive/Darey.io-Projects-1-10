@@ -1,11 +1,20 @@
 # BUILDING A COMPREHENSIVE BUSINESS  WEBSITE SOLUTION AND INTEGRATION OF VARIOUS TOOLS AND TECHNOLOGIES.
 ## A THREE-TIER WEB APPLICATION ARCHITECTURE, A SINGLE REMOTE MYSQL DATABASE AND AN NFS SERVER AS SHARED BACKEND STORAGE FILES. 
 ## Solution Prerequisites: 
-* Infrastruction: AWS.
-*  Three-Tier Webservers Linux: Redhat.  
-* Database Server: Ubuntu + Mysql (Preferable but I used Redhat). 
-* Storage server: Redhat + NFS Server. 
-* Programming language: PHP. Code Repository: Github.  
+1 Infrastruction: AWS.
+2  Three-Tier Webservers Linux: Redhat.  
+3  Database Server: Ubuntu + Mysql (Preferable but I used Redhat). 
+4  Storage server: Redhat + NFS Server. 
+5  Programming language: PHP. 
+6  Code Repository: Github. 
+
+* On the diagram below you can see a common pattern where several stateless Web Servers share a common database and also access the same files using Network File Sytem (NFS) as a shared file storage. Even though the NFS server might be located on a completely separate hardware – for Web Servers it look like a local file system from where they can serve the same files.
+
+  <img width="917" alt="1" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/2733229b-7cff-437e-9495-fffb5fdb353e">
+
+<img width="873" alt="2" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/a28cf063-dbaf-436b-82ce-a19164114512">
+
+
 
 ## NOTE: Not all storage is suitable, hence it is important to know the suitable storage solution for every use case. Such as: what data will be stored, in what format, how this data will be accessed, by whom, from where, how frequently etc. Based on theses questions, I will be able to choose the right suitable storage for my solution. 
 
