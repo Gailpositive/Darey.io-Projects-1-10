@@ -4,8 +4,10 @@
 
 ## To get started, I will be configing and deploying three back-end servers on the  AWS EC2 Instance running ubuntu: Two loadbalancer servers and one Nginx server, open on port 8000, 8000 and 80 respectively .
 
+<img width="673" alt="3" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/55b01625-6690-482d-9c57-79fd4ee68668">
 
-# Step 1
+
+# Step 1: Configure Apache2 As A Loadbalancer
 * I Connect to two separate apache2 load balancer webservers, via my termius terminal using SSH client
 * With the "touch" command, I create two files: "config-apache1.sh" and "config-apache2.sh on the two separate terminals
 * I sudo vi into both files with the command "sudo vi config-apache1.sh" and "sudo vi config-apache2.sh" on two saperate terminals
