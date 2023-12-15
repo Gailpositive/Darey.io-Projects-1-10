@@ -52,3 +52,9 @@
 <img width="557" alt="nginx sytax is ok,this is will come after system active and running" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/cdb766bb-0df4-4b33-b525-50a7428cde62">
 
 # Step 6
+
+<img width="708" alt="4" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/5a68e74f-b577-44fa-b9eb-94cc4329010a">
+
+<img width="713" alt="5" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/8d906d00-39e8-4c79-b5d3-632f373339fc">
+
+<img width="750" alt="6" src="https://github.com/Gailpositive/DevOps-Projects-1-10/assets/111061512/e98fe686-d886-455a-a45f-dc80345d349f">
